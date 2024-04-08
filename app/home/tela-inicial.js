@@ -3,21 +3,15 @@ import { Link, router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 
 
-export default function Index() {
+export default function TelaInicial() {
   
 
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="#151718" style="light" />
-      <Link href="login" asChild>
+      <Link href="/" asChild>
         <Pressable style={styles.botao_link}>
-          <Text style={styles.botao_text}>Login</Text>
-        </Pressable>
-      </Link>
-
-      <Link href="home/tela-inicial" asChild>
-        <Pressable style={styles.botao_link}>
-          <Text style={styles.botao_text}>Tela home</Text>
+          <Text style={styles.botao_text}>Index</Text>
         </Pressable>
       </Link>
 
@@ -26,6 +20,12 @@ export default function Index() {
           <Text style={styles.botao_text}>tela perfil</Text>
         </Pressable>
       </Link>
+
+      {/* <Link href="passageiro/cadastro" asChild>
+        <Pressable style={styles.botao_link}>
+          <Text style={styles.botao_text}>Cadastro Passageiro</Text>
+        </Pressable>
+      </Link> */}
 
     </View>
   )
