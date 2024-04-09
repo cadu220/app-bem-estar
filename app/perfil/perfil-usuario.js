@@ -1,7 +1,7 @@
 import { StyleSheet, Pressable, View, Text } from "react-native";
 import { Link, router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-
+import Footer from "../footer/footer";
 
 export default function Perfil() {
   
@@ -27,6 +27,7 @@ export default function Perfil() {
         </Pressable>
       </Link> */}
 
+      <Footer/>
     </View>
   )
 
