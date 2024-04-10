@@ -7,23 +7,43 @@ export default function Perfil() {
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="#151718" style="light" />
+      <Text style={styles.title}>Seu Perfil</Text>
       <View>
-        <Text style={styles.title}>Seu Perfil</Text>
-        <View>
-          <Image
-            style= {styles.profile_picture}
-            source={require('./imgs/profilePicture.png')}
-          />
+        <View style={styles.profile_info}>
+          <Text style={styles.h3}>Usuário</Text>
+          <Image style={styles.profile_picture} source={require('./imgs/profilePicture.png')}/>
+          <Text style={{alignSelf:'center'}}>"Nome do Usuário"</Text>
+          <Text>Gênero: "Gênero do usuário"</Text>
+          <Text>Idade: "Idade do usuário</Text>
+        </View>
+        <View style={styles.config}>
+          <Text style={styles.h3}>Configurações</Text>
+          <Text>Idade: "Idade do usuário"</Text>
+          <Text>Nome: "Nome do usuário"</Text>
+          <Text>Apelido: "Apelido do usuário"</Text>
+          <Text>Email: "Email do usuário"</Text>
+          <Text>Estilo Principal: "Yoga"</Text>
+          <Button style={styles.botao_report} title="REPORTAR ERRO"/>
         </View>
       </View>
+        <View>
+          <Text style={styles.title}>Amigos</Text>
+        </View>
       <Footer/>
     </View>
   )
 }
 const styles = StyleSheet.create({
+  h3: {
+    color: '#54B85E',
+    fontSize: 25,
+    fontWeight: 'bold',
+    alignSelf: 'center'
+  },  
   container: {
     flex: 1,
-    backgroundColor: "white",
+    width: '100%',
+    backgroundColor: "#F8F8F8",
     justifyContent: "center",
     alignItems: "center"
   },
@@ -37,6 +57,7 @@ const styles = StyleSheet.create({
   },
   title: {
     color: 'white',
+    textAlign: 'center',
     paddingLeft: 20,
     paddingRight: 20,
     fontSize: 25,
@@ -51,5 +72,24 @@ const styles = StyleSheet.create({
     borderRadius: 80,
     width: 80,
     height: 80,
-  }
+  },
+  profile_info: {
+    border: 1,
+    borderColor: 'black',
+    height: 200,
+    width: 340,
+    marginTop: 30,
+    marginBottom: 10,
+    borderRadius: 20,
+    backgroundColor: '#FFFFFF',
+  },
+  config: {
+    height: 300,
+    justifyContent: 'space-around',
+    border: 1,
+    marginBottom: 30,
+    borderColor: 'black',
+    borderRadius: 20,
+    backgroundColor: '#FFFFFF',
+  },
 })
