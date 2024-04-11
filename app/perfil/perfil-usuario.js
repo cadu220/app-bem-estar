@@ -1,4 +1,5 @@
-import { StyleSheet, Pressable, View, Text, Button, Image } from "react-native";
+import { StyleSheet, Pressable, View, Text, Image, ScrollView } from "react-native";
+import React from 'react';
 import { Link, router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import Footer from "../footer/footer";
@@ -12,18 +13,35 @@ export default function Perfil() {
         <View style={styles.profile_info}>
           <Text style={styles.h3}>Usuário</Text>
           <Image style={styles.profile_picture} source={require('./imgs/profilePicture.png')}/>
-          <Text style={{alignSelf:'center'}}>"Nome do Usuário"</Text>
-          <Text>Gênero: "Gênero do usuário"</Text>
-          <Text>Idade: "Idade do usuário</Text>
+          <Text style={{alignSelf:'center', fontSize: 18}}>"Nome do Usuário"</Text>
+          <Text style={styles.info_text}>Gênero: "Gênero do usuário"</Text>
+          <Text style={styles.info_text}>Idade: "Idade do usuário</Text>
         </View>
         <View style={styles.config}>
           <Text style={styles.h3}>Configurações</Text>
-          <Text>Idade: "Idade do usuário"</Text>
-          <Text>Nome: "Nome do usuário"</Text>
-          <Text>Apelido: "Apelido do usuário"</Text>
-          <Text>Email: "Email do usuário"</Text>
-          <Text>Estilo Principal: "Yoga"</Text>
-          <Button style={styles.botao_report} title="REPORTAR ERRO"/>
+          <View style={styles.line}>
+            <Image source={require('./imgs/editButton.png')}/>
+            <Text style={styles.info_text}>Idade: "Idade do usuário"</Text>
+          </View>
+          <View style={styles.line}>
+            <Image source={require('./imgs/editButton.png')}/>
+            <Text style={styles.info_text}>Nome: "Nome do usuário"</Text>
+          </View>
+          <View style={styles.line}>
+            <Image source={require('./imgs/editButton.png')}/>
+            <Text style={styles.info_text}>Apelido: "Apelido do usuário"</Text>
+          </View>
+          <View style={styles.line}>
+            <Image source={require('./imgs/editButton.png')}/>
+            <Text style={styles.info_text}>Email: "Email do usuário"</Text>
+          </View>
+          <View style={styles.line}>
+            <Image source={require('./imgs/editButton.png')}/>
+            <Text style={styles.info_text}>Estilo Principal: "Yoga"</Text>
+          </View>
+          <Pressable style={styles.botao_report}>
+            <Text style={styles.botao_text}>REPORTAR ERRO</Text>
+          </Pressable>
         </View>
       </View>
         <View>
@@ -34,22 +52,30 @@ export default function Perfil() {
   )
 }
 const styles = StyleSheet.create({
-  h3: {
-    color: '#54B85E',
-    fontSize: 25,
-    fontWeight: 'bold',
-    alignSelf: 'center'
-  },  
   container: {
-    flex: 1,
+    flexGrow: 1,
     width: '100%',
     backgroundColor: "#F8F8F8",
     justifyContent: "center",
     alignItems: "center"
   },
+  h3: {
+    color: '#54B85E',
+    fontSize: 25,
+    fontWeight: 'bold',
+    alignSelf: 'center'
+  },
+  info_text: {
+    fontSize: 18,
+  },
+  line: {
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
   botao_report: {
-    backgroundColor: "gray",
-    width: "70%",
+    backgroundColor: "#D9D9D9",
+    width: "50%",
+    padding: 5,
     margin: 10,
     borderRadius: 30,
     justifyContent: "center",
@@ -80,6 +106,7 @@ const styles = StyleSheet.create({
     width: 340,
     marginTop: 30,
     marginBottom: 10,
+    paddingLeft: 10,
     borderRadius: 20,
     backgroundColor: '#FFFFFF',
   },
@@ -87,7 +114,8 @@ const styles = StyleSheet.create({
     height: 300,
     justifyContent: 'space-around',
     border: 1,
-    marginBottom: 30,
+    marginBottom: 10,
+    paddingLeft: 10,
     borderColor: 'black',
     borderRadius: 20,
     backgroundColor: '#FFFFFF',

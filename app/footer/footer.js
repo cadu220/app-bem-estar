@@ -6,10 +6,9 @@ export default function Footer() {
 
     const styles = StyleSheet.create({
         container: {
-            flex: 1,
+            flexGrow: 1,
             width: '100%',
             height: '7%',
-            display: 'flex',
             flexDirection: 'row',
             justifyContent: 'space-around',
             backgroundColor: 'white',
