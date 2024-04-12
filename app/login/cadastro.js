@@ -7,19 +7,10 @@ import { router  } from 'expo-router';
 
 
 const Cadastro = () => {
-  const [cep, setCep] = useState('');
   const [nome, setNome] = useState('');
-  const [cpf, setCpf] = useState('');
   const [senha, setSenha] = useState('');
   const [email, setEmail] = useState('');
-  const [periodo, setPeriodo] = useState('');
-  const [curso, setCurso] = useState('');
-  const [numero, setNumero] = useState('');
-  const [CorretoCEP, setCorretoCEP] = useState();
-  const [CorretoSenha, setCorretoSenha] = useState();
-  const [confirmacaoSenha, setConfirmacaoSenha] = useState('');
-  const [showTextInput, setShowTextInput] = useState(false);
-
+ 
 
 
   const handleCadastro = async () => {

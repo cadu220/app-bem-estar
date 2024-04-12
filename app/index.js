@@ -17,12 +17,13 @@ export default function Index() {
   const Start = async() =>{
     let sessao = await GetSessao()
     
-    // if(sessao==null || sessao==""){
-    //   router.replace(`/`);
-    //   return
-    // }
+    if(sessao==null || sessao==""){
+      // router.replace(`/`);
+      return
+    }
 
     console.log(sessao)
+    if(sessao!=null || sessao != ""){
     let query_validar_email = query(collection(db, "usuario"), where("email", "==", sessao.email));
     let querySnapshot = await getCountFromServer(query_validar_email);
         if (querySnapshot.data().count >= 1) {
@@ -35,7 +36,7 @@ export default function Index() {
           router.replace(`/`);
           return
         }
-  }
+  }}
 
   const ValidaLogin = async(data,sessao) =>{
     if(data.email == sessao.email && data.senha == sessao.senha){

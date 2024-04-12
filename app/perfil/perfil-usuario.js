@@ -2,9 +2,28 @@ import { StyleSheet, Pressable, View, Text, Image } from "react-native";
 import React from 'react';
 import { Link, router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
+import React, { useState,useEffect } from 'react';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import Footer from "../footer/footer";
 
 export default function Perfil() {
+  const [Nome, setNome] = useState();
+
+  useEffect(() => {
+    Start();
+  }, []);
+  const Start = async () => {
+    let sessao = await GetSessao();
+    setNome(sessao.nome);
+  };
+
+  const GetSessao = async () => {
+    try {
+      const jsonValue = await AsyncStorage.getItem("sessao");
+
+      return jsonValue != null ? JSON.parse(jsonValue) : null;
+    } catch (e) {}
+  };
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="#151718" style="light" />
@@ -12,31 +31,36 @@ export default function Perfil() {
       <View>
         <View style={styles.profile_info}>
           <Text style={styles.h3}>Usuário</Text>
-          <Image style={styles.profile_picture} source={require('./imgs/profilePicture.png')}/>
-          <Text style={{alignSelf:'center', fontSize: 18}}>"Nome do Usuário"</Text>
+          <Image
+            style={styles.profile_picture}
+            source={require("./imgs/profilePicture.png")}
+          />
+          <Text style={{ alignSelf: "center", fontSize: 18 }}>
+            "Nome do Usuário:" {Nome}
+          </Text>
           <Text style={styles.info_text}>Gênero: "Gênero do usuário"</Text>
           <Text style={styles.info_text}>Idade: "Idade do usuário</Text>
         </View>
         <View style={styles.config}>
           <Text style={styles.h3}>Configurações</Text>
           <View style={styles.line}>
-            <Image source={require('./imgs/editButton.png')}/>
+            <Image source={require("./imgs/editButton.png")} />
             <Text style={styles.info_text}>Idade: "Idade do usuário"</Text>
           </View>
           <View style={styles.line}>
-            <Image source={require('./imgs/editButton.png')}/>
+            <Image source={require("./imgs/editButton.png")} />
             <Text style={styles.info_text}>Nome: "Nome do usuário"</Text>
           </View>
           <View style={styles.line}>
-            <Image source={require('./imgs/editButton.png')}/>
+            <Image source={require("./imgs/editButton.png")} />
             <Text style={styles.info_text}>Apelido: "Apelido do usuário"</Text>
           </View>
           <View style={styles.line}>
-            <Image source={require('./imgs/editButton.png')}/>
+            <Image source={require("./imgs/editButton.png")} />
             <Text style={styles.info_text}>Email: "Email do usuário"</Text>
           </View>
           <View style={styles.line}>
-            <Image source={require('./imgs/editButton.png')}/>
+            <Image source={require("./imgs/editButton.png")} />
             <Text style={styles.info_text}>Estilo Principal: "Yoga"</Text>
           </View>
           <Pressable style={styles.botao_report}>
@@ -53,28 +77,28 @@ export default function Perfil() {
         </View>
       <Footer/>
     </View>
-  )
+  );
 }
 const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
-    width: '100%',
+    width: "100%",
     backgroundColor: "#F8F8F8",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
   },
   h3: {
-    color: '#54B85E',
+    color: "#54B85E",
     fontSize: 25,
-    fontWeight: 'bold',
-    alignSelf: 'center'
+    fontWeight: "bold",
+    alignSelf: "center",
   },
   info_text: {
     fontSize: 18,
   },
   line: {
-    flexDirection: 'row',
-    alignItems: 'center'
+    flexDirection: "row",
+    alignItems: "center",
   },
   botao_report: {
     backgroundColor: "#D9D9D9",
@@ -83,19 +107,19 @@ const styles = StyleSheet.create({
     margin: 10,
     borderRadius: 30,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
   },
   title: {
-    color: 'white',
-    textAlign: 'center',
+    color: "white",
+    textAlign: "center",
     paddingLeft: 20,
     paddingRight: 20,
     fontSize: 25,
     padding: 10,
     borderWidth: 1,
     borderRadius: 40,
-    borderColor: '#75D67F',
-    backgroundColor: '#75D67F',
+    borderColor: "#75D67F",
+    backgroundColor: "#75D67F",
   },
   profile_picture: {
     borderWidth: 1,
@@ -105,23 +129,23 @@ const styles = StyleSheet.create({
   },
   profile_info: {
     border: 1,
-    borderColor: 'black',
+    borderColor: "black",
     height: 200,
     width: 340,
     marginTop: 30,
     marginBottom: 10,
     paddingLeft: 10,
     borderRadius: 20,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: "#FFFFFF",
   },
   config: {
     height: 300,
-    justifyContent: 'space-around',
+    justifyContent: "space-around",
     border: 1,
     marginBottom: 10,
     paddingLeft: 10,
-    borderColor: 'black',
+    borderColor: "black",
     borderRadius: 20,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: "#FFFFFF",
   },
-})
+});
