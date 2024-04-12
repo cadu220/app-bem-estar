@@ -1,4 +1,4 @@
-import { StyleSheet, Pressable, View, Text, Image, ScrollView } from "react-native";
+import { StyleSheet, Pressable, View, Text, Image } from "react-native";
 import React from 'react';
 import { Link, router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
@@ -45,7 +45,11 @@ export default function Perfil() {
         </View>
       </View>
         <View>
-          <Text style={styles.title}>Amigos</Text>
+          <Link href='amigos/tela-amigos' asChild>
+            <Pressable>
+              <Text style={styles.title}>Amigos</Text>
+            </Pressable>
+          </Link>
         </View>
       <Footer/>
     </View>
