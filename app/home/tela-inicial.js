@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   buttonBackgroundImage: {
-    ...StyleSheet.absoluteFillObject, // Para preencher todo o espaço do botão
+    ...StyleSheet.absoluteFillObject, 
     width: undefined,
     height: undefined,
   },

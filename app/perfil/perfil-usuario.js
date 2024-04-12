@@ -1,5 +1,4 @@
 import { StyleSheet, Pressable, View, Text, Image } from "react-native";
-import React from 'react';
 import { Link, router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import React, { useState,useEffect } from 'react';

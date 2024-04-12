@@ -27,7 +27,7 @@ export default function Footer() {
                 </Link>
             </View>
             <View>
-                <Link href='' asChild>
+                <Link href='relatorio/relatorio' asChild>
                     <Pressable Image>
                         <Image source={require('./imgs/relatory.png')}/>
                     </Pressable>
