@@ -4,29 +4,31 @@ import { Link } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import Footer from "../footer/footer";
 
-const image = require('./imgs/healthy-fitness-concept-fulllength-portrait-beautiful-american-african-lady-grey-fitness.jpg');
+const imageCalistenia = require('./imgs/calistenia.png');
+
+
 
 export default function TelaInicial() {
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="#ffffff" style="dark" />
-      <Link href="/" asChild>
+      <Link href="exercicios/calistenia" asChild>
         <Pressable style={styles.button} android_ripple={{ color: '#fff' }}>
-          <Image source={image} style={styles.buttonBackgroundImage} />
-          <Text style={styles.buttonText}>Index</Text>
+          <Image source={imageCalistenia} style={styles.buttonBackgroundImage} />
+          <Text style={styles.buttonText}>Calistenia</Text>
         </Pressable>
       </Link>
 
       <Link href="perfil/perfil-usuario" asChild>
         <Pressable style={styles.button} android_ripple={{ color: '#fff' }}>
-          <Image source={image} style={styles.buttonBackgroundImage} />
+          <Image source={imageCalistenia} style={styles.buttonBackgroundImage} />
           <Text style={styles.buttonText}>Tela Perfil</Text>
         </Pressable>
       </Link>
 
       <Link href="passageiro/cadastro" asChild>
         <Pressable style={styles.button} android_ripple={{ color: '#fff' }}>
-          <Image source={image} style={styles.buttonBackgroundImage} />
+          <Image source={imageCalistenia} style={styles.buttonBackgroundImage} />
           <Text style={styles.buttonText}>Cadastro Passageiro</Text>
         </Pressable>
       </Link>
