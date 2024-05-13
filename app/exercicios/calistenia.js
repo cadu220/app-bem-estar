@@ -1,47 +1,45 @@
-import { View, StyleSheet, Text, ScrollView } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+
+import exerciseData from './calistenia.json'; 
 
 export default function Exercicios() {
-
-    const muscle = 'biceps'
-    const [ exercises, setExercises ] = useState([])
-
-    const getExercises = async () => {
-        const config = {
-            headers: {
-                'X-Api-Key' : 'qh0vKtOGyRDfZSCiraUK+w==YQaTZmyUepvabflF'
-            }
-        }
-        try {
-            res = await axios.get(`https://api.api-ninjas.com/v1/exercises?muscle=${muscle}`, config)
-            const data = res.data;
-            setExercises(data);
-        }
-        catch (error) {
-            console.log(error);
-        }
-    }
-
+    const [muscleGroup, setMuscleGroup] = useState(null);
+    const [exercises, setExercises] = useState([]);
+    
     useEffect(() => {
-        getExercises()
-    }, []);
-
-    return(
-        <ScrollView>
-        <View style={styles.container}>
-            <Text style={styles.title}>Treino de {muscle}</Text>
-            {exercises.map((exercise, index) => (
-                <View key={index} style={styles.exercise}>
-                    <Text>{exercise.name}</Text>
-                    <Text>{exercise.type}</Text>
-                    <Text>{exercise.difficulty}</Text>
-                </View>
-            ))}
+        if (muscleGroup) {
+        // Filtrar os exercícios pelo músculo selecionado
+        const filteredExercises = exerciseData.filter((exercise) => exercise.muscle === muscleGroup);
+        setExercises(filteredExercises);
+        }
+    }, [muscleGroup]);
+    
+    const handleMuscleSelect = (muscle) => {
+        setMuscleGroup(muscle);
+    };
+    
+    return (
+        <View>
+        <Text>Selecione um grupo muscular:</Text>
+        {/* Renderizar opções de grupos musculares */}
+        <TouchableOpacity onPress={() => handleMuscleSelect('antebraço')}>
+            <Text>Bíceps</Text>
+        </TouchableOpacity>
+        {/* Adicione outras opções de músculos conforme necessário */}
+    
+        {/* Renderizar exercícios do grupo muscular selecionado */}
+        <Text>Exercícios:</Text>
+        {exercises.map((exercise, index) => (
+            <View key={index}>
+            <Text>{exercise.name}</Text>
+            <Text>{exercise.instructions}</Text>
+            {/* Renderizar outras propriedades do exercício conforme necessário */}
+            </View>
+        ))}
         </View>
-        </ScrollView>
     );
-}
+};
 
 const styles = StyleSheet.create({
     container: {

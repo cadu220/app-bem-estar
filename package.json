@@ -9,18 +9,27 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@google-cloud/translate": "^8.2.0",
+    "@psyycker/react-translation": "^0.8.0",
     "@react-native-async-storage/async-storage": "1.21.0",
     "axios": "^1.6.8",
-    "expo": "~50.0.14",
+    "expo": "^51.0.2",
     "expo-constants": "~15.4.5",
     "expo-linking": "~6.2.2",
     "expo-router": "~3.4.8",
     "expo-status-bar": "~1.11.1",
+    "fast-mlkit-translate-text": "^1.0.1",
     "firebase": "^10.10.0",
+    "google-translate-api": "^2.3.0",
+    "nlpcloud": "^2.0.5",
     "react": "18.2.0",
     "react-native": "0.73.6",
+    "react-native-mlkit-entity-extraction": "^1.0.0",
     "react-native-safe-area-context": "4.8.2",
-    "react-native-screens": "~3.29.0"
+    "react-native-screens": "~3.29.0",
+    "react-native-translator": "^1.1.6",
+    "react-native-webview": "^13.8.6",
+    "translate-google-api": "^1.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
