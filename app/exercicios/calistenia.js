@@ -1,11 +1,12 @@
-import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity, ScrollView, Image } from 'react-native';
 import { useState, useEffect } from 'react';
 import exerciseData from './calistenia.json'; 
 
 export default function Exercicios() {
     const [muscleGroup, setMuscleGroup] = useState(null);
     const [exercises, setExercises] = useState([]);
-    
+    const [ showExercises, setShowExercises ] = useState();
+
     useEffect(() => {
         if (muscleGroup) {
         // Filtrar os exercícios pelo músculo selecionado
@@ -16,42 +17,55 @@ export default function Exercicios() {
     
     const handleMuscleSelect = (muscle) => {
         setMuscleGroup(muscle);
+        setShowExercises(true);
     };
     
     return (
         <View>
+            <ScrollView>
+            <View style={styles.container}>
             <Text>Selecione um grupo muscular:</Text>
-            <TouchableOpacity onPress={() => handleMuscleSelect('antebraço')}>
-                <Text>antebraço</Text>
+            <TouchableOpacity onPress={() => handleMuscleSelect('antebraço')} style={styles.title}>
+                <Text>ANTEBRAÇO</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleMuscleSelect('bíceps')}>
-                <Text>bíceps</Text>
+            <TouchableOpacity onPress={() => handleMuscleSelect('bíceps')} style={styles.title}>
+                <Text>BÍCEPS</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleMuscleSelect('quadríceps')}>
-                <Text>quadríceps</Text>
+            <TouchableOpacity onPress={() => handleMuscleSelect('quadríceps')} style={styles.title}>
+                <Text>QUADRÍCEPS</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleMuscleSelect('dorsal')}>
-                <Text>dorsal</Text>
+            <TouchableOpacity onPress={() => handleMuscleSelect('dorsal')} style={styles.title}>
+                <Text>DORSAL</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleMuscleSelect('costas')}>
-                <Text>costas</Text>
+            <TouchableOpacity onPress={() => handleMuscleSelect('costas')} style={styles.title}>
+                <Text>COSTAS</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleMuscleSelect('lombar')}>
-                <Text>lombar</Text>
+            <TouchableOpacity onPress={() => handleMuscleSelect('lombar')} style={styles.title}>
+                <Text>LOMBAR</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleMuscleSelect('abdominal')}>
-                <Text>abdominal</Text>
+            <TouchableOpacity onPress={() => handleMuscleSelect('abdominal')} style={styles.title}>
+                <Text>ABDOMINAL</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleMuscleSelect('ombros')}>
-                <Text>ombros</Text>
+            <TouchableOpacity onPress={() => handleMuscleSelect('ombros')} style={styles.title}>
+                <Text>OMBROS</Text>
+            </TouchableOpacity>
+            
+            <TouchableOpacity onPress={() => setShowExercises(false)} style={styles.title}>
+                <Text>VOLTAR</Text>
             </TouchableOpacity>
             <Text>Exercícios:</Text>
             {exercises.map((exercise, index) => (
                 <View key={index}>
+                    <Image
+                        source={{ uri: exercise.image}}
+                        style={{ width: 300, height: 200 }}
+                    />
                     <Text>{exercise.name}</Text>
                     <Text>{exercise.instructions}</Text>
                 </View>
             ))}
+            </View>
+        </ScrollView>
         </View>
     );
 };
@@ -67,9 +81,10 @@ const styles = StyleSheet.create({
     title: {
         color: "white",
         textAlign: "center",
+        color: "white",
         paddingLeft: 20,
         paddingRight: 20,
-        fontSize: 25,
+        fontSize: 30,
         padding: 10,
         marginTop: 50,
         marginBottom: 30,

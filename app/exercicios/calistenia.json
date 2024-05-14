@@ -1,5 +1,6 @@
 [
   {
+    "image": "https://www.fiqueinforma.com/wp-content/uploads/2018/09/Rosca-de-punho-com-barra-pronada.png",
     "name": "Rosca de Punho com Palmas para Baixo sobre o Banco",
     "type": "força",
     "muscle": "antebraço",
@@ -8,6 +9,7 @@
     "instructions": "Comece posicionando uma barra de peso em um lado de um banco plano. Ajoelhe-se com os dois joelhos de modo que seu corpo esteja voltado para o banco plano. Use os braços para agarrar a barra com uma pegada pronada (palmas para baixo) e traga-os para cima de forma que seus antebraços estejam descansando contra o banco plano. Seus pulsos devem estar pendurados sobre a borda. Comece dobrando os pulsos para cima e expirando. Lentamente abaixe os pulsos de volta para a posição inicial enquanto inspira. Seus antebraços devem permanecer estacionários, pois o movimento necessário para realizar este exercício é apenas o do pulso. Repita pelo número recomendado de repetições. Variações: Este exercício também pode ser realizado sentado, usando as coxas como posição de descanso para os antebraços. Seu pulso pode pendurar sobre seus joelhos e os mesmos movimentos mencionados acima podem ser realizados. Você também pode usar um haltere em vez de uma barra."
   },
   {
+    "image": "https://www.hipertrofia.org/blog/wp-content/uploads/2023/06/barbell-wrist-curl.gif",
     "name": "Rotação de Punho com Barra Reta",
     "type": "força",
     "muscle": "antebraço",
@@ -16,20 +18,13 @@
     "instructions": "Segure uma barra com ambas as mãos e as palmas voltadas para baixo; mãos espaçadas aproximadamente na largura dos ombros. Esta será sua posição inicial. Alternando entre cada uma das suas mãos, execute o movimento estendendo o pulso como se estivesse enrolando um jornal. Continue alternando para frente e para trás até a falha. Inverta o movimento flexionando o pulso, enrolando na direção oposta. Continue com o movimento alternado até a falha."
   },
   {
-    "name": "Caminhada do Agricultor com Halteres",
-    "type": "atleta de força",
-    "muscle": "antebraço",
-    "equipment": "outro",
-    "difficulty": "intermediário",
-    "instructions": "There are various implements that can be used for the farmers walk. These can also be performed with heavy halteres or short bars if these implements aren't available. Begin by standing between the implements. After gripping the handles, lift them up by driving through your heels, keeping your back straight and your head up. Walk taking short, quick steps, and don't forget to breathe. Move for a given distance, typically 50-100 feet, as fast as possible."
-  },
-  {
-    "name": "Rosca de Punho atrás do Corpo em Pé",
+    "image": "https://www.hipertrofia.org/blog/wp-content/uploads/2023/06/smith-standing-back-wrist-curl.gif",
+    "name": "Rosca de Punho por trás das costas",
     "type": "força",
     "muscle": "antebraço",
     "equipment": "barra",
     "difficulty": "iniciante",
-    "instructions": "Start by standing straight and holding a barra behind your glutes at arm's length while using a pronated grip (palms will be facing back away from the glutes) and having your hands shoulder width apart from each outro. You should be looking straight forward while your feet are shoulder width apart from each outro. This is the starting position. While exhaling, slowly elevate the barra up by Roscaing your wrist in a semi-circular motion towards the ceiling. Note: Your wrist should be the only body part moving for this exercise. Hold the contraction for a second and lower the barra back down to the starting position while inhaling. Repeat for the recommended amount of repetitions. When finished, lower the barra down to the squat rack or the floor by bending the knees. Tip: It is easiest to either pick it up from a squat rack or have a partner hand it to you.  Variations: You can also perform this exercise with halteres using the same movements as described above. Anoutro option is to use one haltere at a time for better isolation."
+    "instructions": "Comece ficando em pé e segurando uma barra atrás dos glúteos com o braço estendido enquanto usa uma pegada pronada (as palmas das mãos estarão voltadas para trás, longe dos glúteos) e com as mãos na largura dos ombros, afastadas uma da outra. Você deve olhar para frente enquanto seus pés estão separados na largura dos ombros. esta é a posição inicial. Ao expirar, eleve lentamente a barra girando o pulso em um movimento semicircular em direção ao teto. Nota: Seu pulso deve ser a única parte do corpo em movimento neste exercício. Segure a contração por um segundo e abaixe a barra de volta à posição inicial enquanto inspira. Repita a quantidade recomendada de repetições. Ao terminar, abaixe a barra até o suporte de agachamento ou até o chão dobrando os joelhos. Dica: É mais fácil pegá-lo em uma prateleira de agachamento ou pedir a um parceiro que o entregue a você. Variações: Você também pode realizar este exercício com halteres usando os mesmos movimentos descritos acima. Outra opção é usar um haltere de cada vez para melhor isolamento."
   },
   {
     "name": "Flexão de Dedos Sentado",
