@@ -20,22 +20,38 @@ export default function Exercicios() {
     
     return (
         <View>
-        <Text>Selecione um grupo muscular:</Text>
-        {/* Renderizar opções de grupos musculares */}
-        <TouchableOpacity onPress={() => handleMuscleSelect('antebraço')}>
-            <Text>antebraço</Text>
-        </TouchableOpacity>
-        {/* Adicione outras opções de músculos conforme necessário */}
-    
-        {/* Renderizar exercícios do grupo muscular selecionado */}
-        <Text>Exercícios:</Text>
-        {exercises.map((exercise, index) => (
-            <View key={index}>
-            <Text>{exercise.name}</Text>
-            <Text>{exercise.instructions}</Text>
-            {/* Renderizar outras propriedades do exercício conforme necessário */}
-            </View>
-        ))}
+            <Text>Selecione um grupo muscular:</Text>
+            <TouchableOpacity onPress={() => handleMuscleSelect('antebraço')}>
+                <Text>antebraço</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => handleMuscleSelect('bíceps')}>
+                <Text>bíceps</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => handleMuscleSelect('quadríceps')}>
+                <Text>quadríceps</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => handleMuscleSelect('dorsal')}>
+                <Text>dorsal</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => handleMuscleSelect('costas')}>
+                <Text>costas</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => handleMuscleSelect('lombar')}>
+                <Text>lombar</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => handleMuscleSelect('abdominal')}>
+                <Text>abdominal</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => handleMuscleSelect('ombros')}>
+                <Text>ombros</Text>
+            </TouchableOpacity>
+            <Text>Exercícios:</Text>
+            {exercises.map((exercise, index) => (
+                <View key={index}>
+                    <Text>{exercise.name}</Text>
+                    <Text>{exercise.instructions}</Text>
+                </View>
+            ))}
         </View>
     );
 };
