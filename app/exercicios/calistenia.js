@@ -1,6 +1,5 @@
 import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { useState, useEffect } from 'react';
-
 import exerciseData from './calistenia.json'; 
 
 export default function Exercicios() {
@@ -24,7 +23,7 @@ export default function Exercicios() {
         <Text>Selecione um grupo muscular:</Text>
         {/* Renderizar opções de grupos musculares */}
         <TouchableOpacity onPress={() => handleMuscleSelect('antebraço')}>
-            <Text>Bíceps</Text>
+            <Text>antebraço</Text>
         </TouchableOpacity>
         {/* Adicione outras opções de músculos conforme necessário */}
     

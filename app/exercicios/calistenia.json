@@ -1,642 +1,362 @@
 [
-    {
-      "name": "Carregamento Rickshaw",
-      "type": "atleta de força",
-      "muscle": "antebraço",
-      "equipment": "outro",
-      "difficulty": "iniciante",
-      "instructions": "Posicione a estrutura no ponto de partida e carregue com o peso apropriado. Ficando no centro da estrutura, comece segurando as alças e impulsionando pelos calcanhares para levantar a estrutura. Garanta que seu peito e cabeça estejam erguidos e suas costas estejam retas. Imediatamente comece a caminhar rapidamente com passos rápidos e controlados. Mantenha o peito erguido, a cabeça para frente e certifique-se de continuar respirando. Traga a estrutura para o chão após ter alcançado o ponto final."
-    },
-    {
-      "name": "Curl de Punho com Palmas para Baixo sobre o Banco",
-      "type": "força",
-      "muscle": "antebraço",
-      "equipment": "barra",
-      "difficulty": "intermediário",
-      "instructions": "Comece posicionando uma barra de peso em um lado de um banco plano. Ajoelhe-se com os dois joelhos de modo que seu corpo esteja voltado para o banco plano. Use os braços para agarrar a barra com uma pegada pronada (palmas para baixo) e traga-os para cima de forma que seus antebraços estejam descansando contra o banco plano. Seus pulsos devem estar pendurados sobre a borda. Comece dobrando os pulsos para cima e expirando. Lentamente abaixe os pulsos de volta para a posição inicial enquanto inspira. Seus antebraços devem permanecer estacionários, pois o movimento necessário para realizar este exercício é apenas o do pulso. Repita pelo número recomendado de repetições. Variações: Este exercício também pode ser realizado sentado, usando as coxas como posição de descanso para os antebraços. Seu pulso pode pendurar sobre seus joelhos e os mesmos movimentos mencionados acima podem ser realizados. Você também pode usar um haltere em vez de uma barra."
-    },
-    {
-      "name": "Rotação de Punho com Barra Reta",
-      "type": "força",
-      "muscle": "antebraço",
-      "equipment": "nenhum",
-      "difficulty": "intermediário",
-      "instructions": "Segure uma barra com ambas as mãos e as palmas voltadas para baixo; mãos espaçadas aproximadamente na largura dos ombros. Esta será sua posição inicial. Alternando entre cada uma das suas mãos, execute o movimento estendendo o pulso como se estivesse enrolando um jornal. Continue alternando para frente e para trás até a falha. Inverta o movimento flexionando o pulso, enrolando na direção oposta. Continue com o movimento alternado até a falha."
-    },
-    {
-      "name": "Caminhada do Agricultor com Halteres",
-      "type": "atleta de força",
-      "muscle": "antebraço",
-      "equipment": "outro",
-      "difficulty": "intermediário",
-      "instructions": "There are various implements that can be used for the farmers walk. These can also be performed with heavy halteres or short bars if these implements aren't available. Begin by standing between the implements. After gripping the handles, lift them up by driving through your heels, keeping your back straight and your head up. Walk taking short, quick steps, and don't forget to breathe. Move for a given distance, typically 50-100 feet, as fast as possible."
-    },
-    {
-      "name": "Curl de Punho com Palmas para Cima sobre o Banco",
-      "type": "força",
-      "muscle": "antebraço",
-      "equipment": "barra",
-      "difficulty": "intermediário",
-      "instructions": "Start out by placing a barra on one side of a flat bench. Kneel down on both of your knees so that your body is facing the flat bench. Use your arms to grab the barra with a supinated grip (palms up) and bring them up so that your antebraço are resting against the flat bench. Your wrists should be hanging over the edge. Start out by curling your wrist upwards and exhaling. Slowly lower your wrists back down to the starting position while inhaling. Your antebraço should be stationary as your wrist is the only movement needed to perform this exercise. Repeat for the recommended amount of repetitions.  Variations:  This exercise can also be performed sitting down by using your thighs as a resting position for your antebraço. Your wrist can hang over your knees and the same movements as mentioned above can be performed. You can also use a haltere instead of a barra."
-    },
-    {
-      "name": "Curl de Punho atrás do Corpo em Pé",
-      "type": "força",
-      "muscle": "antebraço",
-      "equipment": "barra",
-      "difficulty": "iniciante",
-      "instructions": "Start by standing straight and holding a barra behind your glutes at arm's length while using a pronated grip (palms will be facing back away from the glutes) and having your hands shoulder width apart from each outro. You should be looking straight forward while your feet are shoulder width apart from each outro. This is the starting position. While exhaling, slowly elevate the barra up by curling your wrist in a semi-circular motion towards the ceiling. Note: Your wrist should be the only body part moving for this exercise. Hold the contraction for a second and lower the barra back down to the starting position while inhaling. Repeat for the recommended amount of repetitions. When finished, lower the barra down to the squat rack or the floor by bending the knees. Tip: It is easiest to either pick it up from a squat rack or have a partner hand it to you.  Variations: You can also perform this exercise with halteres using the same movements as described above. Anoutro option is to use one haltere at a time for better isolation."
-    },
-    {
-      "name": "Flexão de Dedos Sentado",
-      "type": "força",
-      "muscle": "antebraço",
-      "equipment": "barra",
-      "difficulty": "iniciante",
-      "instructions": "Hold a barra with both hands and your palms facing up; hands spaced about shoulder width. Place your feet flat on the floor, at a distance that is slightly wider than shoulder width apart. This will be your starting position. Lower the bar as far as possible by extending the fingers. Allowing the bar to roll down the hands, catch the bar with the final joint in the fingers. Now curl bar up as high as possible by closing your hands while exhaling. Hold the contraction at the top."
-    },
-    {
-      "name": "Flexão de Punho com Polia Baixa e Palmas para Cima Sentado com Ambos os Braços",
-      "type": "força",
-      "muscle": "antebraço",
-      "equipment": "cabo",
-      "difficulty": "iniciante",
-      "instructions": "Put a bench in front of a low pulley maquina that has a barra or EZ Curl attachment on it. Move the bench far enough away so that when you bring the handle to the top of your thighs tension is created on the cabo due to the weight stack being moved up. Now hold the handle with both hands, palms up, using a shoulder-width grip. Step back and sit on the bench with your feet about shoulder width apart, firmly on the floor. Lean forward and place the antebraço on your thighs with the back of your wrists over your knees. This will be your starting position. Lower the bar as far as possible, while inhaling and keeping a tight grip. Now curl the bar up as high as possible while contracting the antebraço. Tip: Only the wrist should move; not the antebraço. After a second contraction at the top go back to the starting position as you inhale. Repeat for the recommended amount of repetitions.  Variations: This exercise can be performed also with a single handle attachment (one arm at a time) or with free weights (barras or halteres) using one arm and two arm variations."
-    },
-    {
-      "name": "Rolo de Pulso",
-      "type": "força",
-      "muscle": "antebraço",
-      "equipment": "outro",
-      "difficulty": "iniciante",
-      "instructions": "To begin, stand straight up grabbing a wrist roller using a pronated grip (palms facing down). Your feet should be shoulder width apart. Slowly lift both arms until they are fully extended and parallel to the floor in front of you. Note: Make sure the rope is not wrapped around the roller. Your entire body should be stationary except for the antebraço. This is the starting position. Rotate one wrist at a time in an upward motion to bring the weight up to the bar by rolling the rope around the roller. Once the weight has reached the bar, slowly begin to lower the weight back down by rotating the wrist in a downward motion until the weight reaches the starting position. Repeat for the prescribed amount of repetitions in your program."
-    },
-    {
-      "name": "Flexão de Punho com Haltere com uma Mão Sentado e Palmas para Cima",
-      "type": "força",
-      "muscle": "antebraço",
-      "equipment": "haltere",
-      "difficulty": "iniciante",
-      "instructions": "Sit on a flat bench with a haltere in your right hand. Place your feet flat on the floor, at a distance that is slightly wider than shoulder width apart. Lean forward and place your right forearm on top of your upper right thigh with your palm up. Tip: Make sure that the front of the wrist lies on top of your knees. This will be your starting position. Lower the haltere as far as possible as you keep a tight grip on the haltere. Inhale as you perform this movement. Now curl the haltere as high as possible as you contract the antebraço and as you exhale. Keep the contraction for a second before you lower again. Tip: The only movement should happen at the wrist. Perform for the recommended amount of repetitions, switch arms and repeat the movement.  Variations: You can also do this movement with two arms at a time, one on each knee, or using a barra."
-    },
-    {
-      "name": "Pressão de Perna Única",
-      "type": "força",
-      "muscle": "quadríceps",
-      "equipment": "maquina",
-      "difficulty": "intermediário",
-      "instructions": "Load the sled to an appropriate weight. Seat yourself on the maquina, planting one foot on the platform in line with your hip. Your free foot can be placed on the ground. Maintain good spinal position with your head and chest up. Supporting the weight, fully extend the knee and unlock the sled. This will be your starting position. Lower the weight by flexing the hip and knee, continuing as far as flexibility allows. Do not allow your lumbar to take the load by moving your pelvis. At the bottom of the motion pause briefly and then return to the starting position by extending the hip and knee. Complete all repetitions for one leg before switching to the outro."
-    },
-    {
-    "name": "Arranque (Clean) a partir de Blocos",
-    "type": "levantamento_olimpico",
-    "muscle": "quadríceps",
+  {
+    "name": "Rosca de Punho com Palmas para Baixo sobre o Banco",
+    "type": "força",
+    "muscle": "antebraço",
+    "equipment": "barra",
+    "difficulty": "intermediário",
+    "instructions": "Comece posicionando uma barra de peso em um lado de um banco plano. Ajoelhe-se com os dois joelhos de modo que seu corpo esteja voltado para o banco plano. Use os braços para agarrar a barra com uma pegada pronada (palmas para baixo) e traga-os para cima de forma que seus antebraços estejam descansando contra o banco plano. Seus pulsos devem estar pendurados sobre a borda. Comece dobrando os pulsos para cima e expirando. Lentamente abaixe os pulsos de volta para a posição inicial enquanto inspira. Seus antebraços devem permanecer estacionários, pois o movimento necessário para realizar este exercício é apenas o do pulso. Repita pelo número recomendado de repetições. Variações: Este exercício também pode ser realizado sentado, usando as coxas como posição de descanso para os antebraços. Seu pulso pode pendurar sobre seus joelhos e os mesmos movimentos mencionados acima podem ser realizados. Você também pode usar um haltere em vez de uma barra."
+  },
+  {
+    "name": "Rotação de Punho com Barra Reta",
+    "type": "força",
+    "muscle": "antebraço",
+    "equipment": "nenhum",
+    "difficulty": "intermediário",
+    "instructions": "Segure uma barra com ambas as mãos e as palmas voltadas para baixo; mãos espaçadas aproximadamente na largura dos ombros. Esta será sua posição inicial. Alternando entre cada uma das suas mãos, execute o movimento estendendo o pulso como se estivesse enrolando um jornal. Continue alternando para frente e para trás até a falha. Inverta o movimento flexionando o pulso, enrolando na direção oposta. Continue com o movimento alternado até a falha."
+  },
+  {
+    "name": "Caminhada do Agricultor com Halteres",
+    "type": "atleta de força",
+    "muscle": "antebraço",
+    "equipment": "outro",
+    "difficulty": "intermediário",
+    "instructions": "There are various implements that can be used for the farmers walk. These can also be performed with heavy halteres or short bars if these implements aren't available. Begin by standing between the implements. After gripping the handles, lift them up by driving through your heels, keeping your back straight and your head up. Walk taking short, quick steps, and don't forget to breathe. Move for a given distance, typically 50-100 feet, as fast as possible."
+  },
+  {
+    "name": "Rosca de Punho atrás do Corpo em Pé",
+    "type": "força",
+    "muscle": "antebraço",
     "equipment": "barra",
     "difficulty": "iniciante",
-    "instructions": "With a barra on boxes or stands of the desired height, take an overhand or hook grip just outside the legs. Lower your hips with the weight focused on the heels, back straight, head facing forward, chest up, with your ombros just in front of the bar. This will be your starting position. Begin the first pull by driving through the heels, extending your knees. Your back angle should stay the same, and your arms should remain straight with the elbows pointed out. Next comes the second pull, the main source of acceleration for the clean. As the bar approaches the mid-thigh position, begin extending through the hips. In a jumping motion, accelerate by extending the hips, knees, and ankles, using speed to move the bar upward. There should be no need to actively pull through the arms to accelerate the weight. At the end of the second pull, the body should be fully extended, leaning slightly back, with the arms still extended.3.  As full extension is achieved, transition into the receiving position by aggressively shrugging and flexing the arms with the elbows up and out. Aggressively pull yourself down, rotating your elbows under the bar as you do so. Receive the bar in a front squat position, the depth of which is dependent upon the height of the bar at the end of the third pull. The bar should be racked onto the protracted ombros, lightly touching the throat with the hands relaxed. Continue to descend to the bottom squat position, which will help in the recovery. Immediately recover by driving through the heels, keeping the torso upright and elbows up. Continue until you have risen to a standing position. Return the weight to the boxes for the next rep."
-    },
-    {
+    "instructions": "Start by standing straight and holding a barra behind your glutes at arm's length while using a pronated grip (palms will be facing back away from the glutes) and having your hands shoulder width apart from each outro. You should be looking straight forward while your feet are shoulder width apart from each outro. This is the starting position. While exhaling, slowly elevate the barra up by Roscaing your wrist in a semi-circular motion towards the ceiling. Note: Your wrist should be the only body part moving for this exercise. Hold the contraction for a second and lower the barra back down to the starting position while inhaling. Repeat for the recommended amount of repetitions. When finished, lower the barra down to the squat rack or the floor by bending the knees. Tip: It is easiest to either pick it up from a squat rack or have a partner hand it to you.  Variations: You can also perform this exercise with halteres using the same movements as described above. Anoutro option is to use one haltere at a time for better isolation."
+  },
+  {
+    "name": "Flexão de Dedos Sentado",
+    "type": "força",
+    "muscle": "antebraço",
+    "equipment": "barra",
+    "difficulty": "iniciante",
+    "instructions": "Hold a barra with both hands and your palms facing up; hands spaced about shoulder width. Place your feet flat on the floor, at a distance that is slightly wider than shoulder width apart. This will be your starting position. Lower the bar as far as possible by extending the fingers. Allowing the bar to roll down the hands, catch the bar with the final joint in the fingers. Now Rosca bar up as high as possible by closing your hands while exhaling. Hold the contraction at the top."
+  },
+  {
+    "name": "Rolo de Pulso",
+    "type": "força",
+    "muscle": "antebraço",
+    "equipment": "outro",
+    "difficulty": "iniciante",
+    "instructions": "To begin, stand straight up grabbing a wrist roller using a pronated grip (palms facing down). Your feet should be shoulder width apart. Slowly lift both arms until they are fully extended and parallel to the floor in front of you. Note: Make sure the rope is not wrapped around the roller. Your entire body should be stationary except for the antebraço. This is the starting position. Rotate one wrist at a time in an upward motion to bring the weight up to the bar by rolling the rope around the roller. Once the weight has reached the bar, slowly begin to lower the weight back down by rotating the wrist in a downward motion until the weight reaches the starting position. Repeat for the prescribed amount of repetitions in your program."
+  },
+  {
+    "name": "Flexão de Punho com Haltere com uma Mão, Sentado e Palmas para Cima",
+    "type": "força",
+    "muscle": "antebraço",
+    "equipment": "haltere",
+    "difficulty": "iniciante",
+    "instructions": "Sit on a flat bench with a haltere in your right hand. Place your feet flat on the floor, at a distance that is slightly wider than shoulder width apart. Lean forward and place your right forearm on top of your upper right thigh with your palm up. Tip: Make sure that the front of the wrist lies on top of your knees. This will be your starting position. Lower the haltere as far as possible as you keep a tight grip on the haltere. Inhale as you perform this movement. Now Rosca the haltere as high as possible as you contract the antebraço and as you exhale. Keep the contraction for a second before you lower again. Tip: The only movement should happen at the wrist. Perform for the recommended amount of repetitions, switch arms and repeat the movement.  Variations: You can also do this movement with two arms at a time, one on each knee, or using a barra."
+  },
+  {
+    "name": "Pressão de Perna Única",
+    "type": "força",
+    "muscle": "quadríceps",
+    "equipment": "maquina",
+    "difficulty": "intermediário",
+    "instructions": "Load the sled to an appropriate weight. Seat yourself on the maquina, planting one foot on the platform in line with your hip. Your free foot can be placed on the ground. Maintain good spinal position with your head and chest up. Supporting the weight, fully extend the knee and unlock the sled. This will be your starting position. Lower the weight by flexing the hip and knee, continuing as far as flexibility allows. Do not allow your lumbar to take the load by moving your pelvis. At the bottom of the motion pause briefly and then return to the starting position by extending the hip and knee. Complete all repetitions for one leg before switching to the outro."
+  },
+  {
     "name": "Agachamento Completo com Barra",
     "type": "força",
     "muscle": "quadríceps",
     "equipment": "barra",
     "difficulty": "intermediário",
     "instructions": "This exercise is best performed inside a squat rack for safety purposes. To begin, first set the bar on a rack just above shoulder level. Once the correct height is chosen and the bar is loaded, step under the bar and place the back of your ombros (slightly below the neck) across it. Hold on to the bar using both arms at each side and lift it off the rack by first pushing with your legs and at the same time straightening your torso. Step away from the rack and position your legs using a shoulder-width medium stance with the toes slightly pointed out. Keep your head up at all times and maintain a straight back. This will be your starting position. Begin to slowly lower the bar by bending the knees and sitting back with your hips as you maintain a straight posture with the head up. Continue down until your hamstrings are on your calves. Inhale as you perform this portion of the movement. Begin to raise the bar as you exhale by pushing the floor with the heel or middle of your foot as you straighten the legs and extend the hips to go back to the starting position. Repeat for the recommended amount of repetitions.  This type of squat allows a greater range of motion, and allows the trunk to maintain a more vertical position than outro types of squats, due to foot position and the higher bar position."
-    },
-    {
-    "name": "Rotação de Pneu",
-    "type": "atleta de força",
-    "muscle": "quadríceps",
-    "equipment": "outro",
-    "difficulty": "intermediário",
-    "instructions": "Begin by gripping the bottom of the tire on the tread, and position your feet back a bit. Your chest should be driving into the tire. To lift the tire, extend through the hips, knees, and ankles, driving into the tire and up. As the tire reaches a 45 degree angle, step forward and drive a knee into the tire. As you do so adjust your grip to the upper portion of the tire and push it forward as hard as possible to complete the turn. Repeat as necessary."
-    },
-    {
+  },
+  {
     "name": "Agachamento em caixa",
-    "type": "levantamento_de_pesoy",
+    "type": "levantamento_de_peso",
     "muscle": "quadríceps",
     "equipment": "barra",
     "difficulty": "intermediário",
     "instructions": "The box squat allows you to squat to desired depth and develop explosive força in the squat movement. Begin in a power rack with a box at the appropriate height behind you. Typically, you would aim for a box height that brings you to a parallel squat, but you can train higher or lower if desired. Begin by stepping under the bar and placing it across the back of the ombros. Squeeze your shoulder blades together and rotate your elbows forward, attempting to bend the bar across your ombros. Remove the bar from the rack, creating a tight arch in your lower back, and step back into position. Place your feet wider for more emphasis on the back, glutes, adductors, and hamstrings, or closer together for more quad development. Keep your head facing forward. With your back, ombros, and core tight, push your knees and butt out and you begin your descent. Sit back with your hips until you are seated on the box. Ideally, your shins should be perpendicular to the ground. Pause when you reach the box, and relax the hip flexors. Never bounce off of a box. Keeping the weight on your heels and pushing your feet and knees out, drive upward off of the box as you lead the movement with your head. Continue upward, maintaining tightness head to toe."
-    },
-    {
+  },
+  {
     "name": "Push-press",
     "type": "levantamento_olimpico",
     "muscle": "quadríceps",
     "equipment": "barra",
     "difficulty": "intermediário",
     "instructions": "Beginning Position:  Use the floor-to-shoulder lifting technique described in the Power Clean exercise to move the bar from the floor to the ombros.  Upward Movement Phase:  Slightly flex the hips and knees, keeping torso erect. Immediately follow with an explosive push upward by extending the knees. Keep torso erect and tensed. At maximum hip and knee extension, shift body weight to balls of feet and extend ankle joints. At maximum plantar flexion, push bar from the ombros. Push the bar with the arms to a fully extended elbow position overhead.  Downward Movement Phase:  Lower bar to ombros. Flex hips and knees slightly as bar touches ombros. Straighten the hips and knees before the upward movement phase begins again.  Breathing:  Exhale through the sticking point of the upward movement phase. Inhale during the downward movement phase."
-    },
-    {
-    "name": "Arranque (Snatch) de Potência",
-    "type": "levantamento_olimpico",
-    "muscle": "quadríceps",
-    "equipment": "barra",
-    "difficulty": "especialista",
-    "instructions": "Place your feet at a shoulder width stance with the barra resting right above the connection between the toes and the rest of the foot. With a palms facing down grip, bend at the knees and keeping the back flat grab the bar using a wider than shoulder width grip. Bring the hips down and make sure that your body drops as if you were going to sit on a chair. This will be your starting position. Start pushing the floor as if it were a moving platform with your feet and simultaneously start lifting the barra keeping it close to your legs. As the bar reaches the middle of your thighs, push the floor with your legs and lift your body to a complete extension in an explosive motion. Lift your ombros back in a shrugging movement as you bring the bar up while lifting your elbows out to the side and keeping them above the bar for as long as possible. Now in a very quick but powerful motion, you have to get your body under the barra when it has reached a high enough point where it can be controlled and drop while locking your arms and holding the barra overhead as you assume a squat position. Finalize the movement by rising up out of the squat position to finish the lift. At the end of the lift both feet should be on line and the arms fully extended holding the barra overhead.  Caution: This is a very advanced exercise so be extremely careful with the weight used. Bad form on this exercise can lead to serious injury."
-    },
-    {
-    "name": "Arranque (Clean) suspenso",
-    "type": "levantamento_olimpico",
-    "muscle": "quadríceps",
-    "equipment": "barra",
-    "difficulty": "iniciante",
-    "instructions": "Begin with a shoulder width, double overhand or hook grip, with the bar hanging at the mid thigh position. Your back should be straight and inclined slightly forward. Begin by aggressively extending through the hips, knees and ankles, driving the weight upward. As you do so, shrug your ombros towards your ears. As full extension is achieved, transition into the final pull by aggressively shrugging and flexing the arms with the elbows up and out. At peak extension, aggressively pull yourself down, rotating your elbows under the bar as you do so. Receive the bar in a front squat position, the depth of which is dependent upon the height of the bar at the end of the third pull. The bar should be racked onto the protracted ombros, lightly touching the throat with the hands relaxed. Continue to descend to the bottom squat position, which will help in the recovery.3.  Immediately recover by driving through the heels, keeping the torso upright and elbows up. Continue until you have risen to a standing position."
-    },
-    {
+  },
+  {
     "name": "Agachamento na Caixa com Banda Reversa",
-    "type": "levantamento_de_pesoy",
+    "type": "levantamento_de_peso",
     "muscle": "quadríceps",
     "equipment": "nenhum",
     "difficulty": "intermediário",
     "instructions": "Begin in a power rack with a box at the appropriate height behind you. Set up the bands either on band pegs or attached to the top of the rack, ensuring they will be directly above the bar during the squat. Attach the outro end to the bar. Begin by stepping under the bar and placing it across the back of the ombros. Squeeze your shoulder blades together and rotate your elbows forward, attempting to bend the bar across your ombros. Remove the bar from the rack, creating a tight arch in your lower back, and step back into position. Place your feet wider for more emphasis on the back, glutes, adductors, and hamstrings, or closer together for more quad development. Keep your head facing forward. With your back, ombros, and core tight, push your knees and butt out and you begin your descent. Sit back with your hips until you are seated on the box. Ideally, your shins should be perpendicular to the ground. Pause when you reach the box, and relax the hip flexors. Never bounce off of a box. Keeping the weight on your heels and pushing your feet and knees out, drive upward off of the box as you lead the movement with your head. Continue upward, maintaining tightness head to toe. Use care to return the barra to the rack."
-    },
-    {
+  },
+  {
     "name": "Pular corda",
     "type": "cárdio",
     "muscle": "quadríceps",
     "equipment": "body_only",
     "difficulty": "intermediário",
     "instructions": "Hold an end of the rope in each hand. Position the rope behind you on the ground. Raise your arms up and turn the rope over your head bringing it down in front of you. When it reaches the ground, jump over it. Find a good turning pace that can be maintained. Different speeds and techniques can be used to introduce variation. Rope jumping is exciting, challenges your coordination, and requires a lot of energy. A 150 lb person will burn about 350 calories jumping rope for 30 minutes, compared to over 450 calories running."
-    },
-    {
+  },
+  {
     "name": "Rotação abdominal com peso em pé",
     "type": "força",
     "muscle": "abdominal",
     "equipment": "outro",
     "difficulty": "intermediário",
     "instructions": "Position a bar into a landmine or securely anchor it in a corner. Load the bar to an appropriate weight. Raise the bar from the floor, taking it to shoulder height with both hands with your arms extended in front of you. Adopt a wide stance. This will be your starting position. Perform the movement by rotating the trunk and hips as you swing the weight all the way down to one side. Keep your arms extended throughout the exercise. Reverse the motion to swing the weight all the way to the opposite side. Continue alternating the movement until the set is complete."
-    },
-    {
+  },
+  {
     "name": "Prancha",
     "type": "força",
     "muscle": "abdominal",
-    "equipment": "body_only",
+    "equipment": "nenhum",
     "difficulty": "intermediário",
     "instructions": "Get into a prone position on the floor, supporting your weight on your toes and your antebraço. Your arms are bent and directly below the shoulder. Keep your body straight at all times, and hold this position as long as possible. To increase difficulty, an arm or leg can be raised."
-    },
-    {
+  },
+  {
     "name": "Elevação de pernas",
     "type": "força",
     "muscle": "abdominal",
     "equipment": "body_only",
     "difficulty": "intermediário",
     "instructions": "Begin by lying on your back on the ground. Your legs should be straight and your arms at your side. This will be your starting position. To perform the movement, tuck the knees toward your chest by flexing the hips and knees. Following this, extend your legs directly above you so that they are perpendicular to the ground. Rotate and elevate your pelvis to raise your glutes from the floor. After a brief pause, return to the starting position."
-    },
-    {
-    "name": "Suspended ab fall-out",
-    "type": "força",
-    "muscle": "abdominal",
-    "equipment": "outro",
-    "difficulty": "intermediário",
-    "instructions": "Adjust the straps so the handles are at an appropriate height, below waist level. Begin standing and grasping the handles. Lean into the straps, moving to an incline push-up position. This will be your starting position. Keeping your arms straight, lean further into the suspension straps, bringing your body closer to the ground, allowing your ombros to extend, raising your arms up and over your head. Maintain a neutral spine and keep the rest of your body straight, your ombros being the only joints allowed to move. Pause during the peak contraction, and then return to the starting position."
-    },
-    {
-    "name": "haltere V-Sit Cross Jab",
-    "type": "força",
-    "muscle": "abdominal",
-    "equipment": "haltere",
-    "difficulty": "intermediário",
-    "instructions": "Begin seated on your butt with your knees bent and feet on the ground. Lean your upper body back to form a 45-degree angle with the floor. Bring your feet off the ground so that your body resembles a \"V\" shape. Grasp a haltere in each hand and hold tight to your chest with palms facing each outro. This will be your starting position. While keeping your core tight and maintaining your body's \"V\" position, quickly extend your left arm straight out (similar to a jab) and then bring it back to the starting position while simultaneously punching out with the right arm. Your torso and legs may slightly rotate side to side opposite of your hands throughout the movementâ€”this is okay. A punch with each hand counts as one total repetition. Repeat for recommended number of repetitions."
-    },
-    {
-    "name": "Standing cabo low-to-high twist",
-    "type": "força",
-    "muscle": "abdominal",
-    "equipment": "cabo",
-    "difficulty": "intermediário",
-    "instructions": "Connect a standard handle on a tower, and move the cabo to the lowest pulley position. With your side to the cabo, grab the handle with one hand and step away from the tower. You should be approximately armâ€™s length away from the pulley, with the tension of the weight on the cabo. Your outstretched arm should be aligned with the cabo. With your feet positioned shoulder width apart, squat down and grab the handle with both hands. Your arms should still be fully extended. In one motion, pull the handle up and across your body until your arms are in a fully-extended position above your head. Keep your back straight and your arms close to your body as you pivot your back foot and straighten your legs to get a full range of motion. Retract your arms and then your body. Return to the neutral position in a slow and controlled manner. Repeat to failure. Then, reposition and repeat the same series of movements on the opposite side.  Tip: You will twist your entire body with this exercise, but focus on getting maximal torso rotation and a strong clinch at the end of the movement. To ensure a good mind-muscle connection, keep your abs tense at all times."
-    },
-    {
-    "name": "haltere spell caster",
-    "type": "força",
-    "muscle": "abdominal",
-    "equipment": "haltere",
-    "difficulty": "iniciante",
-    "instructions": "Hold a haltere in each hand with a pronated grip. Your feet should be wide with your hips and knees extended. This will be your starting position. Begin the movement by pulling both of the halteres to one side next to your hip, rotating your torso. Keeping your arms straight and the halteres parallel to the ground, rotate your torso to swing the weights to your opposite side. Continue alternating, rotating from one side to the outro until the set is complete."
-    },
-    {
+  },
+  {
     "name": "Abdominal Declinado Reverso",
     "type": "força",
     "muscle": "abdominal",
     "equipment": "outro",
     "difficulty": "intermediário",
     "instructions": "Lie on your back on a decline bench and hold on to the top of the bench with both hands. Don't let your body slip down from this position. Hold your legs parallel to the floor using your abs to hold them there while keeping your knees and feet together. Tip: Your legs should be fully extended with a slight bend on the knee. This will be your starting position. While exhaling, move your legs towards the torso as you roll your pelvis backwards and you raise your hips off the bench. At the end of this movement your knees will be touching your chest. Hold the contraction for a second and move your legs back to the starting position while inhaling. Repeat for the recommended amount of repetitions.  Variations: You can do the movement on a flat surface and as you get more advanced you can use ankle weights."
-    },
-    {
-    "name": "Spider crawl",
+  },
+  {
+    "name": "Prancha homem-aranha",
     "type": "força",
     "muscle": "abdominal",
     "equipment": "body_only",
     "difficulty": "intermediário",
     "instructions": "Begin in a prone position on the floor. Support your weight on your hands and toes, with your feet together and your body straight. Your arms should be bent to 90 degrees. This will be your starting position. Initiate the movement by raising one foot off of the ground. Externally rotate the leg and bring the knee toward your elbow, as far forward as possible. Return this leg to the starting position and repeat on the opposite side."
-    },
-    {
-    "name": "Cocoons",
+  },
+  {
+    "name": "Encolhimento abdominal",
     "type": "força",
     "muscle": "abdominal",
     "equipment": "body_only",
     "difficulty": "intermediário",
     "instructions": "Begin by lying on your back on the ground. Your legs should be straight and your arms extended behind your head. This will be your starting position. To perform the movement, tuck the knees toward your chest, rotating your pelvis to lift your glutes from the floor. As you do so, flex the spine, bringing your arms back over your head to perform a simultaneous crunch motion. After a brief pause, return to the starting position."
-    },
-    {
+  },
+  {
     "name": "Barra fixa com peso",
     "type": "força",
     "muscle": "dorsal",
     "equipment": "outro",
     "difficulty": "intermediário",
     "instructions": "Attach a weight to a dip belt and secure it around your waist. Grab the pull-up bar with the palms of your hands facing forward. For a medium grip, your hands should be spaced at shoulder width. Both arms should be extended in front of you holding the bar at the chosen grip. You'll want to bring your torso back about 30 degrees while creating a curvature in your lower back and sticking your chest out. This will be your starting position. Now, exhale and pull your torso up until your head is above your hands. Concentrate on squeezing your shoulder blades back and down as you reach the top contracted position. After a brief moment at the top contracted position, inhale and slowly lower your torso back to the starting position with your arms extended and your dorsal fully stretched."
-    },
-    {
+  },
+  {
     "name": "Barra fixa com pegada inversa",
     "type": "força",
     "muscle": "dorsal",
     "equipment": "body_only",
     "difficulty": "intermediário",
     "instructions": "Grab the pull-up bar with the palms facing forward using the prescribed grip. Note on grips: For a wide grip, your hands need to be spaced out at a distance wider than your shoulder width. For a medium grip, your hands need to be spaced out at a distance equal to your shoulder width and for a close grip at a distance smaller than your shoulder width. As you have both arms extended in front of you holding the bar at the chosen grip width, bring your torso back around 30 degrees or so while creating a curvature on your lower back and sticking your chest out. This is your starting position. Pull your torso up until the bar touches your upper chest by drawing the ombros and the upper arms down and back. Exhale as you perform this portion of the movement. Tip: Concentrate on squeezing the back muscles once you reach the full contracted position. The upper torso should remain stationary as it moves through space and only the arms should move. The antebraço should do no outro work outro than hold the bar. After a second on the contracted position, start to inhale and slowly lower your torso back to the starting position when your arms are fully extended and the dorsal are fully stretched. Repeat this motion for the prescribed amount of repetitions.  Variations:  If you are new at this exercise and do not have the força to perform it, use a chin assist maquina if available. These maquinas use weight to help you push your bodyweight. outrowise, a spotter holding your legs can help. On the outro hand, more advanced lifters can add weight to the exercise by using a weight belt that allows the addition of weighted plates. The behind the neck variation is not recommended as it can be hard on the rotator cuff due to the hyperextension created by bringing the bar behind the neck."
-    },
-    {
-    "name": "Rocky Pull-Ups/Pulldowns",
-    "type": "força",
-    "muscle": "dorsal",
-    "equipment": "outro",
-    "difficulty": "iniciante",
-    "instructions": "Grab the pull-up bar with the palms facing forward using a wide grip. As you have both arms extended in front of you holding the bar at the chosen grip width, bring your torso back around 30 degrees or so while creating a curvature on your lower back and sticking your chest out. This is your starting position. Pull your torso up until the bar touches your upper chest by drawing the ombros and the upper arms down and back. Exhale as you perform this portion of the movement. Tip: Concentrate on squeezing the back muscles once you reach the full contracted position. The upper torso should remain stationary as it moves through space and only the arms should move. The antebraço should do no outro work outro than hold the bar. After a second on the contracted position, start to inhale and slowly lower your torso back to the starting position when your arms are fully extended and the dorsal are fully stretched. Now repeat the same movements as described above except this time your torso will remain straight as you go up and the bar will touch the back of the neck instead of the upper chest. Tip: Use the head to lean forward slightly as it will help you properly execute this portion of the exercise. Once you have lowered yourself back down to the starting position, repeat the exercise for the prescribed amount of repetitions in your program.  Caution: The behind the neck variation can be hard on the rotator cuff due to the hyperextension created by bringing the bar behind the neck so this exercise is not recommended for people with shoulder problems. Variations:  If you are new at this exercise and do not have the força to perform it, use a chin assist maquina if available. These maquinas use weight to help you push your bodyweight. outrowise, a spotter holding your legs can help. You can also use a pull-down maquina."
-    },
-    {
+  },
+  {
     "name": "Barra fixa com pegada fechada",
     "type": "força",
     "muscle": "dorsal",
     "equipment": "cabo",
     "difficulty": "intermediário",
     "instructions": "Sit down on a pull-down maquina with a V-Bar attached to the top pulley. Adjust the knee pad of the maquina to fit your height. These pads will prevent your body from being raised by the resistance attached to the bar. Grab the V-bar with the palms facing each outro (a neutral grip). Stick your chest out and lean yourself back slightly (around 30-degrees) in order to better engage the dorsal. This will be your starting position. Using your dorsal, pull the bar down as you squeeze your shoulder blades. Continue until your chest nearly touches the V-bar. Exhale as you execute this motion. Tip: Keep the torso stationary throughout the movement. After a second hold on the contracted position, slowly bring the bar back to the starting position as you breathe in. Repeat for the prescribed number of repetitions.  Caution: Avoid the temptation to use a weight so big that you need to start swinging your torso in order to perform the exercise."
-    },
-    {
+  },
+  {
     "name": "Barra fixa",
     "type": "força",
     "muscle": "dorsal",
     "equipment": "body_only",
     "difficulty": "iniciante",
     "instructions": "Take a wide grip on a pull-up bar, hanging freely with your arms extended. This will be your starting position. Pull yourself up by flexing the elbows and adducting the glenohumeral joint. Do not swing or use momentum to complete the movement. Attempt to get your chin above your hands. Pause at the top of the motion before lowering yourself to the starting position."
-    },
-    {
+  },
+  {
     "name": "Muscle Up",
     "type": "força",
     "muscle": "dorsal",
     "equipment": "body_only",
     "difficulty": "intermediário",
     "instructions": "Grip the rings using a false grip, with the base of your palms on top of the rings. Initiate a pull up by pulling the elbows down to your side, flexing the elbows. As you reach the top position of the pull-up, pull the rings to your armpits as you roll your ombros forward, allowing your elbows to move straight back behind you. This puts you into the proper position to continue into the dip portion of the movement. Maintaining control and stability, extend through the elbow to complete the motion. Use care when lowering yourself to the ground."
-    },
-    {
-    "name": "Shotgun row",
+  },
+  {
+    "name": "Puxada unilateral no crossover",
     "type": "força",
     "muscle": "dorsal",
     "equipment": "cabo",
     "difficulty": "intermediário",
     "instructions": "Attach a single handle to a low cabo. After selecting the correct weight, stand a couple feet back with a wide-split stance. Your arm should be extended and your shoulder forward. This will be your starting position. Perform the movement by retracting the shoulder and flexing the elbow. As you pull, supinate the wrist, turning the palm upward as you go. After a brief pause, return to the starting position. <"
-    },
-    {
-    "name": "Close-Grip Front Lat Pulldown",
+  },
+  {
+    "name": "Puxada lateral com pegada fechada",
     "type": "força",
     "muscle": "dorsal",
     "equipment": "cabo",
     "difficulty": "intermediário",
     "instructions": "Sit down on a pull-down maquina with a wide bar attached to the top pulley. Make sure that you adjust the knee pad of the maquina to fit your height. These pads will prevent your body from being raised by the resistance attached to the bar. Grab the bar with the palms facing forward using the prescribed grip. Note on grips: For a wide grip, your hands need to be spaced out at a distance wider than your shoulder width. For a medium grip, your hands need to be spaced out at a distance equal to your shoulder width and for a close grip at a distance smaller than your shoulder width. As you have both arms extended in front of you - while holding the bar at the chosen grip width - bring your torso back around 30 degrees or so while creating a curvature on your lower back and sticking your chest out. This is your starting position. As you breathe out, bring the bar down until it touches your upper chest by drawing the ombros and the upper arms down and back. Tip: Concentrate on squeezing the back muscles once you reach the full contracted position. The upper torso should remain stationary (only the arms should move). The antebraço should do no outro work except for holding the bar; therefore do not try to pull the bar down using the antebraço. After a second in the contracted position, while squeezing your shoulder blades together, slowly raise the bar back to the starting position when your arms are fully extended and the dorsal are fully stretched. Inhale during this portion of the movement. 6. Repeat this motion for the prescribed amount of repetitions.  Variations: The behind-the-neck variation is not recommended as it can be hard on the rotator cuff due to the hyperextension created by bringing the bar behind the neck."
-    },
-    {
-    "name": "V-bar pull-up",
-    "type": "força",
-    "muscle": "dorsal",
-    "equipment": "nenhum",
-    "difficulty": "intermediário",
-    "instructions": "Start by placing the middle of the V-bar in the middle of the pull-up bar (assuming that the pull-up station you are using does not have neutral grip handles). The V-Bar handles will be facing down so that you can hang from the pull-up bar through the use of the handles. Once you securely place the V-bar, take a hold of the bar from each side and hang from it. Stick your chest out and lean yourself back slightly in order to better engage the dorsal. This will be your starting position. Using your dorsal, pull your torso up while leaning your head back slightly so that you do not hit yourself with the chin-up bar. Continue until your chest nearly touches the V-bar. Exhale as you execute this motion. After a second hold on the contracted position, slowly lower your body back to the starting position as you breathe in. Repeat for the prescribed number of repetitions.  Variations:  If you are new at this exercise and do not have the força to perform it, use a pull-up assist maquina if available. These maquinas use weight to help you push your bodyweight. outrowise, a spotter holding your legs can help.  On the outro hand, more advanced lifters can add weight to the exercise by using a weight belt that allows the addition of weighted plates."
-    },
-    {
-    "name": "Rope climb",
-    "type": "força",
-    "muscle": "dorsal",
-    "equipment": "body_only",
-    "difficulty": "intermediário",
-    "instructions": "Grab the rope with both hands above your head. Pull down on the rope as you take a small jump. Wrap the rope around one leg, using your feet to pinch the rope. Reach up as high as possible with your arms, gripping the rope tightly. Release the rope from your feet as you pull yourself up with your arms, bringing your knees towards your chest. Resecure your feet on the rope, and then stand up to take anoutro high hold on the rope. Continue until you reach the top of the rope. To lower yourself, loosen the grip of your feet on the rope as you slide down using a hand over hand motion."
-    },
-    {
-    "name": "T-Bar Row with Handle",
-    "type": "força",
-    "muscle": "costas",
-    "equipment": "outro",
-    "difficulty": "intermediário",
-    "instructions": "Position a bar into a landmine or in a corner to keep it from moving. Load an appropriate weight onto your end. Stand over the bar, and position a Double D row handle around the bar next to the collar. Using your hips and legs, rise to a standing position. Assume a wide stance with your hips back and your chest up. Your arms should be extended. This will be your starting position. Pull the weight to your upper abdomen by retracting the shoulder blades and flexing the elbows. Do not jerk the weight or cheat during the movement. After a brief pause, return to the starting position."
-    },
-    {
-    "name": "Reverse-grip bent-over row",
-    "type": "força",
-    "muscle": "costas",
-    "equipment": "barra",
-    "difficulty": "intermediário",
-    "instructions": "Stand erect while holding a barra with a supinated grip (palms facing up). Bend your knees slightly and bring your torso forward, by bending at the waist, while keeping the back straight until it is almost parallel to the floor. Tip: Make sure that you keep the head up. The barra should hang directly in front of you as your arms hang perpendicular to the floor and your torso. This is your starting position. While keeping the torso stationary, lift the barra as you breathe out, keeping the elbows close to the body and not doing any force with the forearm outro than holding the weights. On the top contracted position, squeeze the back muscles and hold for a second. Slowly lower the weight again to the starting position as you inhale. Repeat for the recommended amount of repetitions.  Caution:  This exercise is not recommended for people with back problems. A Low Pulley Row is a better choice for people with back issues. Also, just like with the bent knee dead-lift, if you have a healthy back, ensure perfect form and never slouch the back forward as this can cause back injury. Be cautious as well with the weight used; in case of doubt, use less weight rather than more.  Variations: You can perform the same exercise using a pronated (palms facing out) grip or using halteres."
-    },
-    {
-    "name": "One-Arm haltere Row",
+  },
+  {
+    "name": "Remada unilateral com haltere",
     "type": "força",
     "muscle": "costas",
     "equipment": "haltere",
     "difficulty": "intermediário",
     "instructions": "Choose a flat bench and place a haltere on each side of it. Place the right leg on top of the end of the bench, bend your torso forward from the waist until your upper body is parallel to the floor, and place your right hand on the outro end of the bench for support. Use the left hand to pick up the haltere on the floor and hold the weight while keeping your lower back straight. The palm of the hand should be facing your torso. This will be your starting position. Pull the resistance straight up to the side of your chest, keeping your upper arm close to your side and keeping the torso stationary. Breathe out as you perform this step. Tip: Concentrate on squeezing the back muscles once you reach the full contracted position. Also, make sure that the force is performed with the back muscles and not the arms. Finally, the upper torso should remain stationary and only the arms should move. The antebraço should do no outro work except for holding the haltere; therefore do not try to pull the haltere up using the antebraço. Lower the resistance straight down to the starting position. Breathe in as you perform this step. Repeat the movement for the specified amount of repetitions. Switch sides and repeat again with the outro arm.  Variations: One-arm rows can also be performed using a high pulley or a low pulley instead of a haltere."
-    },
-    {
-    "name": "One-Arm Long Bar Row",
+  },
+  {
+    "name": "Remada unilateral com puxador",
     "type": "força",
     "muscle": "costas",
     "equipment": "barra",
     "difficulty": "intermediário",
     "instructions": "Position a bar into a landmine or in a corner to keep it from moving. Load an appropriate weight onto your end. Stand next to the bar, and take a grip with one hand close to the collar. Using your hips and legs, rise to a standing position. Assume a bent-knee stance with your hips back and your chest up. Your arm should be extended. This will be your starting position. Pull the weight to your side by retracting the shoulder and flexing the elbow. Do not jerk the weight or cheat during the movement. After a brief pause, return to the starting position."
-    },
-    {
-    "name": "T-Bar Row",
-    "type": "força",
-    "muscle": "costas",
-    "equipment": "outro",
-    "difficulty": "intermediário",
-    "instructions": "Load the bar to an appropriate weight for your training. Stand astride the bar and bend at the hips to take a pronated grip on the handles. Ensure that your back remains flat, and then remove the weight from the rests, letting the bar hang at arms length. This will be your starting position. Perform the movement by flexing the elbows and retracting the shoulder blades, pulling the weight to your chest. After a brief pause at the top of the motion, return to the starting position."
-    },
-    {
-    "name": "Bent Over Two-Arm Long Bar Row",
-    "type": "força",
-    "muscle": "costas",
-    "equipment": "barra",
-    "difficulty": "intermediário",
-    "instructions": "Put weight on one of the ends of an Olympic barra. Make sure that you either place the outro end of the barra in the corner of two walls; or put a heavy object on the ground so the barra cannot slide backward. Bend forward until your torso is as close to parallel with the floor as you can and keep your knees slightly bent. Now grab the bar with both arms just behind the plates on the side where the weight was placed and put your outro hand on your knee. This will be your starting position. Pull the bar straight up with your elbows in (to maximize back stimulation) until the plates touch your lower chest. Squeeze the back muscles as you lift the weight up and hold for a second at the top of the movement. Breathe out as you lift the weight. Tip: Use a stirrup or double handle cabo attachment by hooking it under the end of the bar. Slowly lower the bar to the starting position getting a nice stretch on the dorsal. Tip: Do not let the plates touch the floor. To ensure the best range of motion, I recommend using small plates (25-lb ones) as opposed to larger plates (like 35-45lb ones). Repeat for the recommended amount of repetitions.  Variations: You can perform this exercise using a low pulley or T-bar row maquina."
-    },
-    {
-    "name": "Alternating sit-through with crunch",
-    "type": "força",
-    "muscle": "costas",
-    "equipment": "outro",
-    "difficulty": "intermediário",
-    "instructions": "Put weight on one of the ends of an Olympic barra. Make sure that you either place the outro end of the barra in the corner of two walls; or put a heavy object on the ground so the barra cannot slide backward. Bend forward until your torso is as close to parallel with the floor as you can and keep your knees slightly bent. Now grab the bar with one arm just behind the plates on the side where the weight was placed and put your outro hand on your knee. This will be your starting position. Pull the bar straight up with your elbow in (to maximize back stimulation) until the plates touch your lower chest. Squeeze the back muscles as you lift the weight up and hold for a second at the top of the movement. Breathe out as you lift the weight. Tip: Do not allow for any swinging of the torso. Only the arm should move. Slowly lower the bar to the starting position getting a nice stretch on the dorsal. Tip: Do not let the plates touch the floor. To ensure the best range of motion, I recommend using small plates (25-lb ones) as opposed to larger plates (like 35-45lb ones). Repeat for the recommended amount of repetitions and switch arms.  Variations: You can perform this exercise using a low pulley."
-    },
-    {
-    "name": "Rower",
-    "type": "cárdio",
-    "muscle": "costas",
-    "equipment": "maquina",
-    "difficulty": "intermediário",
-    "instructions": "To begin, seat yourself on the rower. Make sure that your heels are resting comfortably against the base of the foot pedals and that the straps are secured. Select the program that you wish to use, if applicabo. Sit up straight and bend forward at the hips. There are three phases of movement when using a rower. The first phase is when you come forward on the rower. Your knees are bent and against your chest. Your upper body is leaning slightly forward while still maintaining good posture.Next, push against the foot pedals and extend your legs while bringing your hands to your upper abdominal area, squeezing your ombros back as you do so. To avoid straining your back, use primarily your leg and hip muscles. The recovery phase simply involves straightening your arms, bending the knees, and bringing your body forward again as you transition back into the first phase."
-    },
-    {
-    "name": "Seated cabo Rows",
-    "type": "força",
-    "muscle": "costas",
-    "equipment": "cabo",
-    "difficulty": "intermediário",
-    "instructions": "For this exercise you will need access to a low pulley row maquina with a V-bar. Note: The V-bar will enable you to have a neutral grip where the palms of your hands face each outro. To get into the starting position, first sit down on the maquina and place your feet on the front platform or crossbar provided making sure that your knees are slightly bent and not locked. Lean over as you keep the natural alignment of your back and grab the V-bar handles. With your arms extended pull back until your torso is at a 90-degree angle from your legs. Your back should be slightly arched and your chest should be sticking out. You should be feeling a nice stretch on your dorsal as you hold the bar in front of you. This is the starting position of the exercise. Keeping the torso stationary, pull the handles back towards your torso while keeping the arms close to it until you touch the abdominal. Breathe out as you perform that movement. At that point you should be squeezing your back muscles hard. Hold that contraction for a second and slowly go back to the original position while breathing in. Repeat for the recommended amount of repetitions.  Caution: Avoid swinging your torso back and forth as you can cause lower back injury by doing so. Variations: You can use a straight bar instead of a V-Bar and perform with a pronated grip (palms facing down-forward) or a supinated grip (palms facing up-reverse grip)."
-    },
-    {
-    "name": "Incline haltere row",
+  },
+  {
+    "name": "Remada com haltere inclinada",
     "type": "força",
     "muscle": "costas",
     "equipment": "haltere",
     "difficulty": "intermediário",
     "instructions": "Using a neutral grip, lean into an incline bench. Take a haltere in each hand with a neutral grip, beginning with the arms straight. This will be your starting position. Retract the shoulder blades and flex the elbows to row the halteres to your side. Pause at the top of the motion, and then return to the starting position."
-    },
-    {
-    "name": "Atlas Stones",
-    "type": "atleta de força",
-    "muscle": "lombar",
-    "equipment": "outro",
-    "difficulty": "intermediário",
-    "instructions": "Begin with the atlas stone between your feet. Bend at the hips to wrap your arms vertically around the Atlas Stone, attempting to get your fingers underneath the stone. Many stones will have a small flat portion on the bottom, which will make the stone easier to hold. Pulling the stone into your torso, drive through the back half of your feet to pull the stone from the ground. As the stone passes the knees, lap it by sitting backward, pulling the stone on top of your thighs. Sit low, getting the stone high onto your chest as you change your grip to reach over the stone. Stand, driving through with your hips. Close distance to the loading platform, and lean back, extending the hips to get the stone as high as possible."
-    },
-    {
-    "name": "barra deficit deadlift",
-    "type": "levantamento_de_pesoy",
-    "muscle": "lombar",
-    "equipment": "barra",
-    "difficulty": "iniciante",
-    "instructions": "Begin by having a platform or weight plates that you can stand on, usually 1-3 inches in height. Approach the bar so that it is centered over your feet. You feet should be about hip width apart. Bend at the hip to grip the bar at shoulder width, allowing your shoulder blades to protract. Typically, you would use an overhand grip or an over/under grip on heavier sets. With your feet, and your grip set, take a big breath and then lower your hips and bend the knees until your shins contact the bar. Look forward with your head, keep your chest up and your back arched, and begin driving through the heels to move the weight upward. After the bar passes the knees, aggressively pull the bar back, pulling your shoulder blades together as you drive your hips forward into the bar. Lower the bar by bending at the hips and guiding it to the floor."
-    },
-    {
-    "name": "Back extension",
+  },
+  {
+    "name": "Extensão das costas",
     "type": "força",
     "muscle": "lombar",
     "equipment": "body_only",
     "difficulty": "intermediário",
     "instructions": "Lie face down on a hyperextension bench, tucking your ankles securely under the footpads. Adjust the upper pad if possible so your upper thighs lie flat across the wide pad, leaving enough room for you to bend at the waist without any restriction. With your body straight, cross your arms in front of you (my preference) or behind your head. This will be your starting position. Tip: You can also hold a weight plate for extra resistance in front of you under your crossed arms. Start bending forward slowly at the waist as far as you can while keeping your back flat. Inhale as you perform this movement. Keep moving forward until you feel a nice stretch on the hamstrings and you can no longer keep going without a rounding of the back. Tip: Never round the back as you perform this exercise. Also, some people can go farther than outros. The key thing is that you go as far as your body allows you to without rounding the back. Slowly raise your torso back to the initial position as you inhale. Tip: Avoid the temptation to arch your back past a straight line. Also, do not swing the torso at any time in order to protect the back from injury. Repeat for the recommended amount of repetitions.  Variations: This exercise can also be performed without a hyperextension bench, but in this case you will need a spotter. Also, a similar exercise to this one is the good morning and the stiff-legged deadlift."
-    },
-    {
-    "name": "Axle Deadlift",
-    "type": "atleta de força",
-    "muscle": "lombar",
-    "equipment": "outro",
-    "difficulty": "iniciante",
-    "instructions": "Approach the bar so that it is centered over your feet. You feet should be about hip width apart. Bend at the hip to grip the bar at shoulder width, allowing your shoulder blades to protract. Typically, you would use an over/under grip. With your feet and your grip set, take a big breath and then lower your hips and flex the knees until your shins contact the bar. Look forward with your head, keep your chest up and your back arched, and begin driving through the heels to move the weight upward. After the bar passes the knees, aggressively pull the bar back, pulling your shoulder blades together as you drive your hips forward into the bar. Lower the bar by bending at the hips and guiding it to the floor."
-    },
-    {
-    "name": "Hyperextensions With No Hyperextension Bench",
-    "type": "força",
-    "muscle": "lombar",
-    "equipment": "body_only",
-    "difficulty": "iniciante",
-    "instructions": "With someone holding down your legs, slide yourself down to the edge a flat bench until your hips hang off the end of the bench. Tip: Your entire upper body should be hanging down towards the floor. Also, you will be in the same position as if you were on a hyperextension bench but the range of motion will be shorter due to the height of the flat bench vs. that of the hyperextension bench. With your body straight, cross your arms in front of you (my preference) or behind your head. This will be your starting position. Tip: You can also hold a weight plate for extra resistance in front of you under your crossed arms. Start bending forward slowly at the waist as far as you can while keeping your back flat. Inhale as you perform this movement. Keep moving forward until you almost touch the floor or you feel a nice stretch on the hamstrings (whichever comes first). Tip: Never round the back as you perform this exercise. Slowly raise your torso back to the initial position as you exhale. Tip: Avoid the temptation to arch your back past a straight line. Also, do not swing the torso at any time in order to protect the back from injury. Repeat for the recommended amount of repetitions.  Variations: This exercise can also be performed using a hyperextension bench. Also, a similar exercise to this one is the good morning and the stiff-legged deadlift."
-    },
-    {
-    "name": "Deadlift with Bands",
-    "type": "levantamento_de_pesoy",
+  },
+  {
+    "name": "Levantamento terra com elásticos",
+    "type": "levantamento_de_peso",
     "muscle": "lombar",
     "equipment": "barra",
     "difficulty": "iniciante",
     "instructions": "To deadlift with short bands, simply loop them over the bar before you start, and step into them to set up. For long bands, they will need to be anchored to a secure base, such as heavy halteres or a rack. Approach the bar so that it is centered over your feet. You feet should be about hip width apart. Ensure that the bands are under the back half of your foot (for short bands), directly where you are driving into the floor. Bend at the hip to grip the bar at shoulder width, allowing your shoulder blades to protract. Typically, you would use an overhand grip or an over/under grip on heavier sets.2.  With your feet, and your grip set, take a big breath and then lower your hips and bend the knees until your shins contact the bar. Look forward with your head, keep your chest up and your back arched, and begin driving through the heels to move the weight upward. After the bar passes the knees, aggressively pull the bar back, pulling your shoulder blades together as you drive your hips forward into the bar. Lower the bar by bending at the hips and guiding it to the floor."
-    },
-    {
-    "name": "Deadlift with Bands",
-    "type": "levantamento_de_pesoy",
-    "muscle": "lombar",
-    "equipment": "barra",
-    "difficulty": "iniciante",
-    "instructions": "To deadlift with short bands, simply loop them over the bar before you start, and step into them to set up. For long bands, they will need to be anchored to a secure base, such as heavy halteres or a rack. Approach the bar so that it is centered over your feet. You feet should be about hip width apart. Ensure that the bands are under the back half of your foot (for short bands), directly where you are driving into the floor. Bend at the hip to grip the bar at shoulder width, allowing your shoulder blades to protract. Typically, you would use an overhand grip or an over/under grip on heavier sets.2.  With your feet, and your grip set, take a big breath and then lower your hips and bend the knees until your shins contact the bar. Look forward with your head, keep your chest up and your back arched, and begin driving through the heels to move the weight upward. After the bar passes the knees, aggressively pull the bar back, pulling your shoulder blades together as you drive your hips forward into the bar. Lower the bar by bending at the hips and guiding it to the floor."
-    },
-    {
-    "name": "Deadlift with Chains",
-    "type": "levantamento_de_pesoy",
+  },
+  {
+    "name": "Levantamento terra com correntes",
+    "type": "levantamento_de_peso",
     "muscle": "lombar",
     "equipment": "barra",
     "difficulty": "iniciante",
     "instructions": "You can attach the chains to the sleeves of the bar, or just drape the middle over the bar so there is a greater weight increase as you lift. Approach the bar so that it is centered over your feet. You feet should be about hip width apart. Bend at the hip to grip the bar at shoulder width, allowing your shoulder blades to protract. Typically, you would use an overhand grip or an over/under grip on heavier sets. With your feet, and your grip set, take a big breath and then lower your hips and bend the knees until your shins contact the bar. Look forward with your head, keep your chest up and your back arched, and begin driving through the heels to move the weight upward. After the bar passes the knees, aggressively pull the bar back, pulling your shoulder blades together as you drive your hips forward into the bar. Lower the bar by bending at the hips and guiding it to the floor."
-    },
-    {
-    "name": "Rack Pull with Bands",
-    "type": "levantamento_de_pesoy",
-    "muscle": "lombar",
-    "equipment": "barra",
-    "difficulty": "iniciante",
-    "instructions": "Set up in a power rack with the bar on the pins. The pins should be set to the desired point; just below the knees, just above, or in the mid thigh position. Attach bands to the base of the rack, or secure them with halteres. Attach the outro end to the bar. You may need to choke the bands to provide tension. Position yourself against the bar in proper deadlifting position. Your feet should be under your hips, your grip shoulder width, back arched, and hips back to engage the hamstrings. Since the weight is typically heavy, you may use a mixed grip, a hook grip, or use straps to aid in holding the weight. With your head looking forward, extend through the hips and knees, pulling the weight up and back until lockout. Be sure to pull your ombros back as you complete the movement. Return the weight to the pins and repeat."
-    },
-    {
+  },
+  {
     "name": "Superman",
-    "type": "stretching",
+    "type": "alongamento",
     "muscle": "lombar",
     "equipment": "body_only",
     "difficulty": "intermediário",
     "instructions": "To begin, lie straight and face down on the floor or exercise mat. Your arms should be fully extended in front of you. This is the starting position. Simultaneously raise your arms, legs, and chest off of the floor and hold this contraction for 2 seconds. Tip: Squeeze your lower back to get the best results from this exercise. Remember to exhale during this movement. Note: When holding the contracted position, you should look like superman when he is flying. Slowly begin to lower your arms, legs and chest back down to the starting position while inhaling. Repeat for the recommended amount of repetitions prescribed in your program.  Variations: You can also perform this exercise using one arm and leg at a time. Simply elevating your left leg, arm and side of your chest and do the same with the right side."
-    },
-    {
-    "name": "haltere front raise to lateral raise",
+  },
+  {
+    "name": "Elevação frontal com haltere",
     "type": "força",
     "muscle": "ombros",
     "equipment": "haltere",
     "difficulty": "intermediário",
     "instructions": "In a standing position, hold a pair of halteres at your side. This will be your starting position. Keeping your elbows slightly bent, raise the weights directly in front of you to shoulder height, avoiding any swinging or cheating. At the top of the exercise move the weights out in front of you, keeping your arms extended. Lower the weights with a controlled motion. On the next repetition, raise the weights in front of you to shoulder height before moving the weights laterally to your sides. Lower the weights to the starting position."
-    },
-    {
-    "name": "Clean and press",
-    "type": "força",
-    "muscle": "ombros",
-    "equipment": "barra",
-    "difficulty": "intermediário",
-    "instructions": "Assume a shoulder-width stance, with knees inside the arms. Now while keeping the back flat, bend at the knees and hips so that you can grab the bar with the arms fully extended and a pronated grip that is slightly wider than shoulder width. Point the elbows out to sides. The bar should be close to the shins. Position the ombros over or slightly ahead of the bar. Establish a flat back posture. This will be your starting position. Begin to pull the bar by extending the knees. Move your hips forward and raise the ombros at the same rate while keeping the angle of the back constant; continue to lift the bar straight up while keeping it close to your body. As the bar passes the knee, extend at the ankles, knees, and hips forcefully, similar to a jumping motion. As you do so, continue to guide the bar with your hands, shrugging your ombros and using the momentum from your movement to pull the bar as high as possible. The bar should travel close to your body, and you should keep your elbows out. At maximum elevation, your feet should clear the floor and you should start to pull yourself under the bar. The mechanics of this could change slightly, depending on the weight used. You should descend into a squatting position as you pull yourself under the bar. As the bar hits terminal height, rotate your elbows around and under the bar. Rack the bar across the front of the ombros while keeping the torso erect and flexing the hips and knees to absorb the weight of the bar. Stand to full height, holding the bar in the clean position. Without moving your feet, press the bar overhead as you exhale. Lower the bar under control ."
-    },
-    {
-    "name": "Single-arm palm-in haltere shoulder press",
-    "type": "força",
-    "muscle": "ombros",
-    "equipment": "haltere",
-    "difficulty": "intermediário",
-    "instructions": "Start by having a haltere in one hand with your arm fully extended to the side using a neutral grip. Use your outro arm to hold on to an incline bench to keep your balance. Your feet should be shoulder width apart from each outro. Now slowly lift the haltere up until you create a 90 degree angle with your arm. Note: Your forearm should be perpendicular to the floor. Continue to maintain a neutral grip throughout the entire exercise. Slowly lift the haltere up until your arm is fully extended. This the starting position. While inhaling lower the weight down until your arm is at a 90 degree angle again. Feel the contraction for a second and then lift the weight back up towards the starting position while exhaling. Remember to hold on to the incline bench and keep your feet positioned to keep balance during the exercise. Repeat for the recommended amount of repetitions. Switch arms and repeat the exercise.  Variation: This exercise can be performed with halteres in each arm as the halteres will help to keep you balanced. This is anoutro great way to add variety to your routines and keep them interesting."
-    },
-    {
-    "name": "Clean and jerk",
-    "type": "levantamento_olimpico",
-    "muscle": "ombros",
-    "equipment": "barra",
-    "difficulty": "intermediário",
-    "instructions": "With a barra on the floor close to the shins, take an overhand or hook grip just outside the legs. Lower your hips with the weight focused on the heels, back straight, head facing forward, chest up, with your ombros just in front of the bar. This will be your starting position. Begin the first pull by driving through the heels, extending your knees. Your back angle should stay the same, and your arms should remain straight. Move the weight with control as you continue to above the knees. Next comes the second pull, the main source of acceleration for the clean. As the bar approaches the mid-thigh position, begin extending through the hips. In a jumping motion, accelerate by extending the hips, knees, and ankles, using speed to move the bar upward. There should be no need to actively pull through the arms to accelerate the weight; at the end of the second pull, the body should be fully extended, leaning slightly back, with the arms still extended. As full extension is achieved, transition into the third pull by aggressively shrugging and flexing the arms with the elbows up and out. At peak extension, aggressively pull yourself down, rotating your elbows under the bar as you do so. Receive the bar in a front squat position, the depth of which is dependent upon the height of the bar at the end of the third pull. The bar should be racked onto the protracted ombros, lightly touching the throat with the hands relaxed. Continue to descend to the bottom squat position, which will help in the recovery. Immediately recover by driving through the heels, keeping the torso upright and elbows up. Continue until you have risen to a standing position. The second phase is the jerk, which raises the weight overhead. Standing with the weight racked on the front of the ombros, begin with the dip. With your feet directly under your hips, flex the knees without moving the hips backward. Go down only slightly, and reverse direction as powerfully as possible. Drive through the heels create as much speed and force as possible, and be sure to move your head out of the way as the bar leaves the ombros. At this moment as the feet leave the floor, the feet must be placed into the receiving position as quickly as possible. In the brief moment the feet are not actively driving against the platform, the athletes effort to push the bar up will drive them down. The feet should be split, with one foot forward, and one foot back. Receive the bar with the arms locked out overhead. Return to a standing position."
-    },
-    {
-    "name": "Single-arm kettlebell push-press",
-    "type": "força",
-    "muscle": "ombros",
-    "equipment": "kettlebells",
-    "difficulty": "intermediário",
-    "instructions": "Hold a kettlebell by the handle. Clean the kettlebell to your shoulder by extending through the legs and hips as you pull the kettlebell towards your shoulder. Rotate your wrist as you do so, so that the palm faces forward. This will be your starting position. Dip your body by bending the knees, keeping your torso upright. Immediately reverse direction, driving through the heels, in essence jumping to create momentum. As you do so, press the kettlebell overhead to lockout by extending the arms, using your body's momentum to move the weight. Lower the weight to perform the next repetition."
-    },
-    {
-    "name": "Military press",
+  },
+  {
+    "name": "Desenvolvimento",
     "type": "força",
     "muscle": "ombros",
     "equipment": "barra",
     "difficulty": "intermediário",
     "instructions": "Start by placing a barra that is about chest high on a squat rack. Once you have selected the weights, grab the barra using a pronated (palms facing forward) grip. Make sure to grip the bar wider than shoulder width apart from each outro. Slightly bend the knees and place the barra on your collar bone. Lift the barra up keeping it lying on your chest. Take a step back and position your feet shoulder width apart from each outro. Once you pick up the barra with the correct grip length, lift the bar up over your head by locking your arms. Hold at about shoulder level and slightly in front of your head. This is your starting position. Lower the bar down to the collarbone slowly as you inhale. Lift the bar back up to the starting position as you exhale. Repeat for the recommended amount of repetitions.  Variations:  This exercise can also be performed sitting as those with lower back problems are better off performing this seated variety. The behind the neck variation is not recommended for people with shoulder problems as it can be hard on the rotator cuff due to the hyperextension created by bringing the bar behind the neck. Anoutro option is to use halteres when performing this exercise for better isolation."
-    },
-    {
-    "name": "Standing palms-in shoulder press",
-    "type": "força",
-    "muscle": "ombros",
-    "equipment": "haltere",
-    "difficulty": "intermediário",
-    "instructions": "Start by having a haltere in each hand with your arm fully extended to the side using a neutral grip. Your feet should be shoulder width apart from each outro. Now slowly lift the halteres up until you create a 90 degree angle with your arms. Note: Your antebraço should be perpendicular to the floor. This the starting position. Continue to maintain a neutral grip throughout the entire exercise. Slowly lift the halteres up until your arms are fully extended. While inhaling lower the weights down until your arm is at a 90 degree angle again. Repeat for the recommended amount of repetitions.  Variation: This exercise can be performed with a haltere in one arm and anoutro holding on to an incline bench. This is anoutro great way to add variety to your routines and keep them interesting."
-    },
-    {
-    "name": "Seated barra shoulder press",
+  },
+  {
+    "name": "Desenvolvimento com barra sentado",
     "type": "força",
     "muscle": "ombros",
     "equipment": "barra",
     "difficulty": "intermediário",
     "instructions": "Sit on a Military Press Bench with a bar behind your head and either have a spotter give you the bar (better on the rotator cuff this way) or pick it up yourself carefully with a pronated grip (palms facing forward). Tip: Your grip should be wider than shoulder width and it should create a 90-degree angle between the forearm and the upper arm as the barra goes down. Once you pick up the barra with the correct grip length, lift the bar up over your head by locking your arms. Hold at about shoulder level and slightly in front of your head. This is your starting position. Lower the bar down to the collarbone slowly as you inhale. Lift the bar back up to the starting position as you exhale. Repeat for the recommended amount of repetitions.  Variations:  This exercise can also be performed standing but those with lower back problems are better off performing this seated variety. The behind the neck variation is not recommended for people with shoulder problems as it can be hard on the rotator cuff due to the hyperextension created by bringing the bar behind the neck."
-    },
-    {
-    "name": "Seated haltere Press",
+  },
+  {
+    "name": "Desenvolvimento com halteres sentado",
     "type": "força",
     "muscle": "ombros",
     "equipment": "haltere",
     "difficulty": "intermediário",
     "instructions": "Grab a couple of halteres and sit on a military press bench or a utility bench that has a back support on it as you place the halteres upright on top of your thighs. Clean the halteres up one at a time by using your thighs to bring the halteres up to shoulder height at each side. Rotate the wrists so that the palms of your hands are facing forward. This is your starting position. As you exhale, push the halteres up until they touch at the top. After a second pause, slowly come down back to the starting position as you inhale. Repeat for the recommended amount of repetitions.  Variations:  You can perform the exercise standing or sitting on a regular flat bench. For people with lower back problems, the version described is the recommended one. You can also perform the exercise as Arnold Schwarzenegger used to do it, which is to start holding the halteres with a supinated grip (palms facing you) in front of your ombros and then, as you start pushing up, you align the halteres in the starting position described on step 3 by rotating your wrists and touch the halteres at the top. As you come down, then you would go back to the starting position by rotating the wrist throughout the lowering portion until the palms of your hands are facing you. This variation is called the Arnold Press. However, it is not recommended if you have rotator cuff problems."
-    },
-    {
-    "name": "Standing haltere shoulder press",
+  },
+  {
+    "name": "Desenvolvimento com halteres em pé",
     "type": "força",
     "muscle": "ombros",
     "equipment": "haltere",
     "difficulty": "intermediário",
     "instructions": "Standing with your feet shoulder width apart, take a haltere in each hand. Raise the halteres to head height, the elbows out and about 90 degrees. This will be your starting position. Maintaining strict technique with no leg drive or leaning back, extend through the elbow to raise the weights together directly above your head. Pause, and slowly return the weight to the starting position."
-    },
-    {
-    "name": "Incline Hammer Curls",
+  },
+  {
+    "name": "Rosca martelo inclinada",
     "type": "força",
     "muscle": "bíceps",
     "equipment": "haltere",
     "difficulty": "iniciante",
     "instructions": "Seat yourself on an incline bench with a haltere in each hand. You should pressed firmly against he back with your feet together. Allow the halteres to hang straight down at your side, holding them with a neutral grip. This will be your starting position. Initiate the movement by flexing at the elbow, attempting to keep the upper arm stationary. Continue to the top of the movement and pause, then slowly return to the start position."
-    },
-    {
-    "name": "Wide-grip barra curl",
+  },
+  {
+    "name": "Rosca com barra com pegada aberta",
     "type": "força",
     "muscle": "bíceps",
     "equipment": "barra",
     "difficulty": "iniciante",
-    "instructions": "Stand up with your torso upright while holding a barra at the wide outer handle. The palm of your hands should be facing forward. The elbows should be close to the torso. This will be your starting position. While holding the upper arms stationary, curl the weights forward while contracting the bíceps as you breathe out. Tip: Only the antebraço should move. Continue the movement until your bíceps are fully contracted and the bar is at shoulder level. Hold the contracted position for a second and squeeze the bíceps hard. Slowly begin to bring the bar back to starting position as your breathe in. Repeat for the recommended amount of repetitions.  Variations:  You can also perform this movement using an E-Z bar or E-Z attachment hooked to a low pulley. This variation seems to really provide a good contraction at the top of the movement. You may also use the closer grip for variety purposes."
-    },
-    {
-    "name": "EZ-bar spider curl",
-    "type": "força",
-    "muscle": "bíceps",
-    "equipment": "barra",
-    "difficulty": "intermediário",
-    "instructions": "Start out by setting the bar on the part of the preacher bench that you would normally sit on. Make sure to align the barra properly so that it is balanced and will not fall off. Move to the front side of the preacher bench (the part where the arms usually lay) and position yourself to lay at a 45 degree slant with your torso and stomach pressed against the front side of the preacher bench. Make sure that your feet (especially the toes) are well positioned on the floor and place your upper arms on top of the pad located on the inside part of the preacher bench. Use your arms to grab the barra with a supinated grip (palms facing up) at about shoulder width apart or slightly closer from each outro. Slowly begin to lift the barra upwards and exhale. Hold the contracted position for a second as you squeeze the bíceps. Slowly begin to bring the barra back to the starting position as your breathe in. . Repeat for the recommended amount of repetitions.  Variation: You can also use halteres when performing this exercise. Just make sure you place the halteres on the part of the preacher bench where you would normally sit properly."
-    },
-    {
-    "name": "Hammer Curls",
+    "instructions": "Stand up with your torso upright while holding a barra at the wide outer handle. The palm of your hands should be facing forward. The elbows should be close to the torso. This will be your starting position. While holding the upper arms stationary, Rosca the weights forward while contracting the bíceps as you breathe out. Tip: Only the antebraço should move. Continue the movement until your bíceps are fully contracted and the bar is at shoulder level. Hold the contracted position for a second and squeeze the bíceps hard. Slowly begin to bring the bar back to starting position as your breathe in. Repeat for the recommended amount of repetitions.  Variations:  You can also perform this movement using an E-Z bar or E-Z attachment hooked to a low pulley. This variation seems to really provide a good contraction at the top of the movement. You may also use the closer grip for variety purposes."
+  },
+  {
+    "name": "Rosca martelo",
     "type": "força",
     "muscle": "bíceps",
     "equipment": "haltere",
     "difficulty": "intermediário",
-    "instructions": "Stand up with your torso upright and a haltere on each hand being held at arms length. The elbows should be close to the torso. The palms of the hands should be facing your torso. This will be your starting position. Now, while holding your upper arm stationary, exhale and curl the weight forward while contracting the bíceps. Continue to raise the weight until the bíceps are fully contracted and the haltere is at shoulder level. Hold the contracted position for a brief moment as you squeeze the bíceps. Tip: Focus on keeping the elbow stationary and only moving your forearm. After the brief pause, inhale and slowly begin the lower the halteres back down to the starting position. Repeat for the recommended amount of repetitions.  Variations: There are many possible variations for this movement. For instance, you can perform the exercise sitting down on a bench with or without back support and you can also perform it by alternating arms; first lift the right arm for one repetition, then the left, then the right, etc."
-    },
-    {
-    "name": "EZ-Bar Curl",
+    "instructions": "Stand up with your torso upright and a haltere on each hand being held at arms length. The elbows should be close to the torso. The palms of the hands should be facing your torso. This will be your starting position. Now, while holding your upper arm stationary, exhale and Rosca the weight forward while contracting the bíceps. Continue to raise the weight until the bíceps are fully contracted and the haltere is at shoulder level. Hold the contracted position for a brief moment as you squeeze the bíceps. Tip: Focus on keeping the elbow stationary and only moving your forearm. After the brief pause, inhale and slowly begin the lower the halteres back down to the starting position. Repeat for the recommended amount of repetitions.  Variations: There are many possible variations for this movement. For instance, you can perform the exercise sitting down on a bench with or without back support and you can also perform it by alternating arms; first lift the right arm for one repetition, then the left, then the right, etc."
+  },
+  {
+    "name": "Rosca Zottman",
     "type": "força",
     "muscle": "bíceps",
-    "equipment": "e-z_curl_bar",
+    "equipment": "haltere",
     "difficulty": "intermediário",
-    "instructions": "Stand up straight while holding an EZ curl bar at the wide outer handle. The palms of your hands should be facing forward and slightly tilted inward due to the shape of the bar. Keep your elbows close to your torso. This will be your starting position. Now, while keeping your upper arms stationary, exhale and curl the weights forward while contracting the bíceps. Focus on only moving your antebraço. Continue to raise the weight until your bíceps are fully contracted and the bar is at shoulder level. Hold the top contracted position for a moment and squeeze the bíceps. Then inhale and slowly lower the bar back to the starting position. Repeat for the recommended amount of repetitions.  Variations: You can also perform this movement using an E-Z attachment hooked to a low pulley. This variation seems to really provide a good contraction at the top of the movement. You may also use the closer grip for variety purposes."
-    },
-    {
-    "name": "Zottman Curl",
-    "type": "força",
-    "muscle": "bíceps",
-    "equipment": "nenhum",
-    "difficulty": "intermediário",
-    "instructions": "Stand up with your torso upright and a haltere in each hand being held at arms length. The elbows should be close to the torso. Make sure the palms of the hands are facing each outro. This will be your starting position. While holding the upper arm stationary, curl the weights while contracting the bíceps as you breathe out. Only the antebraço should move. Your wrist should rotate so that you have a supinated (palms up) grip. Continue the movement until your bíceps are fully contracted and the halteres are at shoulder level. Hold the contracted position for a second as you squeeze the bíceps. Now during the contracted position, rotate your wrist until you now have a pronated (palms facing down) grip with the thumb at a higher position than the pinky. Slowly begin to bring the halteres back down using the pronated grip. As the halteres close your thighs, start rotating the wrist so that you go back to a neutral (palms facing your body) grip. Repeat for the recommended amount of repetitions."
-    },
-    {
-    "name": "Bíceps curl to shoulder press",
+    "instructions": "Stand up with your torso upright and a haltere in each hand being held at arms length. The elbows should be close to the torso. Make sure the palms of the hands are facing each outro. This will be your starting position. While holding the upper arm stationary, Rosca the weights while contracting the bíceps as you breathe out. Only the antebraço should move. Your wrist should rotate so that you have a supinated (palms up) grip. Continue the movement until your bíceps are fully contracted and the halteres are at shoulder level. Hold the contracted position for a second as you squeeze the bíceps. Now during the contracted position, rotate your wrist until you now have a pronated (palms facing down) grip with the thumb at a higher position than the pinky. Slowly begin to bring the halteres back down using the pronated grip. As the halteres close your thighs, start rotating the wrist so that you go back to a neutral (palms facing your body) grip. Repeat for the recommended amount of repetitions."
+  },
+  {
+    "name": "Bíceps Rosca para desenvolvimento",
     "type": "força",
     "muscle": "bíceps",
     "equipment": "haltere",
     "difficulty": "iniciante",
-    "instructions": "Begin in a standing position with a haltere in each hand. Your arms should be hanging at your sides with your palms facing forward. Look directly ahead, keeping your chest up, with your feet shoulder-width apart. This will be your starting position. Initiate the movement by flexing the elbows to curl the weight. Do not use momentum or flex through the shoulder, instead use a controlled motion. Execute the pressing movement by extending the arm, flexing and abducting the shoulder to rotate the arm as you press above your head. Pause at the top of the motion before reversing the movement to return to the starting position. Complete the desired number of repetitions before switching to the opposite side."
-    },
-    {
-    "name": "barra Curl",
+    "instructions": "Begin in a standing position with a haltere in each hand. Your arms should be hanging at your sides with your palms facing forward. Look directly ahead, keeping your chest up, with your feet shoulder-width apart. This will be your starting position. Initiate the movement by flexing the elbows to Rosca the weight. Do not use momentum or flex through the shoulder, instead use a controlled motion. Execute the pressing movement by extending the arm, flexing and abducting the shoulder to rotate the arm as you press above your head. Pause at the top of the motion before reversing the movement to return to the starting position. Complete the desired number of repetitions before switching to the opposite side."
+  },
+  {
+    "name": "Rosca com barra barra",
     "type": "força",
     "muscle": "bíceps",
     "equipment": "barra",
     "difficulty": "intermediário",
-    "instructions": "Stand up with your torso upright while holding a barra at a shoulder-width grip. The palm of your hands should be facing forward and the elbows should be close to the torso. This will be your starting position. While holding the upper arms stationary, curl the weights forward while contracting the bíceps as you breathe out. Tip: Only the antebraço should move. Continue the movement until your bíceps are fully contracted and the bar is at shoulder level. Hold the contracted position for a second and squeeze the bíceps hard. Slowly begin to bring the bar back to starting position as your breathe in. Repeat for the recommended amount of repetitions.  Variations:  You can also perform this movement using a straight bar attachment hooked to a low pulley. This variation seems to really provide a good contraction at the top of the movement. You may also use the closer grip for variety purposes."
-    },
-    {
-    "name": "Concentration curl",
+    "instructions": "Stand up with your torso upright while holding a barra at a shoulder-width grip. The palm of your hands should be facing forward and the elbows should be close to the torso. This will be your starting position. While holding the upper arms stationary, Rosca the weights forward while contracting the bíceps as you breathe out. Tip: Only the antebraço should move. Continue the movement until your bíceps are fully contracted and the bar is at shoulder level. Hold the contracted position for a second and squeeze the bíceps hard. Slowly begin to bring the bar back to starting position as your breathe in. Repeat for the recommended amount of repetitions.  Variations:  You can also perform this movement using a straight bar attachment hooked to a low pulley. This variation seems to really provide a good contraction at the top of the movement. You may also use the closer grip for variety purposes."
+  },
+  {
+    "name": "Rosca Concentração",
     "type": "força",
     "muscle": "bíceps",
     "equipment": "haltere",
     "difficulty": "intermediário",
-    "instructions": "Sit down on a flat bench with one haltere in front of you between your legs. Your legs should be spread with your knees bent and feet on the floor. Use your right arm to pick the haltere up. Place the back of your right upper arm on the top of your inner right thigh. Rotate the palm of your hand until it is facing forward away from your thigh. Tip: Your arm should be extended and the haltere should be above the floor. This will be your starting position. While holding the upper arm stationary, curl the weights forward while contracting the bíceps as you breathe out. Only the antebraço should move. Continue the movement until your bíceps are fully contracted and the halteres are at shoulder level. Tip: At the top of the movement make sure that the little finger of your arm is higher than your thumb. This guarantees a good contraction. Hold the contracted position for a second as you squeeze the bíceps. Slowly begin to bring the halteres back to starting position as your breathe in. Caution: Avoid swinging motions at any time. Repeat for the recommended amount of repetitions. Then repeat the movement with the left arm.  Variations: This exercise can be performed standing with the torso bent forward and the arm in front of you. In this case, no leg support is used for the back of your arm so you will need to make extra effort to ensure no movement of the upper arm. This is a more challenging version of the exercise and is not recommended for people with lower back issues."
-    },
-    {
-    "name": "Flexor Incline haltere Curls",
-    "type": "força",
-    "muscle": "bíceps",
-    "equipment": "haltere",
-    "difficulty": "iniciante",
-    "instructions": "Hold the haltere towards the side farther from you so that you have more weight on the side closest to you. (This can be done for a good effect on all bicep haltere exercises). Now do a normal incline haltere curl, but keep your wrists as far back as possible so as to neutralize any stress that is placed on them. Sit on an incline bench that is angled at 45-degrees while holding a haltere on each hand. Let your arms hang down on your sides, with the elbows in, and turn the palms of your hands forward with the thumbs pointing away from the body. Tip: You will keep this hand position throughout the movement as there should not be any twisting of the hands as they come up. This will be your starting position. Curl up the two halteres at the same time until your bíceps are fully contracted and exhale. Tip: Do not swing the arms or use momentum. Keep a controlled motion at all times. Hold the contracted position for a second at the top. As you inhale, slowly go back to the starting position. Repeat for the recommended amount of repetitions.  Caution: Do not extend your arms totally as you could injure your elbows if you hyperextend them. Also, make sure that on the way down you move slowly to avoid injury. Variations: You can use cabos for this movement as well."
-    }
-  ]
+    "instructions": "Sit down on a flat bench with one haltere in front of you between your legs. Your legs should be spread with your knees bent and feet on the floor. Use your right arm to pick the haltere up. Place the back of your right upper arm on the top of your inner right thigh. Rotate the palm of your hand until it is facing forward away from your thigh. Tip: Your arm should be extended and the haltere should be above the floor. This will be your starting position. While holding the upper arm stationary, Rosca the weights forward while contracting the bíceps as you breathe out. Only the antebraço should move. Continue the movement until your bíceps are fully contracted and the halteres are at shoulder level. Tip: At the top of the movement make sure that the little finger of your arm is higher than your thumb. This guarantees a good contraction. Hold the contracted position for a second as you squeeze the bíceps. Slowly begin to bring the halteres back to starting position as your breathe in. Caution: Avoid swinging motions at any time. Repeat for the recommended amount of repetitions. Then repeat the movement with the left arm.  Variations: This exercise can be performed standing with the torso bent forward and the arm in front of you. In this case, no leg support is used for the back of your arm so you will need to make extra effort to ensure no movement of the upper arm. This is a more challenging version of the exercise and is not recommended for people with lower back issues."
+  }
+]
