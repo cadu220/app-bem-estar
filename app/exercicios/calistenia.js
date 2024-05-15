@@ -1,4 +1,4 @@
-import { View, StyleSheet, Text, TouchableOpacity, ScrollView, Image } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { useState, useEffect } from 'react';
 import exerciseData from './calistenia.json'; 
 
@@ -6,7 +6,7 @@ export default function Exercicios() {
     const [muscleGroup, setMuscleGroup] = useState(null);
     const [exercises, setExercises] = useState([]);
     const [ showExercises, setShowExercises ] = useState();
-
+    
     useEffect(() => {
         if (muscleGroup) {
         // Filtrar os exercícios pelo músculo selecionado
