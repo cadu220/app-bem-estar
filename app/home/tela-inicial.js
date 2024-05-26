@@ -19,14 +19,14 @@ export default function TelaInicial() {
         </Pressable>
       </Link>
 
-      <Link href="exercicios/calistenia" asChild>
+      <Link href="exercicios/calistenia/calistenia" asChild>
         <Pressable style={styles.button} android_ripple={{ color: '#fff' }}>
           <Image source={imageCalistenia} style={styles.buttonBackgroundImage} />
           <Text style={styles.buttonText}>CALISTENIA</Text>
         </Pressable>
       </Link>
 
-      <Link href="passageiro/ioga" asChild>
+      <Link href="exercicios/ioga" asChild>
         <Pressable style={styles.button} android_ripple={{ color: '#fff' }}>
           <Image source={imageIoga} style={styles.buttonBackgroundImage} />
           <Text style={styles.buttonText}>IOGA</Text>

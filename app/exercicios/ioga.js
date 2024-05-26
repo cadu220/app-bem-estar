@@ -1,4 +1,4 @@
-import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity, ScrollView } from 'react-native';
 import { useState, useEffect } from 'react';
 import exerciseData from './ioga.json'; 
 
@@ -20,27 +20,30 @@ export default function Ioga() {
     
     return (
         <View>
+            <ScrollView>
             <Text>Selecione um grupo de exercícios:</Text>
-            <TouchableOpacity onPress={() => handleTypeSelect('antebraço')} style={styles.title}>
-                <Text>antebraço</Text>
+            <TouchableOpacity onPress={() => handleTypeSelect('Alongamento')} style={styles.title}>
+                <Text>Alongamento</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleTypeSelect('bíceps')} style={styles.title}>
-                <Text>bíceps</Text>
+            <TouchableOpacity onPress={() => handleTypeSelect('Fortalecimento')} style={styles.title}>
+                <Text>Fortalecimento</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleTypeSelect('quadríceps')} style={styles.title}>
-                <Text>quadríceps</Text>
+            <TouchableOpacity onPress={() => handleTypeSelect('Equilíbrio')} style={styles.title}>
+                <Text>Equilíbrio</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => handleTypeSelect('Flexão')} style={styles.title}>
+                <Text>Flexão</Text>
             </TouchableOpacity>
             <Text>Exercícios:</Text>
-            {exercises.map((exercise, index) => (
-                <View key={index}>
-                    <Image
-                        source={{ uri: exercise.image}}
-                        style={{ width: 300, height: 200 }}
-                    />
+            {/*<Image source={{ uri: exercise.image}} style={{ width: 300, height: 200 }}/>*/
+            exercises.map((exercise, index) => (
+                <View key={index} style={styles.exercise}>
+
                     <Text>{exercise.name}</Text>
                     <Text>{exercise.instructions}</Text>
                 </View>
             ))}
+            </ScrollView>
         </View>
     );
 };

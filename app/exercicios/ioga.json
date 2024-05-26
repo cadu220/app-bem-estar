@@ -1,279 +1,279 @@
 [
     {
-      "image": "https://example.com/exercicio1.jpg",
+      "image": "",
       "name": "Postura do Cão Olhando para Baixo (Adho Mukha Svanasana)",
       "type": "Alongamento",
       "difficulty": "Iniciante",
       "instructions": "1. Comece na posição de quatro apoios. 2. Levante os quadris em direção ao teto, formando um triângulo com o corpo. 3. Estique os braços e as pernas, mantendo os calcanhares no chão. 4. Mantenha a posição por 30 segundos a 1 minuto."
     },
     {
-      "image": "https://example.com/exercicio2.jpg",
+      "image": "",
       "name": "Postura do Guerreiro I (Virabhadrasana I)",
       "type": "Fortalecimento",
       "difficulty": "Intermediário",
       "instructions": "1. Comece na posição de pé. 2. Dê um passo largo para trás com uma perna e gire o pé para fora em um ângulo de 45 graus. 3. Dobre a perna da frente em um ângulo de 90 graus, mantendo o joelho sobre o tornozelo. 4. Estique os braços para cima e mantenha a posição por 30 segundos a 1 minuto."
     },
     {
-      "image": "https://example.com/exercicio3.jpg",
+      "image": "",
       "name": "Postura do Triângulo (Trikonasana)",
       "type": "Equilíbrio",
       "difficulty": "Avançado",
       "instructions": "1. Comece na posição de pé com as pernas afastadas. 2. Vire um pé para fora em um ângulo de 90 graus e mantenha o outro pé virado ligeiramente para dentro. 3. Estenda o tronco para o lado sobre a perna virada para fora, alcançando o chão ou a perna. 4. Mantenha a posição por 30 segundos a 1 minuto e depois repita do outro lado."
     },
     {
-      "image": "https://example.com/exercicio4.jpg",
+      "image": "",
       "name": "Postura do Gato-Vaca (Marjaryasana-Bitilasana)",
       "type": "Flexão",
-        "difficulty": "Iniciante",
-        "instructions": "1. Comece na posição de quatro apoios. 2. Inspire e arqueie a coluna, levantando a cabeça e o quadril para olhar para cima (postura de vaca). 3. Expire e arredonde a coluna para cima, trazendo o queixo em direção ao peito (postura de gato). 4. Continue alternando entre as duas posturas durante 1 minuto."
+      "difficulty": "Iniciante",
+      "instructions": "1. Comece na posição de quatro apoios. 2. Inspire e arqueie a coluna, levantando a cabeça e o quadril para olhar para cima (postura de vaca). 3. Expire e arredonde a coluna para cima, trazendo o queixo em direção ao peito (postura de gato). 4. Continue alternando entre as duas posturas durante 1 minuto."
     },
     {
-      "image": "https://example.com/exercicio5.jpg",
+      "image": "",
       "name": "Postura do Guerreiro II (Virabhadrasana II)",
       "type": "Fortalecimento",
       "difficulty": "Intermediário",
       "instructions": "1. Comece na posição de pé. 2. Dê um passo largo para trás com uma perna e gire o pé para fora em um ângulo de 90 graus. 3. Dobre a perna da frente em um ângulo de 90 graus, mantendo o joelho sobre o tornozelo. 4. Estenda os braços para os lados, paralelos ao chão, olhando sobre a mão da frente. 5. Mantenha a posição por 30 segundos a 1 minuto e depois repita do outro lado."
     },
     {
-      "image": "https://example.com/exercicio6.jpg",
+      "image": "",
       "name": "Postura do Guerreiro III (Virabhadrasana III)",
       "type": "Equilíbrio",
       "difficulty": "Avançado",
       "instructions": "1. Comece na posição de guerreiro I. 2. Incline o tronco para a frente, levantando a perna traseira e estendendo-a para trás, paralela ao chão. 3. Estenda os braços para frente, paralelos ao chão, com as palmas das mãos viradas uma para a outra. 4. Mantenha a posição por 30 segundos a 1 minuto e depois repita do outro lado."
     },
     {
-      "image": "https://example.com/exercicio7.jpg",
+      "image": "",
       "name": "Postura da Criança (Balasana)",
       "type": "Relaxamento",
       "difficulty": "Iniciante",
       "instructions": "1. Sente-se sobre os calcanhares com os joelhos juntos ou afastados, conforme confortável. 2. Incline o tronco para frente e estenda os braços para a frente ou ao lado do corpo. 3. Deixe a testa tocar o chão, se possível. 4. Mantenha a posição por 1 a 3 minutos, respirando profundamente."
     },
     {
-        "image": "https://example.com/exercicio8.jpg",
+        "image": "",
         "name": "Postura da Ponte (Setu Bandhasana)",
         "type": "Fortalecimento",
         "difficulty": "Intermediário",
         "instructions": "1. Deite-se de costas com os joelhos dobrados e os pés apoiados no chão, afastados na largura dos quadris. 2. Levante os quadris em direção ao teto, pressionando os pés no chão e levando os braços para baixo, com as palmas das mãos viradas para baixo. 3. Mantenha os ombros no chão e levante o quadril o máximo possível. 4. Mantenha a posição por 30 segundos a 1 minuto e depois desça lentamente."
     },
     {
-        "image": "https://example.com/exercicio9.jpg",
+        "image": "",
         "name": "Postura da Tartaruga (Kurmasana)",
         "type": "Flexão",
         "difficulty": "Avançado",
         "instructions": "1. Sente-se com as pernas estendidas à sua frente. 2. Dobre os joelhos e coloque as solas dos pés juntas, deixando os joelhos caírem para os lados. 3. Segure os pés com as mãos e incline o tronco para a frente, tentando levar a testa em direção aos pés. 4. Mantenha a posição por 30 segundos a 1 minuto, respirando profundamente."
     },
     {
-        "image": "https://example.com/exercicio10.jpg",
+        "image": "",
         "name": "Postura do Arco (Dhanurasana)",
         "type": "Fortalecimento",
         "difficulty": "Intermediário",
         "instructions": "1. Deite-se de barriga para baixo com os braços ao lado do corpo, as palmas das mãos viradas para cima. 2. Dobre os joelhos e segure os tornozelos com as mãos. 3. Inspire e levante o peito e as pernas do chão, estendendo o corpo para trás. 4. Mantenha a posição por 20 a 30 segundos, respirando profundamente, e depois solte lentamente."
     },
     {
-        "image": "https://example.com/exercicio11.jpg",
+        "image": "",
         "name": "Postura do Triângulo Reverso (Parivrtta Trikonasana)",
         "type": "Alongamento",
         "difficulty": "Intermediário",
         "instructions": "1. Comece na postura do triângulo, com os pés afastados e um pé virado para fora em um ângulo de 90 graus. 2. Gire o tronco em direção à perna da frente e estenda o braço do mesmo lado para baixo, colocando a mão no chão ou na perna. 3. Estenda o outro braço para cima, olhando para a mão. 4. Mantenha a posição por 30 segundos a 1 minuto e depois repita do outro lado."
     },
     {
-        "image": "https://example.com/exercicio12.jpg",
+        "image": "",
         "name": "Postura do Camelo (Ustrasana)",
         "type": "Flexão",
         "difficulty": "Avançado",
         "instructions": "1. Ajoelhe-se com os joelhos afastados na largura dos quadris. 2. Coloque as mãos nos quadris e empurre os quadris para frente. 3. Arqueie a coluna para trás, levando as mãos para os calcanhares e mantendo os quadris empurrados para a frente. 4. Mantenha a posição por 30 segundos a 1 minuto, respirando profundamente."
     },
     {
-        "image": "https://example.com/exercicio13.jpg",
+        "image": "",
         "name": "Postura do Pombo deitado (Supta Kapotasana)",
         "type": "Flexão",
         "difficulty": "Avançado",
         "instructions": "1. Deite-se de costas com os joelhos dobrados e os pés no chão. 2. Cruze a perna direita sobre a perna esquerda, apoiando o tornozelo direito no joelho esquerdo. 3. Levante a perna esquerda em direção ao peito e segure por trás da coxa esquerda. 4. Mantenha a posição por 30 segundos a 1 minuto e depois troque de lado."
     },
     {
-        "image": "https://example.com/exercicio14.jpg",
+        "image": "",
         "name": "Postura do Herói (Virasana)",
         "type": "Alongamento",
         "difficulty": "Iniciante",
         "instructions": "1. Ajoelhe-se com os joelhos juntos e os pés afastados na largura dos quadris. 2. Sente-se entre os calcanhares, mantendo os dedos dos pés virados para trás. 3. Mantenha a coluna ereta e os ombros relaxados. 4. Mantenha a posição por 1 a 3 minutos, respirando profundamente."
     },
     {
-        "image": "https://example.com/exercicio15.jpg",
+        "image": "",
         "name": "Postura da Cobra (Bhujangasana)",
         "type": "Fortalecimento",
         "difficulty": "Iniciante",
         "instructions": "1. Deite-se de barriga para baixo com as mãos ao lado do peito, as palmas das mãos no chão e os cotovelos dobrados para trás. 2. Pressione as mãos no chão e levante o peito do chão, mantendo os quadris no chão. 3. Mantenha os ombros relaxados e estenda os braços. 4. Mantenha a posição por 20 a 30 segundos, respirando profundamente, e depois desça lentamente."
     },
     {
-        "image": "https://example.com/exercicio16.jpg",
+        "image": "",
         "name": "Postura do Triângulo Estendido (Utthita Trikonasana)",
         "type": "Alongamento",
         "difficulty": "Intermediário",
         "instructions": "1. Comece na posição de pé com os pés afastados. 2. Vire um pé para fora em um ângulo de 90 graus e mantenha o outro pé virado ligeiramente para dentro. 3. Estenda o tronco para o lado sobre a perna virada para fora, alcançando o chão ou a perna. 4. Mantenha a posição por 30 segundos a 1 minuto e depois repita do outro lado."
     },
     {
-        "image": "https://example.com/exercicio17.jpg",
+        "image": "",
         "name": "Postura do Gato Torcido (Parivrtta Marjaryasana)",
         "type": "Flexão",
         "difficulty": "Intermediário",
         "instructions": "1. Comece na posição de quatro apoios. 2. Inspire e arqueie a coluna, olhando para cima. 3. Expire e gire o tronco para um lado, levando o braço oposto para cima e olhando por baixo do braço elevado. 4. Mantenha a posição por 30 segundos a 1 minuto e depois repita do outro lado."
     },
     {
-        "image": "https://example.com/exercicio18.jpg",
+        "image": "",
         "name": "Postura da Montanha (Tadasana)",
         "type": "Equilíbrio",
         "difficulty": "Iniciante",
         "instructions": "1. Fique de pé com os pés juntos, os braços ao lado do corpo e os olhos voltados para frente. 2. Distribua o peso uniformemente pelos pés, mantendo os dedos dos pés relaxados. 3. Estique os braços para baixo com as palmas das mãos viradas para as coxas. 4. Mantenha a posição por 30 segundos a 1 minuto, respirando profundamente."
     },
     {
-        "image": "https://example.com/exercicio19.jpg",
+        "image": "",
         "name": "Postura da Criança Estendida (Utthita Balasana)",
         "type": "Relaxamento",
         "difficulty": "Iniciante",
         "instructions": "1. Sente-se sobre os calcanhares com os joelhos juntos ou afastados, conforme confortável. 2. Estenda os braços para a frente ou ao lado do corpo, com as palmas das mãos no chão. 3. Deixe a testa tocar o chão, se possível, e estenda os braços o máximo possível. 4. Mantenha a posição por 1 a 3 minutos, respirando profundamente."
     },
     {
-        "image": "https://example.com/exercicio20.jpg",
+        "image": "",
         "name": "Postura do Cão de Cabeça para Baixo (Adho Mukha Vrksasana)",
         "type": "Equilíbrio",
         "difficulty": "Avançado",
         "instructions": "1. Comece na postura de quatro apoios com as mãos e os joelhos no chão. 2. Coloque as mãos no chão à frente dos ombros, dedos dos pés dobrados para dentro. 3. Levante os quadris em direção ao teto, estendendo as pernas e pressionando os calcanhares em direção ao chão. 4. Mantenha a posição por 20 a 30 segundos, respirando profundamente, e depois desça lentamente."
     },
     {
-        "image": "https://example.com/exercicio21.jpg",
+        "image": "",
         "name": "Postura do Triângulo Invertido (Parivrtta Trikonasana)",
         "type": "Alongamento",
         "difficulty": "Intermediário",
         "instructions": "1. Comece na postura do triângulo, com os pés afastados e um pé virado para fora em um ângulo de 90 graus. 2. Gire o tronco em direção à perna da frente e estenda o braço do mesmo lado para baixo, colocando a mão no chão ou na perna. 3. Estenda o outro braço para cima, olhando para a mão. 4. Mantenha a posição por 30 segundos a 1 minuto e depois repita do outro lado."
     },
     {
-        "image": "https://example.com/exercicio22.jpg",
+        "image": "",
         "name": "Postura do Peixe (Matsyasana)",
         "type": "Flexão",
         "difficulty": "Intermediário",
         "instructions": "1. Sente-se com as pernas estendidas à sua frente. 2. Coloque as mãos sob os quadris, com as palmas das mãos no chão e os dedos voltados para os pés. 3. Arqueie as costas e incline a cabeça para trás, apoiando o peso do corpo nos cotovelos e antebraços. 4. Mantenha a posição por 30 segundos a 1 minuto, respirando profundamente."
     },
     {
-        "image": "https://example.com/exercicio23.jpg",
+        "image": "",
         "name": "Postura da Tartaruga Virada (Parivrtta Kurmasana)",
         "type": "Flexão",
         "difficulty": "Avançado",
         "instructions": "1. Sente-se com as pernas estendidas à sua frente. 2. Dobre uma perna e coloque o pé no lado externo do quadril oposto. 3. Dobre a outra perna e coloque o pé sobre o joelho da perna dobrada. 4. Gire o tronco em direção à perna dobrada e alcance a mão oposta até o pé dobrado. 5. Mantenha a posição por 30 segundos a 1 minuto e depois repita do outro lado."
     },
     {
-        "image": "https://example.com/exercicio24.jpg",
+        "image": "",
         "name": "Postura do Triângulo Estendido com Torção (Parivrtta Utthita Trikonasana)",
         "type": "Alongamento",
         "difficulty": "Avançado",
         "instructions": "1. Comece na postura do triângulo, com os pés afastados e um pé virado para fora em um ângulo de 90 graus. 2. Gire o tronco em direção à perna da frente e estenda o braço do mesmo lado para baixo, colocando a mão no chão ou na perna. 3. Estenda o outro braço para cima e, em seguida, gire o tronco para cima, estendendo o braço em direção ao teto. 4. Mantenha a posição por 30 segundos a 1 minuto e depois repita do outro lado."
     },
     {
-        "image": "https://example.com/exercicio25.jpg",
+        "image": "",
         "name": "Postura da Corça (Matsyendrasana)",
         "type": "Flexão",
         "difficulty": "Avançado",
         "instructions": "1. Sente-se com a perna direita estendida à frente e a perna esquerda dobrada, com o pé esquerdo apoiado no lado externo do joelho direito. 2. Coloque a mão esquerda no chão atrás de você e leve o braço direito ao redor da perna esquerda, segurando o pé esquerdo. 3. Gire o tronco em direção à perna esquerda e olhe sobre o ombro esquerdo. 4. Mantenha a posição por 30 segundos a 1 minuto e depois repita do outro lado."
     },
     {
-        "image": "https://example.com/exercicio26.jpg",
+        "image": "",
         "name": "Postura do Triângulo Estendido com Torção (Parivrtta Utthita Trikonasana)",
         "type": "Alongamento",
         "difficulty": "Avançado",
         "instructions": "1. Comece na postura do triângulo, com os pés afastados e um pé virado para fora em um ângulo de 90 graus. 2. Gire o tronco em direção à perna da frente e estenda o braço do mesmo lado para baixo, colocando a mão no chão ou na perna. 3. Estenda o outro braço para cima e, em seguida, gire o tronco para cima, estendendo o braço em direção ao teto. 4. Mantenha a posição por 30 segundos a 1 minuto e depois repita do outro lado."
     },
     {
-        "image": "https://example.com/exercicio27.jpg",
+        "image": "",
         "name": "Postura da Corça (Matsyendrasana)",
         "type": "Flexão",
         "difficulty": "Avançado",
         "instructions": "1. Sente-se com a perna direita estendida à frente e a perna esquerda dobrada, com o pé esquerdo apoiado no lado externo do joelho direito. 2. Coloque a mão esquerda no chão atrás de você e leve o braço direito ao redor da perna esquerda, segurando o pé esquerdo. 3. Gire o tronco em direção à perna esquerda e olhe sobre o ombro esquerdo. 4. Mantenha a posição por 30 segundos a 1 minuto e depois repita do outro lado."
     },
     {
-        "image": "https://example.com/exercicio28.jpg",
+        "image": "",
         "name": "Postura do Pombo Estendido (Eka Pada Rajakapotasana)",
         "type": "Flexão",
         "difficulty": "Avançado",
         "instructions": "1. Comece na postura do pombo, com uma perna dobrada à frente e a outra estendida para trás. 2. Estenda o tronco para a frente sobre a perna dobrada, mantendo as mãos no chão ou nos calcanhares. 3. Mantenha a coluna alongada e os quadris nivelados. 4. Mantenha a posição por 30 segundos a 1 minuto e depois repita do outro lado."
     },
     {
-        "image": "https://example.com/exercicio29.jpg",
+        "image": "",
         "name": "Postura do Cachorro Olhando para Baixo (Adho Mukha Svanasana)",
         "type": "Fortalecimento",
         "difficulty": "Iniciante",
         "instructions": "1. Comece na posição de quatro apoios. 2. Levante os quadris em direção ao teto, formando um triângulo com o corpo. 3. Estique os braços e as pernas, mantendo os calcanhares no chão. 4. Mantenha a posição por 30 segundos a 1 minuto."
     },
     {
-        "image": "https://example.com/exercicio30.jpg",
+        "image": "",
         "name": "Postura da Tábua (Phalakasana)",
         "type": "Fortalecimento",
         "difficulty": "Intermediário",
         "instructions": "1. Comece na posição de quatro apoios, com os pulsos alinhados com os ombros e os joelhos alinhados com os quadris. 2. Estenda as pernas para trás e levante o corpo, mantendo o tronco e as pernas alinhados. 3. Mantenha os ombros, quadris e calcanhares em linha reta. 4. Mantenha a posição por 30 segundos a 1 minuto, respirando profundamente."
     },
     {
-        "image": "https://example.com/exercicio31.jpg",
+        "image": "",
         "name": "Postura da Vaca (Bitilasana)",
         "type": "Flexão",
         "difficulty": "Iniciante",
         "instructions": "1. Comece na posição de quatro apoios. 2. Inspire e arqueie a coluna, levantando a cabeça e o quadril para olhar para cima (postura de vaca). 3. Expire e arredonde a coluna para cima, trazendo o queixo em direção ao peito (postura de gato). 4. Continue alternando entre as duas posturas durante 1 minuto."
     },
     {
-        "image": "https://example.com/exercicio32.jpg",
+        "image": "",
         "name": "Postura do Camelo (Ustrasana)",
         "type": "Flexão",
         "difficulty": "Intermediário",
         "instructions": "1. Ajoelhe-se com os joelhos afastados na largura dos quadris. 2. Coloque as mãos nos quadris e empurre os quadris para frente. 3. Arqueie a coluna para trás, levando as mãos para os calcanhares e mantendo os quadris empurrados para a frente. 4. Mantenha a posição por 30 segundos a 1 minuto, respirando profundamente."
     },
     {
-        "image": "https://example.com/exercicio33.jpg",
+        "image": "",
         "name": "Postura do Guerreiro IV (Virabhadrasana IV)",
         "type": "Equilíbrio",
         "difficulty": "Avançado",
         "instructions": "1. Comece na postura do guerreiro II. 2. Gire o tronco em direção à perna da frente, estendendo os braços para os lados e mantendo-os paralelos ao chão. 3. Levante a perna traseira do chão, mantendo-a paralela ao chão. 4. Mantenha a posição por 30 segundos a 1 minuto e depois repita do outro lado."
     },
     {
-        "image": "https://example.com/exercicio34.jpg",
+        "image": "",
         "name": "Postura do Triângulo com Torção (Parivrtta Trikonasana)",
         "type": "Alongamento",
         "difficulty": "Intermediário",
         "instructions": "1. Comece na postura do triângulo, com os pés afastados e um pé virado para fora em um ângulo de 90 graus. 2. Gire o tronco em direção à perna da frente e estenda o braço do mesmo lado para baixo, colocando a mão no chão ou na perna. 3. Estenda o outro braço para cima e, em seguida, gire o tronco para cima, estendendo o braço em direção ao teto. 4. Mantenha a posição por 30 segundos a 1 minuto e depois repita do outro lado."
     },
     {
-        "image": "https://example.com/exercicio35.jpg",
+        "image": "",
         "name": "Postura do Corvo (Bakasana)",
         "type": "Equilíbrio",
         "difficulty": "Avançado",
         "instructions": "1. Agache-se com os pés afastados na largura dos quadris e as mãos no chão à frente dos pés. 2. Dobre os cotovelos ligeiramente e coloque os joelhos nas axilas, apoiando-os na parte de trás dos braços. 3. Incline o peso para a frente e levante os pés do chão, equilibrando-se nos braços. 4. Mantenha a posição por 20 a 30 segundos, respirando profundamente, e depois desça lentamente."
     },
     {
-        "image": "https://example.com/exercicio36.jpg",
+        "image": "",
         "name": "Postura do Arado (Halasana)",
         "type": "Flexão",
         "difficulty": "Avançado",
         "instructions": "1. Deite-se de costas com as pernas estendidas e os braços ao lado do corpo, as palmas das mãos voltadas para baixo. 2. Levante as pernas em direção ao teto, mantendo os quadris no chão. 3. Dobre os quadris e leve as pernas atrás da cabeça, apoiando as mãos nas costas para dar suporte. 4. Mantenha a posição por 30 segundos a 1 minuto, respirando profundamente."
     },
     {
-        "image": "https://example.com/exercicio37.jpg",
+        "image": "",
         "name": "Postura do Pino (Sirsasana)",
         "type": "Equilíbrio",
         "difficulty": "Avançado",
         "instructions": "1. Ajoelhe-se e entrelace os dedos, formando um apoio para a cabeça com as mãos. 2. Coloque a parte superior da cabeça no chão, alinhando as mãos e os cotovelos. 3. Levante os quadris, dobrando os joelhos e levando os pés em direção ao corpo. 4. Levante os pés do chão e estenda as pernas para cima, mantendo o equilíbrio nos braços e na cabeça. 5. Mantenha a posição por 20 a 30 segundos, respirando profundamente, e depois desça lentamente."
     },
     {
-      "image": "https://example.com/exercicio38.jpg",
+      "image": "",
       "name": "Postura da Árvore (Vrksasana)",
       "type": "Equilíbrio",
       "difficulty": "Intermediário",
       "instructions": "1. Comece na posição de pé. 2. Levante um pé e coloque-o na parte interna da coxa ou da perna oposta. 3. Mantenha os braços esticados para cima ou junte as palmas das mãos na altura do peito. 4. Mantenha a posição por 30 segundos a 1 minuto e depois troque de lado."
     },
     {
-      "image": "https://example.com/exercicio39.jpg",
+      "image": "",
       "name": "Postura do Pássaro (Bakasana)",
       "type": "Força",
       "difficulty": "Avançado",
       "instructions": "1. Comece na posição de agachamento com os joelhos dobrados. 2. Coloque as mãos no chão à sua frente e afunde os ombros entre os joelhos. 3. Levante os calcanhares do chão e transfira o peso do corpo para os braços. 4. Lentamente, estenda as pernas e mantenha a posição por 20 a 30 segundos."
     },
     {
-      "image": "https://example.com/exercicio40.jpg",
+      "image": "",
       "name": "Postura do Pombo (Eka Pada Rajakapotasana)",
       "type": "Alongamento",
       "difficulty": "Avançado",
