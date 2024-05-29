@@ -22,16 +22,23 @@ import {
 import db from "../firebase";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { StatusBar } from "expo-status-bar";
+import { useNavigation } from '@react-navigation/native';
+
 
 export default function Login() {
   const [Senha, setSenha] = useState();
   const [email, setEmail] = useState();
   const [MostrarSenha, setMostrarSenha] = useState(true);
   const [SenhaHiddenImg, setSenhaHiddenImg] = useState();
+  const navigation = useNavigation();
 
   useEffect(() => {
     Start();
   }, []);
+
+  const navigatePage = (page) => {
+    navigation.navigate(page);
+  }
 
   const Start = async () => {
     setSenhaHiddenImg(
@@ -66,7 +73,7 @@ export default function Login() {
     if (Senha == data.senha) {
       const jsonValue = JSON.stringify(data);
       await AsyncStorage.setItem("sessao", jsonValue);
-      router.replace(`/`);
+      navigatePage("TelaInicial");
       return;
     } else {
       ToastAndroid.showWithGravity(
@@ -131,14 +138,12 @@ export default function Login() {
           {SenhaHiddenImg}
         </TouchableOpacity>
       </View>
-<Link href="login/cadastro" asChild>
-        <Pressable style={styles.botao_link} >
+        <Pressable onPress={() => navigatePage("cadastro")} style={styles.botao_link} >
           <Text style={styles.linkText}>Fazer Cadastro</Text>
         </Pressable>
-      </Link>
-      <Pressable style={styles.botao} onPress={FazerLogin}>
-  <Text style={styles.botao_text}>Fazer Login</Text>
-</Pressable>
+        <Pressable style={styles.botao} onPress={FazerLogin}>
+          <Text style={styles.botao_text}>Fazer Login</Text>
+        </Pressable>
     </View>
   );
 }

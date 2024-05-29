@@ -1,20 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { registerRootComponent } from 'expo';
 
-export default function App() {
+// Importe suas telas
+import Exercicio from './app/exercicios/calistenia/exercicio';
+import Exercicios from './app/exercicios/calistenia/calistenia';
+import Index from './app/index';
+import Perfil from './app/perfil/perfil-usuario';
+import TelaInicial from './app/home/tela-inicial';
+import Cadastro from './app/login/cadastro';
+import Login from './app/login/login';
+
+const Stack = createStackNavigator();
+registerRootComponent(App);
+
+function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='Index'>
+        <Stack.Screen name="Exercicio" component={Exercicio} />
+        <Stack.Screen name="Exercicios" component={Exercicios} />
+        <Stack.Screen name="Index" component={Index}/>
+        <Stack.Screen name="Perfil" component={Perfil}/>
+        <Stack.Screen name="TelaInicial" component={TelaInicial}/>
+        <Stack.Screen name="Cadastro" component={Cadastro}/>
+        <Stack.Screen name="Login" component={Login}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;

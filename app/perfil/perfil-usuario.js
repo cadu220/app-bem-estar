@@ -25,6 +25,7 @@ import React, { useState, useEffect } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Footer from "../footer/footer";
 import DateTimePicker from "@react-native-community/datetimepicker";
+
 export default function Perfil() {
   const [Nome, setNome] = useState();
   const [genero, setGenero] = useState();

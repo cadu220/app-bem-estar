@@ -3,15 +3,17 @@ import {  View, Text, TextInput, Alert, Button, Image, StyleSheet, ScrollView } 
 import db from '../firebase';
 import { collection, addDoc } from "firebase/firestore";
 import { router  } from 'expo-router';
-
-
+import { useNavigation } from '@react-navigation/native';
 
 const Cadastro = () => {
   const [nome, setNome] = useState('');
   const [senha, setSenha] = useState('');
   const [email, setEmail] = useState('');
+  const navigation = useNavigation();
  
-
+  const navigatePage = (page) => {
+    navigation.navigate(page);
+  }
 
   const handleCadastro = async () => {
    
@@ -22,8 +24,7 @@ const Cadastro = () => {
         })
 
         Alert.alert('Usuário cadastrado!');
-        router.replace('/');
-
+        navigatePage("TelaInicial")
       }
 
   return (
@@ -51,13 +52,9 @@ const Cadastro = () => {
           style={styles.input}
           placeholder="Email"
           maxLength={25}
-          secureTextEntry
           value={email}
           onChangeText={(text) => setEmail(text)}
         />
-
-        
-
         <Button title="Cadastrar" onPress={() => handleCadastro()} />
       </ScrollView>
     </View>

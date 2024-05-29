@@ -6,13 +6,19 @@ import { StatusBar } from "expo-status-bar";
 import db from './firebase';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Footer from "./footer/footer";
+import { useNavigation } from '@react-navigation/native';
 
 export default function Index() {
+  const navigation = useNavigation();
   useEffect(() => {
   
     Start()
 
 }, []);
+
+  const navigatePage = (page) => {
+    navigation.navigate(page);
+  }
 
   const Start = async() =>{
     let sessao = await GetSessao()
@@ -62,17 +68,13 @@ export default function Index() {
     <View style={styles.container}>
       <StatusBar backgroundColor="#151718" style="light" />
 
-      <Link href="login/cadastro" asChild>
-        <Pressable style={styles.botao_link}>
+        <Pressable onPress={() => navigatePage("Cadastro")} style={styles.botao_link}>
           <Text style={styles.botao_text}>Fazer Cadastro</Text>
         </Pressable>
-      </Link>
 
-      <Link href="login/login" asChild>
-        <Pressable style={styles.botao_link}>
+        <Pressable onPress={() => navigatePage("Login")} style={styles.botao_link}>
           <Text style={styles.botao_text}>Fazer Login</Text>
         </Pressable>
-      </Link>
     </View>
   )
 
@@ -97,7 +99,4 @@ const styles = StyleSheet.create({
     fontSize: 25,
     padding: 10
   }
-
-
-
-})
+});

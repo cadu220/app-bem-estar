@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import exerciseData from './calistenia.json';
 import { useNavigation } from '@react-navigation/native';
 
-export default function Exercicios() {
+const Exercicios = () => {
     const [muscleGroup, setMuscleGroup] = useState(null);
     const [exercises, setExercises] = useState([]);
     const [ showExercises, setShowExercises ] = useState(false);
@@ -23,7 +23,8 @@ export default function Exercicios() {
     };
 
     const startExercise = () => {
-        navigation.navigate('exercicio');
+        console.log(muscleGroup);
+        navigation.navigate('Exercicio', {exercises: exercises});
     };
     
     return (
@@ -117,3 +118,5 @@ const styles = StyleSheet.create({
         backgroundColor: "#75D67F",
     },  
 });
+
+export default Exercicios;
