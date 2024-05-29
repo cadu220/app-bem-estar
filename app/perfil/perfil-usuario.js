@@ -17,7 +17,6 @@ import {
   updateDoc,
   doc,
   where,
-  getCountFromServer,
 } from "firebase/firestore";
 import { Link, router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
@@ -25,21 +24,23 @@ import React, { useState, useEffect } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Footer from "../footer/footer";
 import DateTimePicker from "@react-native-community/datetimepicker";
-export default function Perfil() {
-  const [Nome, setNome] = useState();
-  const [genero, setGenero] = useState();
-  const [idade, setIdade] = useState();
-  const [apelido, setApelido] = useState();
-  const [estilo, setEstilo] = useState();
-  const [email, setEmail] = useState();
-  const [modalVisible, setModalVisible] = useState(false);
-  const [novaDataNascimento, setnovaDataNascimento] = useState(new Date());
 
+export default function Perfil() {
+  const [Nome, setNome] = useState("");
+  const [genero, setGenero] = useState("");
+  const [idade, setIdade] = useState("");
+  const [apelido, setApelido] = useState("");
+  const [estilo, setEstilo] = useState("");
+  const [email, setEmail] = useState("");
+  const [modalVisible, setModalVisible] = useState(false);
+  const [modalAlterarInfos, setModalAlterarInfos] = useState(false);
+  const [novaDataNascimento, setnovaDataNascimento] = useState(new Date());
   const [VisibleDesconectar, setVisibleDesconectar] = useState(false);
 
   useEffect(() => {
     Start();
   }, []);
+
   const Start = async () => {
     let sessao = await GetSessao();
     setNome(sessao.nome);
@@ -52,22 +53,26 @@ export default function Perfil() {
     console.log(idadeUser);
 
     setIdade(idadeUser);
-
-    // setIdade(sessao.idade);
     setApelido(sessao.apelido);
     setEmail(sessao.email);
     setEstilo(sessao.estilo);
   };
+
   const handleImageClick = () => {
     setModalVisible(true);
+  };
+
+  const alterarInfos = () => {
+    setModalAlterarInfos(true);
   };
 
   const GetSessao = async () => {
     try {
       const jsonValue = await AsyncStorage.getItem("sessao");
-
       return jsonValue != null ? JSON.parse(jsonValue) : null;
-    } catch (e) {}
+    } catch (e) {
+      console.error("Erro ao obter sessão:", e);
+    }
   };
 
   const Desconectar = async () => {
@@ -80,31 +85,65 @@ export default function Perfil() {
       const q = query(collection(db, "usuario"), where("email", "==", email));
       const querySnapshot = await getDocs(q);
 
-      const usuarioDoc = querySnapshot.docs[0];
-      const usuarioId = usuarioDoc.id;
+      if (!querySnapshot.empty) {
+        const usuarioDoc = querySnapshot.docs[0];
+        const usuarioId = usuarioDoc.id;
+        const usuarioRef = doc(db, "usuario", usuarioId);
 
-      const usuarioRef = doc(db, "usuario", usuarioId);
-      await updateDoc(usuarioRef, {
-        idade: novaDataNascimento,
-      });
+        await updateDoc(usuarioRef, {
+          datanascimento: novaDataNascimento,
+        });
 
-      const sessao = await GetSessao();
-      if (sessao) {
-        sessao.datanascimento = novaDataNascimento;
-        await AsyncStorage.setItem("sessao", JSON.stringify(sessao));
+        const sessao = await GetSessao();
+        if (sessao) {
+          sessao.datanascimento = novaDataNascimento;
+          await AsyncStorage.setItem("sessao", JSON.stringify(sessao));
+        }
+
+        const dataNascimento = new Date(sessao.datanascimento);
+        const dataAtual = new Date();
+        const diff = dataAtual.getTime() - dataNascimento.getTime();
+        const idadeUser = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+        setIdade(idadeUser);
+
+        setModalVisible(false);
       }
-      const dataNascimento = new Date(sessao.datanascimento);
-      const dataAtual = new Date();
-
-      const diff = dataAtual.getTime() - dataNascimento.getTime();
-      const idadeUser = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
-      setIdade(idadeUser);
-
-      setModalVisible(false);
     } catch (error) {
       console.error("Erro ao atualizar usuário:", error);
     }
   };
+
+  const handleSaveNome = async () => {
+    try {
+      const q = query(collection(db, "usuario"), where("email", "==", email));
+      const querySnapshot = await getDocs(q);
+
+      if (!querySnapshot.empty) {
+        const usuarioDoc = querySnapshot.docs[0];
+        const usuarioId = usuarioDoc.id;
+        const usuarioRef = doc(db, "usuario", usuarioId);
+
+        await updateDoc(usuarioRef, {
+          nome: Nome,
+          email: email,
+          estilo: estilo,
+        });
+
+        const sessao = await GetSessao();
+        if (sessao) {
+          sessao.nome = Nome;
+          sessao.estilo = estilo;
+          sessao.email = email;
+          await AsyncStorage.setItem("sessao", JSON.stringify(sessao));
+        }
+
+        setModalAlterarInfos(false);
+      }
+    } catch (error) {
+      console.error("Erro ao atualizar nome do usuário:", error);
+    }
+  };
+
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="#151718" style="light" />
@@ -117,7 +156,7 @@ export default function Perfil() {
             source={require("./imgs/profilePicture.png")}
           />
           <Text style={styles.info_text}>Nome do Usuário: {Nome}</Text>
-          <Text style={styles.info_text}>Gênero:{genero}</Text>
+          <Text style={styles.info_text}>Gênero: {genero}</Text>
           <Text style={styles.info_text}>Idade: {idade}</Text>
         </View>
         <View style={styles.config}>
@@ -134,8 +173,8 @@ export default function Perfil() {
             animationType="slide"
             transparent={true}
           >
-            <View >
-              <View >
+            <View style={styles.modalContainer}>
+              <View style={styles.modalContent}>
                 <DateTimePicker
                   value={novaDataNascimento}
                   mode="date"
@@ -145,23 +184,75 @@ export default function Perfil() {
                     handleSave();
                   }}
                 />
+                <Button
+                  title="Cancelar"
+                  onPress={() => setModalVisible(false)}
+                />
               </View>
             </View>
           </Modal>
           <View style={styles.line}>
-            <Image source={require("./imgs/editButton.png")} />
+            <Image
+              source={require("./imgs/editButton.png")}
+              onTouchEnd={alterarInfos}
+            />
             <Text style={styles.info_text}>Nome: {Nome}</Text>
           </View>
+          <Modal
+            visible={modalAlterarInfos}
+            transparent={true}
+            animationType="slide"
+          >
+            <View style={styles.modalContainer}>
+              <View style={styles.modalContent}>
+                <Text style={styles.modalTitle}>Alterar Nome</Text>
+                <TextInput
+                  style={styles.input}
+                  placeholder="Nome"
+                  value={Nome}
+                  onChangeText={(text) => setNome(text)}
+                />
+                <TextInput
+                  style={styles.input}
+                  placeholder="email"
+                  value={email}
+                  onChangeText={(text) => setEmail(text)}
+                />
+                <TextInput
+                  style={styles.input}
+                  placeholder="Estilo"
+                  value={estilo}
+                  onChangeText={(text) => setEstilo(text)}
+                />
+                <View style={styles.buttonContainer}>
+                  <Button title="Salvar" onPress={handleSaveNome} />
+                  <Button
+                    title="Cancelar"
+                    onPress={() => setModalAlterarInfos(false)}
+                  />
+                </View>
+              </View>
+            </View>
+          </Modal>
           <View style={styles.line}>
-            <Image source={require("./imgs/editButton.png")} />
+            <Image
+              source={require("./imgs/editButton.png")}
+              onTouchEnd={alterarInfos}
+            />
             <Text style={styles.info_text}>Apelido: {apelido}</Text>
           </View>
           <View style={styles.line}>
-            <Image source={require("./imgs/editButton.png")} />
+            <Image
+              source={require("./imgs/editButton.png")}
+              onTouchEnd={alterarInfos}
+            />
             <Text style={styles.info_text}>Email: {email}</Text>
           </View>
           <View style={styles.line}>
-            <Image source={require("./imgs/editButton.png")} />
+            <Image
+              source={require("./imgs/editButton.png")}
+              onTouchEnd={alterarInfos}
+            />
             <Text style={styles.info_text}>Estilo Principal: {estilo}</Text>
           </View>
           <View style={styles.buttonContainer}>
@@ -219,6 +310,7 @@ export default function Perfil() {
     </View>
   );
 }
+
 const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
@@ -248,6 +340,13 @@ const styles = StyleSheet.create({
     borderRadius: 30,
     justifyContent: "center",
     alignItems: "center",
+  },
+  input: {
+    height: 40,
+    borderColor: "gray",
+    borderWidth: 1,
+    marginBottom: 16,
+    paddingLeft: 8,
   },
   title: {
     color: "white",
@@ -373,5 +472,10 @@ const styles = StyleSheet.create({
     borderColor: "black",
     borderRadius: 12,
     borderWidth: 1,
+  },
+  modalTitle: {
+    fontSize: 20,
+    marginBottom: 10,
+    textAlign: "center",
   },
 });
