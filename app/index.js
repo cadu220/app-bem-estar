@@ -73,8 +73,6 @@ export default function Index() {
           <Text style={styles.botao_text}>Fazer Login</Text>
         </Pressable>
       </Link>
-
-      <Footer/>
     </View>
   )
 

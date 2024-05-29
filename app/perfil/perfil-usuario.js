@@ -6,15 +6,35 @@ import {
   Modal,
   Image,
   TouchableOpacity,
+  TextInput,
+  Button,
 } from "react-native";
+import db from "../firebase";
+import {
+  collection,
+  getDocs,
+  query,
+  updateDoc,
+  doc,
+  where,
+  getCountFromServer,
+} from "firebase/firestore";
 import { Link, router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import React, { useState, useEffect } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Footer from "../footer/footer";
-
+import DateTimePicker from "@react-native-community/datetimepicker";
 export default function Perfil() {
   const [Nome, setNome] = useState();
+  const [genero, setGenero] = useState();
+  const [idade, setIdade] = useState();
+  const [apelido, setApelido] = useState();
+  const [estilo, setEstilo] = useState();
+  const [email, setEmail] = useState();
+  const [modalVisible, setModalVisible] = useState(false);
+  const [novaDataNascimento, setnovaDataNascimento] = useState(new Date());
+
   const [VisibleDesconectar, setVisibleDesconectar] = useState(false);
 
   useEffect(() => {
@@ -23,6 +43,23 @@ export default function Perfil() {
   const Start = async () => {
     let sessao = await GetSessao();
     setNome(sessao.nome);
+    setGenero(sessao.genero);
+    const dataNascimento = new Date(sessao.datanascimento);
+    const dataAtual = new Date();
+
+    const diff = dataAtual.getTime() - dataNascimento.getTime();
+    const idadeUser = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+    console.log(idadeUser);
+
+    setIdade(idadeUser);
+
+    // setIdade(sessao.idade);
+    setApelido(sessao.apelido);
+    setEmail(sessao.email);
+    setEstilo(sessao.estilo);
+  };
+  const handleImageClick = () => {
+    setModalVisible(true);
   };
 
   const GetSessao = async () => {
@@ -37,6 +74,37 @@ export default function Perfil() {
     await AsyncStorage.removeItem("sessao");
     router.replace(`/`);
   };
+
+  const handleSave = async () => {
+    try {
+      const q = query(collection(db, "usuario"), where("email", "==", email));
+      const querySnapshot = await getDocs(q);
+
+      const usuarioDoc = querySnapshot.docs[0];
+      const usuarioId = usuarioDoc.id;
+
+      const usuarioRef = doc(db, "usuario", usuarioId);
+      await updateDoc(usuarioRef, {
+        idade: novaDataNascimento,
+      });
+
+      const sessao = await GetSessao();
+      if (sessao) {
+        sessao.datanascimento = novaDataNascimento;
+        await AsyncStorage.setItem("sessao", JSON.stringify(sessao));
+      }
+      const dataNascimento = new Date(sessao.datanascimento);
+      const dataAtual = new Date();
+
+      const diff = dataAtual.getTime() - dataNascimento.getTime();
+      const idadeUser = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+      setIdade(idadeUser);
+
+      setModalVisible(false);
+    } catch (error) {
+      console.error("Erro ao atualizar usuário:", error);
+    }
+  };
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="#151718" style="light" />
@@ -48,33 +116,53 @@ export default function Perfil() {
             style={styles.profile_picture}
             source={require("./imgs/profilePicture.png")}
           />
-          <Text style={styles.info_text}>
-            Nome do Usuário: {Nome}
-          </Text>
-          <Text style={styles.info_text}>Gênero: "Gênero do usuário"</Text>
-          <Text style={styles.info_text}>Idade: "Idade do usuário</Text>
+          <Text style={styles.info_text}>Nome do Usuário: {Nome}</Text>
+          <Text style={styles.info_text}>Gênero:{genero}</Text>
+          <Text style={styles.info_text}>Idade: {idade}</Text>
         </View>
         <View style={styles.config}>
           <Text style={styles.h3}>Configurações</Text>
           <View style={styles.line}>
+            <Image
+              source={require("./imgs/editButton.png")}
+              onTouchEnd={handleImageClick}
+            />
+            <Text style={styles.info_text}>Idade: {idade}</Text>
+          </View>
+          <Modal
+            visible={modalVisible}
+            animationType="slide"
+            transparent={true}
+          >
+            <View >
+              <View >
+                <DateTimePicker
+                  value={novaDataNascimento}
+                  mode="date"
+                  display="spinner"
+                  onChange={(event, date) => {
+                    setnovaDataNascimento(date);
+                    handleSave();
+                  }}
+                />
+              </View>
+            </View>
+          </Modal>
+          <View style={styles.line}>
             <Image source={require("./imgs/editButton.png")} />
-            <Text style={styles.info_text}>Idade: "Idade do usuário"</Text>
+            <Text style={styles.info_text}>Nome: {Nome}</Text>
           </View>
           <View style={styles.line}>
             <Image source={require("./imgs/editButton.png")} />
-            <Text style={styles.info_text}>Nome: "Nome do usuário"</Text>
+            <Text style={styles.info_text}>Apelido: {apelido}</Text>
           </View>
           <View style={styles.line}>
             <Image source={require("./imgs/editButton.png")} />
-            <Text style={styles.info_text}>Apelido: "Apelido do usuário"</Text>
+            <Text style={styles.info_text}>Email: {email}</Text>
           </View>
           <View style={styles.line}>
             <Image source={require("./imgs/editButton.png")} />
-            <Text style={styles.info_text}>Email: "Email do usuário"</Text>
-          </View>
-          <View style={styles.line}>
-            <Image source={require("./imgs/editButton.png")} />
-            <Text style={styles.info_text}>Estilo Principal: "Yoga"</Text>
+            <Text style={styles.info_text}>Estilo Principal: {estilo}</Text>
           </View>
           <View style={styles.buttonContainer}>
             <Pressable style={styles.botao_report}>
@@ -90,35 +178,34 @@ export default function Perfil() {
             </TouchableOpacity>
           </View>
           <Modal
-    animationType="slide"
-    transparent={true}
-    visible={VisibleDesconectar}
-    onRequestClose={() => setVisibleDesconectar(!VisibleDesconectar)}
->
-    <View style={styles.modalContainer}>
-        <View style={styles.modalContent}>
-            <Text style={styles.texto_sair}>Certeza que deseja sair?</Text>
-            <View style={styles.buttonContainer}>
-                <TouchableOpacity
+            animationType="slide"
+            transparent={true}
+            visible={VisibleDesconectar}
+            onRequestClose={() => setVisibleDesconectar(!VisibleDesconectar)}
+          >
+            <View style={styles.modalContainer}>
+              <View style={styles.modalContent}>
+                <Text style={styles.texto_sair}>Certeza que deseja sair?</Text>
+                <View style={styles.buttonContainer}>
+                  <TouchableOpacity
                     style={[styles.button, styles.cancelarButton]}
                     onPress={() => setVisibleDesconectar(!VisibleDesconectar)}
-                >
+                  >
                     <Text style={styles.buttonText}>Cancelar</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
+                  </TouchableOpacity>
+                  <TouchableOpacity
                     style={[styles.button, styles.desconectarButton]}
                     onPress={() => {
-                        setVisibleDesconectar(!VisibleDesconectar);
-                        Desconectar();
+                      setVisibleDesconectar(!VisibleDesconectar);
+                      Desconectar();
                     }}
-                >
+                  >
                     <Text style={styles.buttonText}>Desconectar</Text>
-                </TouchableOpacity>
+                  </TouchableOpacity>
+                </View>
+              </View>
             </View>
-        </View>
-    </View>
-</Modal>
-
+          </Modal>
         </View>
       </View>
       <View>
@@ -184,7 +271,7 @@ const styles = StyleSheet.create({
   profile_info: {
     border: 1,
     borderColor: "black",
-    height: 200,
+    height: 220,
     width: 340,
     marginTop: 30,
     marginBottom: 10,
@@ -247,45 +334,44 @@ const styles = StyleSheet.create({
   },
   modalContainer: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center', // Colocando o modal no final da tela
-    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Fundo escuro para destacar o modal,
-},
-modalContent: {
-    backgroundColor: '#fff',
+    alignItems: "center",
+    justifyContent: "center", // Colocando o modal no final da tela
+    backgroundColor: "rgba(0, 0, 0, 0.5)", // Fundo escuro para destacar o modal,
+  },
+  modalContent: {
+    backgroundColor: "#fff",
     borderRadius: 20,
-    width: "85%", 
+    width: "85%",
     padding: 20,
-},
-texto_sair: {
+  },
+  texto_sair: {
     fontSize: 20,
     marginBottom: 20,
-    textAlign: 'center',
-},
-buttonContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-},
-button: {
+    textAlign: "center",
+  },
+  buttonContainer: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+  },
+  button: {
     padding: 10,
     borderRadius: 5,
-    width: '40%', // Definindo a largura dos botões
-},
-buttonText: {
+    width: "40%", // Definindo a largura dos botões
+  },
+  buttonText: {
     fontSize: 18,
-    textAlign: 'center',
-},
-cancelarButton: {
-    backgroundColor: '#fff', // Cor de fundo para o botão Cancelar
+    textAlign: "center",
+  },
+  cancelarButton: {
+    backgroundColor: "#fff", // Cor de fundo para o botão Cancelar
     borderColor: "black",
-    borderRadius:12,
+    borderRadius: 12,
     borderWidth: 1,
-
-},
-desconectarButton: {
-    backgroundColor: 'red', // Cor de fundo para o botão Desconectar
+  },
+  desconectarButton: {
+    backgroundColor: "red", // Cor de fundo para o botão Desconectar
     borderColor: "black",
-    borderRadius:12,
+    borderRadius: 12,
     borderWidth: 1,
-},
+  },
 });
