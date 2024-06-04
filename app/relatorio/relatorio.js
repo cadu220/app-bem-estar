@@ -13,7 +13,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import Footer from "../footer/footer";
 const image = require("./imgs/healthy-fitness-concept-fulllength-portrait-beautiful-american-african-lady-grey-fitness.jpg");
 
-export default function Perfil() {
+export default function Relatorio() {
   //   const [Nome, setNome] = useState();
 
   //   useEffect(() => {

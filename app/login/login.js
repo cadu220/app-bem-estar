@@ -69,6 +69,7 @@ export default function Login() {
       );
     }
   };
+  
   const SalvarInfoLogin = async (data) => {
     if (Senha == data.senha) {
       const jsonValue = JSON.stringify(data);

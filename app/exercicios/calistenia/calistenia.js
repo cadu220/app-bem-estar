@@ -92,6 +92,7 @@ const styles = StyleSheet.create({
     },
     title: {
         padding: 10,
+        marginTop: 60,
         margin: 20,
         borderWidth: 1,
         borderRadius: 40,

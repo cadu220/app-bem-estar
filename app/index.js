@@ -1,35 +1,39 @@
 import { StyleSheet, Pressable, View, Text } from "react-native";
 import { Link, router } from "expo-router";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { collection, getDocs, query, where, getCountFromServer } from "firebase/firestore";
 import { StatusBar } from "expo-status-bar";
 import db from './firebase';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Footer from "./footer/footer";
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useFocusEffect } from '@react-navigation/native';
 
 export default function Index() {
   const navigation = useNavigation();
-  useEffect(() => {
-  
-    Start()
 
-}, []);
+  useFocusEffect(
+    useCallback(() => {
+      Start();
+    }, [])
+  );
 
   const navigatePage = (page) => {
-    navigation.navigate(page);
+    navigation.reset({
+      index: 0,
+      routes: [{ name: page }],
+    });
   }
 
   const Start = async() =>{
     let sessao = await GetSessao()
     
-    if(sessao==null || sessao==""){
-      // router.replace(`/`);
+    if(!sessao){
+      navigatePage("Index");
       return
     }
 
-    console.log(sessao)
-    if(sessao!=null || sessao != ""){
+    console.log(sessao);
+    if(sessao != null || sessao != ""){
     let query_validar_email = query(collection(db, "usuario"), where("email", "==", sessao.email));
     let querySnapshot = await getCountFromServer(query_validar_email);
         if (querySnapshot.data().count >= 1) {
@@ -39,17 +43,17 @@ export default function Index() {
                 ValidaLogin(doc.data(),sessao)
             });
         }else{
-          router.replace(`/`);
-          return
+          navigatePage("Index");
+          return;
         }
   }}
 
   const ValidaLogin = async(data,sessao) =>{
     if(data.email == sessao.email && data.senha == sessao.senha){
-      router.replace(`/home/tela-inicial`);
+      navigatePage("TelaInicial");
     }else{
-      router.replace(`/`);
-      return
+      navigatePage("Index");
+      return;
     }
   }
 
@@ -59,8 +63,8 @@ export default function Index() {
       
       return jsonValue != null ? JSON.parse(jsonValue) : null;
       
-    }catch(e){
-
+    }catch(error){
+      console.log("Erro: " + error);
     }
 
   }

@@ -19,12 +19,12 @@ import {
   where,
   getCountFromServer,
 } from "firebase/firestore";
-import { Link, router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import React, { useState, useEffect } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Footer from "../footer/footer";
 import DateTimePicker from "@react-native-community/datetimepicker";
+import { useNavigation } from '@react-navigation/native';
 
 export default function Perfil() {
   const [Nome, setNome] = useState();
@@ -35,8 +35,12 @@ export default function Perfil() {
   const [email, setEmail] = useState();
   const [modalVisible, setModalVisible] = useState(false);
   const [novaDataNascimento, setnovaDataNascimento] = useState(new Date());
-
   const [VisibleDesconectar, setVisibleDesconectar] = useState(false);
+  const navigation = useNavigation();
+
+  const navigatePage = (page) => {
+    navigation.navigate(page);
+  }
 
   useEffect(() => {
     Start();
@@ -73,7 +77,7 @@ export default function Perfil() {
 
   const Desconectar = async () => {
     await AsyncStorage.removeItem("sessao");
-    router.replace(`/`);
+    navigatePage("Index");
   };
 
   const handleSave = async () => {
@@ -210,11 +214,9 @@ export default function Perfil() {
         </View>
       </View>
       <View>
-        <Link href="amigos/tela-amigos" asChild>
-          <Pressable>
+          {/* <Pressable onPress={() => navigatePage("Amigos")}>
             <Text style={styles.title}>Amigos</Text>
-          </Pressable>
-        </Link>
+          </Pressable> */}
       </View>
       <Footer />
     </View>
