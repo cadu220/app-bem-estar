@@ -11,6 +11,7 @@ import Perfil from './app/perfil/perfil-usuario';
 import TelaInicial from './app/home/tela-inicial';
 import Cadastro from './app/login/cadastro';
 import Login from './app/login/login';
+import Logar from './app/tela_inicial';
 import Relatorio from './app/relatorio/relatorio';
 
 const Stack = createStackNavigator();
@@ -20,6 +21,7 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Index' screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="Logar" component={Logar} />
         <Stack.Screen name="Exercicio" component={Exercicio} />
         <Stack.Screen name="Exercicios" component={Exercicios}/>
         <Stack.Screen name="Index" component={Index}/>

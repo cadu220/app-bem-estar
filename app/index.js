@@ -1,4 +1,4 @@
-import { StyleSheet, Pressable, View, Text } from "react-native";
+import { StyleSheet, Pressable, View, Text, ActivityIndicator } from "react-native";
 import { Link, router } from "expo-router";
 import { useState, useEffect, useCallback } from 'react';
 import { collection, getDocs, query, where, getCountFromServer } from "firebase/firestore";
@@ -28,7 +28,7 @@ export default function Index() {
     let sessao = await GetSessao()
     
     if(!sessao){
-      navigatePage("Index");
+      navigatePage("Logar");
       return
     }
 
@@ -43,7 +43,7 @@ export default function Index() {
                 ValidaLogin(doc.data(),sessao)
             });
         }else{
-          navigatePage("Index");
+          navigatePage("Logar");
           return;
         }
   }}
@@ -52,7 +52,7 @@ export default function Index() {
     if(data.email == sessao.email && data.senha == sessao.senha){
       navigatePage("TelaInicial");
     }else{
-      navigatePage("Index");
+      navigatePage("Logar");
       return;
     }
   }
@@ -69,16 +69,18 @@ export default function Index() {
 
   }
   return (
-    <View style={styles.container}>
-      <StatusBar backgroundColor="#151718" style="light" />
+    <View style={{
+      width: "100%",
+      height: "100%",
+      flex: 1,
+      alignSelf: "center",
+      justifyContent: "center",
+      backgroundColor: "#fff",
 
-        <Pressable onPress={() => navigatePage("Cadastro")} style={styles.botao_link}>
-          <Text style={styles.botao_text}>Fazer Cadastro</Text>
-        </Pressable>
+    }}>
+      <StatusBar backgroundColor="#fff" style="light" />
 
-        <Pressable onPress={() => navigatePage("Login")} style={styles.botao_link}>
-          <Text style={styles.botao_text}>Fazer Login</Text>
-        </Pressable>
+      <ActivityIndicator style={{}} size="large" color="gray" />
     </View>
   )
 
