@@ -19,17 +19,17 @@ export default function TelaInicial() {
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="#ffffff" style="dark" />
-        <Pressable onPress={() => navigatePage("")} style={styles.button} android_ripple={{ color: '#fff' }}>
+        <Pressable onPress={() => navigatePage("Meditacao")} style={styles.button} android_ripple={{ color: '#fff' }}>
           <Image source={imageMeditacao} style={styles.buttonBackgroundImage} />
           <Text style={styles.buttonText}>MEDITAÇÃO</Text>
         </Pressable>
 
-        <Pressable onPress={() => navigatePage("Exercicios")} style={styles.button} android_ripple={{ color: '#fff' }}>
+        <Pressable onPress={() => navigatePage("Calistenia")} style={styles.button} android_ripple={{ color: '#fff' }}>
           <Image source={imageCalistenia} style={styles.buttonBackgroundImage} />
           <Text style={styles.buttonText}>CALISTENIA</Text>
         </Pressable>
 
-        <Pressable onPress={() => navigatePage("")} style={styles.button} android_ripple={{ color: '#fff' }}>
+        <Pressable onPress={() => navigatePage("Ioga")} style={styles.button} android_ripple={{ color: '#fff' }}>
           <Image source={imageIoga} style={styles.buttonBackgroundImage} />
           <Text style={styles.buttonText}>IOGA</Text>
         </Pressable>

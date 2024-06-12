@@ -1,10 +1,13 @@
-import { View, StyleSheet, Text, TouchableOpacity, ScrollView } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity, ScrollView, Image } from 'react-native';
 import { useState, useEffect } from 'react';
-import exerciseData from './ioga.json'; 
+import exerciseData from './ioga.json';
+import { useNavigation } from '@react-navigation/native'; 
 
 export default function Ioga() {
     const [typeGroup, setTypeGroup] = useState(null);
     const [exercises, setExercises] = useState([]);
+    const [ showExercises, setShowExercises ] = useState(false);
+    const navigation = useNavigation();
     
     useEffect(() => {
         if (typeGroup) {
@@ -16,33 +19,52 @@ export default function Ioga() {
     
     const handleTypeSelect = (muscle) => {
         setTypeGroup(muscle);
+        setShowExercises(true);
+    };
+
+    const startExercise = () => {
+        console.log(typeGroup);
+        navigation.navigate('ExercicioIoga', {exercises: exercises});
     };
     
     return (
         <View>
             <ScrollView>
-            <Text>Selecione um grupo de exercícios:</Text>
-            <TouchableOpacity onPress={() => handleTypeSelect('Alongamento')} style={styles.title}>
-                <Text>Alongamento</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleTypeSelect('Fortalecimento')} style={styles.title}>
-                <Text>Fortalecimento</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleTypeSelect('Equilíbrio')} style={styles.title}>
-                <Text>Equilíbrio</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleTypeSelect('Flexão')} style={styles.title}>
-                <Text>Flexão</Text>
-            </TouchableOpacity>
-            <Text>Exercícios:</Text>
-            {/*<Image source={{ uri: exercise.image}} style={{ width: 300, height: 200 }}/>*/
-            exercises.map((exercise, index) => (
-                <View key={index} style={styles.exercise}>
-
-                    <Text>{exercise.name}</Text>
-                    <Text>{exercise.instructions}</Text>
+                { !showExercises ? (
+                <View>
+                    <View style={styles.title}>
+                        <Text style={styles.h1}>Selecione um grupo de exercícios:</Text>
+                    </View>
+                    <TouchableOpacity onPress={() => handleTypeSelect('Alongamento')} style={styles.exercise}>
+                        <Text style={styles.title_text}>Alongamento</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => handleTypeSelect('Fortalecimento')} style={styles.exercise}>
+                        <Text style={styles.title_text}>Fortalecimento</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => handleTypeSelect('Equilíbrio')} style={styles.exercise}>
+                        <Text style={styles.title_text}>Equilíbrio</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => handleTypeSelect('Flexão')} style={styles.exercise}>
+                        <Text style={styles.title_text}>Flexão</Text>
+                    </TouchableOpacity>
                 </View>
-            ))}
+            ) : (
+                <View>
+                <TouchableOpacity onPress={() => setShowExercises(false)} style={styles.title}>
+                    <Text style={styles.title_text}>VOLTAR</Text>
+                </TouchableOpacity>
+                {
+                exercises.map((exercise, index) => (
+                    <View key={index} style={styles.exercise}>
+                        <Text style={styles.title_text}>{exercise.name}</Text>
+                    </View>
+                ))}
+                    <TouchableOpacity onPress={startExercise} style={styles.title}>
+                        <Text style={styles.h1}>Começar</Text>
+                    </TouchableOpacity>
+                </View>
+            )
+        }
             </ScrollView>
         </View>
     );
@@ -57,28 +79,28 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     title: {
-        color: "white",
-        textAlign: "center",
-        color: "white",
-        paddingLeft: 20,
-        paddingRight: 20,
-        fontSize: 30,
         padding: 10,
-        marginTop: 50,
-        marginBottom: 30,
+        marginTop: 60,
+        margin: 20,
         borderWidth: 1,
         borderRadius: 40,
         borderColor: "#75D67F",
         backgroundColor: "#75D67F",
     },
-    exercise: {
+    h1: {
         color: "white",
+        fontSize: 35,
         textAlign: "center",
-        paddingLeft: 20,
-        paddingRight: 20,
+    },
+    title_text : {
+        textAlign: "center",
+        fontSize: 30,
+    },
+    exercise: {
+        textAlign: "center",
         fontSize: 25,
         padding: 10,
-        margin: 10,
+        margin: 20,
         borderWidth: 1,
         borderRadius: 40,
         borderColor: "#75D67F",

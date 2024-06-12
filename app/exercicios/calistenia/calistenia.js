@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import exerciseData from './calistenia.json';
 import { useNavigation } from '@react-navigation/native';
 
-const Exercicios = () => {
+const Calistenia = () => {
     const [muscleGroup, setMuscleGroup] = useState(null);
     const [exercises, setExercises] = useState([]);
     const [ showExercises, setShowExercises ] = useState(false);
@@ -66,7 +66,7 @@ const Exercicios = () => {
                 <TouchableOpacity onPress={() => setShowExercises(false)} style={styles.title}>
                     <Text style={styles.title_text}>VOLTAR</Text>
                 </TouchableOpacity>
-                {/*<Image source={{ uri: exercise.image}} style={{ width: 300, height: 200 }}/> */
+                {
                 exercises.map((exercise, index) => (
                     <View key={index} style={styles.exercise}>
                         <Text style={styles.title_text}>{exercise.name}</Text>
@@ -120,4 +120,4 @@ const styles = StyleSheet.create({
     },  
 });
 
-export default Exercicios;
+export default Calistenia;
