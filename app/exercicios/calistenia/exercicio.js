@@ -13,7 +13,7 @@ const Exercicio = ({ route, navigation }) => {
       setCurrentExerciseIndex(currentExerciseIndex + 1);
       setShowDescription(false);
     } else {
-      navigation.navigate('TelaInicial');
+      navigation.navigate('ExercicioFinalizado');
     }
   };
 
@@ -27,8 +27,8 @@ const Exercicio = ({ route, navigation }) => {
         <Text style={styles.descriptionButton}>Mostrar Descrição</Text>
       </TouchableOpacity>
       {showDescription && <Text style={styles.instructions}>{currentExercise.instructions}</Text>}
-      <TouchableOpacity onPress={handleNext} style={styles.nextButton}>
-        <Text style={styles.nextButtonText}>Avançar</Text>
+      <TouchableOpacity onPress={handleNext} style={styles.button}>
+        <Text style={styles.button_text}>Avançar</Text>
       </TouchableOpacity>
     </View>
     </ScrollView>
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   },
   descriptionButton: {
     fontSize: 18,
-    color: 'blue',
+    color: '#75D67F',
     marginBottom: 10,
   },
   description: {
@@ -77,6 +77,21 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: '#FFF',
   },
+  button_text: {
+    color: "white",
+    fontSize: 35,
+    textAlign: "center",
+  },
+  button: {
+    textAlign: "center",
+    fontSize: 25,
+    padding: 10,
+    margin: 20,
+    borderWidth: 1,
+    borderRadius: 40,
+    borderColor: "#75D67F",
+    backgroundColor: "#75D67F",
+  }
 });
 
 export default Exercicio;

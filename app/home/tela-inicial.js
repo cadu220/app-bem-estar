@@ -26,7 +26,7 @@ export default function TelaInicial() {
 
         <Pressable onPress={() => navigatePage("Calistenia")} style={styles.button} android_ripple={{ color: '#fff' }}>
           <Image source={imageCalistenia} style={styles.buttonBackgroundImage} />
-          <Text style={styles.buttonText}>CALISTENIA</Text>
+          <Text style={styles.buttonText}>MUSCULAÇÃO</Text>
         </Pressable>
 
         <Pressable onPress={() => navigatePage("Ioga")} style={styles.button} android_ripple={{ color: '#fff' }}>
@@ -51,15 +51,17 @@ const styles = StyleSheet.create({
     width: 300,
     height: 150,
     borderRadius: 30,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: 'flex-start',
+    alignItems: "flex-start",
     marginVertical: 10,
     backgroundColor: 'transparent',
     overflow: 'hidden', 
   },
   buttonText: {
-    color: '#000000', // Alterado para preto
-    fontSize: 18,
+    color: '#FFFFFF', // Alterado para preto
+    fontSize: 35,
+    left: 20,
+    fontWeight: "bold",
   },
   buttonBackgroundImage: {
     ...StyleSheet.absoluteFillObject, 

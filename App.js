@@ -16,6 +16,7 @@ import Cadastro from './app/login/cadastro';
 import Login from './app/login/login';
 import Logar from './app/tela_inicial';
 import Relatorio from './app/relatorio/relatorio';
+import ExercicioFinalizado from './app/exercicios/exercicio-finalizado';
 
 const Stack = createStackNavigator();
 registerRootComponent(App);
@@ -36,6 +37,7 @@ function App() {
         <Stack.Screen name="Cadastro" component={Cadastro}/>
         <Stack.Screen name="Login" component={Login}/>
         <Stack.Screen name="Relatorio" component={Relatorio}/>
+        <Stack.Screen name="ExercicioFinalizado" component={ExercicioFinalizado}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
