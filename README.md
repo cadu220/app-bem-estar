@@ -4,9 +4,9 @@
 
 # npx expo install @react-native-async-storage/async-storage
 
-# npm install axios
+# npm install -g eas-cli
 
-# import AsyncStorage from '@react-native-async-storage/async-storage';
+# npm install axios
 
 # npm install firebase
 
