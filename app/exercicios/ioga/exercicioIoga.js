@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, Image, Button, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 
-const Exercicio = ({ route, navigation }) => {
+const ExercicioIoga = ({ route, navigation }) => {
   const { exercises } = route.params;
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const [showDescription, setShowDescription] = useState(false);
@@ -22,7 +22,6 @@ const Exercicio = ({ route, navigation }) => {
         <View style={styles.container}>
       <Image source={{ uri: currentExercise.image }} style={styles.gif} />
       <Text style={styles.name}>{currentExercise.name}</Text>
-      <Text style={styles.reps}>Repetições: {currentExercise.reps}</Text>
       <TouchableOpacity onPress={() => setShowDescription(!showDescription)}>
         <Text style={styles.descriptionButton}>Mostrar Descrição</Text>
       </TouchableOpacity>
@@ -94,4 +93,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Exercicio;
+export default ExercicioIoga;

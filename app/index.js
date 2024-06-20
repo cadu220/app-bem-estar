@@ -1,29 +1,39 @@
-import { StyleSheet, Pressable, View, Text } from "react-native";
+import { StyleSheet, Pressable, View, Text, ActivityIndicator } from "react-native";
 import { Link, router } from "expo-router";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { collection, getDocs, query, where, getCountFromServer } from "firebase/firestore";
 import { StatusBar } from "expo-status-bar";
 import db from './firebase';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Footer from "./footer/footer";
+import { useNavigation, useFocusEffect } from '@react-navigation/native';
 
 export default function Index() {
-  useEffect(() => {
-  
-    Start()
+  const navigation = useNavigation();
 
-}, []);
+  useFocusEffect(
+    useCallback(() => {
+      Start();
+    }, [])
+  );
+
+  const navigatePage = (page) => {
+    navigation.reset({
+      index: 0,
+      routes: [{ name: page }],
+    });
+  }
 
   const Start = async() =>{
     let sessao = await GetSessao()
     
-    if(sessao==null || sessao==""){
-      // router.replace(`/`);
+    if(!sessao){
+      navigatePage("Logar");
       return
     }
 
-    console.log(sessao)
-    if(sessao!=null || sessao != ""){
+    console.log(sessao);
+    if(sessao != null || sessao != ""){
     let query_validar_email = query(collection(db, "usuario"), where("email", "==", sessao.email));
     let querySnapshot = await getCountFromServer(query_validar_email);
         if (querySnapshot.data().count >= 1) {
@@ -33,17 +43,17 @@ export default function Index() {
                 ValidaLogin(doc.data(),sessao)
             });
         }else{
-          router.replace(`/`);
-          return
+          navigatePage("Logar");
+          return;
         }
   }}
 
   const ValidaLogin = async(data,sessao) =>{
     if(data.email == sessao.email && data.senha == sessao.senha){
-      router.replace(`/home/tela-inicial`);
+      navigatePage("TelaInicial");
     }else{
-      router.replace(`/`);
-      return
+      navigatePage("Logar");
+      return;
     }
   }
 
@@ -53,26 +63,24 @@ export default function Index() {
       
       return jsonValue != null ? JSON.parse(jsonValue) : null;
       
-    }catch(e){
-
+    }catch(error){
+      console.log("Erro: " + error);
     }
 
   }
   return (
-    <View style={styles.container}>
-      <StatusBar backgroundColor="#151718" style="light" />
+    <View style={{
+      width: "100%",
+      height: "100%",
+      flex: 1,
+      alignSelf: "center",
+      justifyContent: "center",
+      backgroundColor: "#fff",
 
-      <Link href="login/cadastro" asChild>
-        <Pressable style={styles.botao_link}>
-          <Text style={styles.botao_text}>Fazer Cadastro</Text>
-        </Pressable>
-      </Link>
+    }}>
+      <StatusBar backgroundColor="#fff" style="light" />
 
-      <Link href="login/login" asChild>
-        <Pressable style={styles.botao_link}>
-          <Text style={styles.botao_text}>Fazer Login</Text>
-        </Pressable>
-      </Link>
+      <ActivityIndicator style={{}} size="large" color="gray" />
     </View>
   )
 
@@ -97,7 +105,4 @@ const styles = StyleSheet.create({
     fontSize: 25,
     padding: 10
   }
-
-
-
-})
+});

@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import exerciseData from './calistenia.json';
 import { useNavigation } from '@react-navigation/native';
 
-export default function Exercicios() {
+const Calistenia = () => {
     const [muscleGroup, setMuscleGroup] = useState(null);
     const [exercises, setExercises] = useState([]);
     const [ showExercises, setShowExercises ] = useState(false);
@@ -23,7 +23,8 @@ export default function Exercicios() {
     };
 
     const startExercise = () => {
-        navigation.navigate('exercicio');
+        console.log(muscleGroup);
+        navigation.navigate('Exercicio', {exercises: exercises});
     };
     
     return (
@@ -65,7 +66,7 @@ export default function Exercicios() {
                 <TouchableOpacity onPress={() => setShowExercises(false)} style={styles.title}>
                     <Text style={styles.title_text}>VOLTAR</Text>
                 </TouchableOpacity>
-                {/*<Image source={{ uri: exercise.image}} style={{ width: 300, height: 200 }}/> */
+                {
                 exercises.map((exercise, index) => (
                     <View key={index} style={styles.exercise}>
                         <Text style={styles.title_text}>{exercise.name}</Text>
@@ -91,6 +92,7 @@ const styles = StyleSheet.create({
     },
     title: {
         padding: 10,
+        marginTop: 60,
         margin: 20,
         borderWidth: 1,
         borderRadius: 40,
@@ -117,3 +119,5 @@ const styles = StyleSheet.create({
         backgroundColor: "#75D67F",
     },  
 });
+
+export default Calistenia;

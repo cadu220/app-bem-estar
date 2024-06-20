@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text, Pressable,Button,  Image } from 'react-native';
+import { StyleSheet, View, Text, Pressable, Image } from 'react-native';
 import { Link } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import Footer from "../footer/footer";
@@ -7,31 +7,32 @@ import Footer from "../footer/footer";
 const imageMeditacao = require('./imgs/meditacao.png');
 const imageCalistenia = require('./imgs/calistenia.png');
 const imageIoga = require('./imgs/ioga.png');
+import { useNavigation } from '@react-navigation/native';
 
 export default function TelaInicial() {
+  const navigation = useNavigation();
+
+  const navigatePage = (page) => {
+    navigation.navigate(page);
+  }
+  
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="#ffffff" style="dark" />
-      <Link href="exercicios/meditacao" asChild>
-        <Pressable style={styles.button} android_ripple={{ color: '#fff' }}>
+        <Pressable onPress={() => navigatePage("Meditacao")} style={styles.button} android_ripple={{ color: '#fff' }}>
           <Image source={imageMeditacao} style={styles.buttonBackgroundImage} />
           <Text style={styles.buttonText}>MEDITAÇÃO</Text>
         </Pressable>
-      </Link>
 
-      <Link href="exercicios/calistenia/calistenia" asChild>
-        <Pressable style={styles.button} android_ripple={{ color: '#fff' }}>
+        <Pressable onPress={() => navigatePage("Calistenia")} style={styles.button} android_ripple={{ color: '#fff' }}>
           <Image source={imageCalistenia} style={styles.buttonBackgroundImage} />
-          <Text style={styles.buttonText}>CALISTENIA</Text>
+          <Text style={styles.buttonText}>MUSCULAÇÃO</Text>
         </Pressable>
-      </Link>
 
-      <Link href="exercicios/ioga" asChild>
-        <Pressable style={styles.button} android_ripple={{ color: '#fff' }}>
+        <Pressable onPress={() => navigatePage("Ioga")} style={styles.button} android_ripple={{ color: '#fff' }}>
           <Image source={imageIoga} style={styles.buttonBackgroundImage} />
           <Text style={styles.buttonText}>IOGA</Text>
         </Pressable>
-      </Link>
       <Footer/>
     </View>
   );
@@ -50,15 +51,17 @@ const styles = StyleSheet.create({
     width: 300,
     height: 150,
     borderRadius: 30,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: 'flex-start',
+    alignItems: "flex-start",
     marginVertical: 10,
     backgroundColor: 'transparent',
     overflow: 'hidden', 
   },
   buttonText: {
-    color: '#000000', // Alterado para preto
-    fontSize: 18,
+    color: '#FFFFFF', // Alterado para preto
+    fontSize: 35,
+    left: 20,
+    fontWeight: "bold",
   },
   buttonBackgroundImage: {
     ...StyleSheet.absoluteFillObject, 

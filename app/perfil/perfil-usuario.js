@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   TextInput,
   Button,
+  Linking
 } from "react-native";
 import db from "../firebase";
 import {
@@ -18,12 +19,12 @@ import {
   doc,
   where,
 } from "firebase/firestore";
-import { Link, router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import React, { useState, useEffect } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Footer from "../footer/footer";
 import DateTimePicker from "@react-native-community/datetimepicker";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Perfil() {
   const [Nome, setNome] = useState("");
@@ -33,9 +34,14 @@ export default function Perfil() {
   const [estilo, setEstilo] = useState("");
   const [email, setEmail] = useState("");
   const [modalVisible, setModalVisible] = useState(false);
-  const [modalAlterarInfos, setModalAlterarInfos] = useState(false);
+  const [modalVisibleInfos, setModalVisibleInfos] = useState(false);
   const [novaDataNascimento, setnovaDataNascimento] = useState(new Date());
   const [VisibleDesconectar, setVisibleDesconectar] = useState(false);
+  const navigation = useNavigation();
+
+  const navigatePage = (page) => {
+    navigation.navigate(page);
+  };
 
   useEffect(() => {
     Start();
@@ -45,14 +51,31 @@ export default function Perfil() {
     let sessao = await GetSessao();
     setNome(sessao.nome);
     setGenero(sessao.genero);
-    const dataNascimento = new Date(sessao.datanascimento);
-    const dataAtual = new Date();
+    if (new Date(sessao.datanascimento) == NaN) {
+      const timestamp = sessao.datanascimento;
 
-    const diff = dataAtual.getTime() - dataNascimento.getTime();
-    const idadeUser = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
-    console.log(idadeUser);
+      const dataNascimento = new Date(
+        timestamp.seconds * 1000 + timestamp.nanoseconds / 1000000
+      );
+      console.log(dataNascimento);
 
-    setIdade(idadeUser);
+      const dataAtual = new Date();
+
+      const diff = dataAtual.getTime() - dataNascimento.getTime();
+      const idadeUser = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+      console.log(idadeUser);
+      setIdade(idadeUser);
+    } else {
+      const dataNascimento = new Date(sessao.datanascimento);
+      console.log(sessao.datanascimento);
+      const dataAtual = new Date();
+      const diff = dataAtual.getTime() - dataNascimento.getTime();
+      const idadeUser = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+      console.log(idadeUser);
+      setIdade(idadeUser);
+    }
+
+    // setIdade(sessao.idade);
     setApelido(sessao.apelido);
     setEmail(sessao.email);
     setEstilo(sessao.estilo);
@@ -62,8 +85,8 @@ export default function Perfil() {
     setModalVisible(true);
   };
 
-  const alterarInfos = () => {
-    setModalAlterarInfos(true);
+  const modalAlterarInfos = () => {
+    setModalVisibleInfos(true);
   };
 
   const GetSessao = async () => {
@@ -77,73 +100,71 @@ export default function Perfil() {
 
   const Desconectar = async () => {
     await AsyncStorage.removeItem("sessao");
-    router.replace(`/`);
+    navigatePage("Index");
   };
 
   const handleSave = async () => {
+    let alterarData = false;
+    if (modalVisible) {
+      alterarData = true;
+    }
+    setModalVisible(false);
+    setModalVisibleInfos(false);
     try {
       const q = query(collection(db, "usuario"), where("email", "==", email));
       const querySnapshot = await getDocs(q);
 
-      if (!querySnapshot.empty) {
-        const usuarioDoc = querySnapshot.docs[0];
-        const usuarioId = usuarioDoc.id;
-        const usuarioRef = doc(db, "usuario", usuarioId);
+      const usuarioDoc = querySnapshot.docs[0];
+      const usuarioId = usuarioDoc.id;
 
+      const usuarioRef = doc(db, "usuario", usuarioId);
+      if (alterarData) {
         await updateDoc(usuarioRef, {
           datanascimento: novaDataNascimento,
         });
-
-        const sessao = await GetSessao();
-        if (sessao) {
-          sessao.datanascimento = novaDataNascimento;
-          await AsyncStorage.setItem("sessao", JSON.stringify(sessao));
-        }
-
-        const dataNascimento = new Date(sessao.datanascimento);
-        const dataAtual = new Date();
-        const diff = dataAtual.getTime() - dataNascimento.getTime();
-        const idadeUser = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
-        setIdade(idadeUser);
-
-        setModalVisible(false);
+      } else {
+        await updateDoc(usuarioRef, {
+          nome: Nome,
+          email: email,
+          apelido: apelido,
+          estilo: estilo,
+        });
       }
+
+      const sessao = await GetSessao();
+      if (sessao) {
+        sessao.datanascimento = novaDataNascimento;
+        sessao.nome = Nome;
+        sessao.email = email;
+        sessao.apelido = apelido;
+        sessao.estilo = estilo;
+        await AsyncStorage.setItem("sessao", JSON.stringify(sessao));
+      }
+      const dataNascimento = new Date(sessao.datanascimento);
+      const dataAtual = new Date();
+
+      const diff = dataAtual.getTime() - dataNascimento.getTime();
+      const idadeUser = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+      setIdade(idadeUser);
     } catch (error) {
       console.error("Erro ao atualizar usuário:", error);
     }
   };
 
-  const handleSaveNome = async () => {
-    try {
-      const q = query(collection(db, "usuario"), where("email", "==", email));
-      const querySnapshot = await getDocs(q);
+  const handleReportarErro = () => {
+    let mensagem = "Olá, encontrei um erro no aplicativo que gostaria de reportar.";
+    let numeroWhatsApp = "+5548984748537"; 
 
-      if (!querySnapshot.empty) {
-        const usuarioDoc = querySnapshot.docs[0];
-        const usuarioId = usuarioDoc.id;
-        const usuarioRef = doc(db, "usuario", usuarioId);
+    let url = `whatsapp://send?phone=${numeroWhatsApp}&text=${mensagem}`;
 
-        await updateDoc(usuarioRef, {
-          nome: Nome,
-          email: email,
-          estilo: estilo,
-        });
-
-        const sessao = await GetSessao();
-        if (sessao) {
-          sessao.nome = Nome;
-          sessao.estilo = estilo;
-          sessao.email = email;
-          await AsyncStorage.setItem("sessao", JSON.stringify(sessao));
-        }
-
-        setModalAlterarInfos(false);
+    Linking.canOpenURL(url).then(supported => {
+      if (supported) {
+        return Linking.openURL(url);
+      } else {
+        alert('Não é possível abrir o WhatsApp.');
       }
-    } catch (error) {
-      console.error("Erro ao atualizar nome do usuário:", error);
-    }
+    }).catch(err => console.error('Um erro ocorreu ao tentar abrir o WhatsApp:', err));
   };
-
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="#151718" style="light" />
@@ -173,8 +194,8 @@ export default function Perfil() {
             animationType="slide"
             transparent={true}
           >
-            <View style={styles.modalContainer}>
-              <View style={styles.modalContent}>
+            <View>
+              <View>
                 <DateTimePicker
                   value={novaDataNascimento}
                   mode="date"
@@ -194,7 +215,7 @@ export default function Perfil() {
           <View style={styles.line}>
             <Image
               source={require("./imgs/editButton.png")}
-              onTouchEnd={alterarInfos}
+              onTouchEnd={modalAlterarInfos}
             />
             <Text style={styles.info_text}>Nome: {Nome}</Text>
           </View>
@@ -237,28 +258,28 @@ export default function Perfil() {
           <View style={styles.line}>
             <Image
               source={require("./imgs/editButton.png")}
-              onTouchEnd={alterarInfos}
+              onTouchEnd={modalAlterarInfos}
             />
             <Text style={styles.info_text}>Apelido: {apelido}</Text>
           </View>
           <View style={styles.line}>
             <Image
               source={require("./imgs/editButton.png")}
-              onTouchEnd={alterarInfos}
+              onTouchEnd={modalAlterarInfos}
             />
             <Text style={styles.info_text}>Email: {email}</Text>
           </View>
           <View style={styles.line}>
             <Image
               source={require("./imgs/editButton.png")}
-              onTouchEnd={alterarInfos}
+              onTouchEnd={modalAlterarInfos}
             />
             <Text style={styles.info_text}>Estilo Principal: {estilo}</Text>
           </View>
           <View style={styles.buttonContainer}>
-            <Pressable style={styles.botao_report}>
-              <Text style={styles.botao_text}>REPORTAR ERRO</Text>
-            </Pressable>
+          <Pressable style={styles.botao_report} onPress={handleReportarErro}>
+      <Text style={styles.botao_text}>REPORTAR ERRO</Text>
+    </Pressable>
             <TouchableOpacity
               style={styles.botao_report}
               onPress={() => {
@@ -297,14 +318,73 @@ export default function Perfil() {
               </View>
             </View>
           </Modal>
+          <Modal
+            animationType="slide"
+            transparent={true}
+            visible={modalVisibleInfos}
+            onRequestClose={() => setModalVisibleInfos(!modalVisibleInfos)}
+          >
+            <View style={styles.modalContainer}>
+              <View style={styles.modalContent}>
+                <Text style={styles.texto_sair}>Edite suas informações</Text>
+                <View style={styles.inputContainer}>
+                  <TextInput
+                    style={styles.input}
+                    placeholder="Nome"
+                    value={Nome}
+                    onChangeText={(text) => setNome(text)}
+                  />
+                </View>
+                <View style={styles.inputContainer}>
+                  <TextInput
+                    style={styles.input}
+                    placeholder="apelido"
+                    value={apelido}
+                    onChangeText={(text) => setApelido(text)}
+                  />
+                </View>
+                <View style={styles.inputContainer}>
+                  <TextInput
+                    style={styles.input}
+                    placeholder="email"
+                    value={email}
+                    onChangeText={(text) => setEmail(text)}
+                  />
+                </View>
+                <View style={styles.inputContainer}>
+                  <TextInput
+                    style={styles.input}
+                    placeholder="estilo"
+                    value={estilo}
+                    onChangeText={(text) => setEstilo(text)}
+                  />
+                </View>
+                <View style={styles.buttonContainer}>
+                  <TouchableOpacity
+                    style={[styles.button, styles.cancelarButton]}
+                    onPress={() => setModalVisibleInfos(!modalVisibleInfos)}
+                  >
+                    <Text style={styles.buttonText}>Cancelar</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    style={[styles.button, styles.salvarButton]}
+                    onPress={() => {
+                      setModalVisibleInfos(!modalVisibleInfos);
+                      handleSave();
+                    }}
+                  >
+                    <Text style={styles.buttonText}>Salvar</Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            </View>
+          </Modal>
         </View>
       </View>
       <View>
-        <Link href="amigos/tela-amigos" asChild>
-          <Pressable>
+        {/* <Pressable onPress={() => navigatePage("Amigos")}>
             <Text style={styles.title}>Amigos</Text>
-          </Pressable>
-        </Link>
+          </Pressable> */}
       </View>
       <Footer />
     </View>
@@ -331,6 +411,23 @@ const styles = StyleSheet.create({
   line: {
     flexDirection: "row",
     alignItems: "center",
+  },
+  inputContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%",
+    marginBottom: 20,
+  },
+  input: {
+    height: 50,
+    borderColor: "#75D67F",
+    borderWidth: 1,
+    marginBottom: 20,
+    paddingLeft: 15,
+    justifyContent: "center",
+    borderRadius: 30,
+    width: "80%",
   },
   botao_report: {
     backgroundColor: "#D9D9D9",
@@ -371,7 +468,6 @@ const styles = StyleSheet.create({
     border: 1,
     borderColor: "black",
     height: 220,
-    width: 340,
     marginTop: 30,
     marginBottom: 10,
     paddingLeft: 10,
@@ -473,9 +569,10 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     borderWidth: 1,
   },
-  modalTitle: {
-    fontSize: 20,
-    marginBottom: 10,
-    textAlign: "center",
+  salvarButton: {
+    backgroundColor: "#75D67F", // Cor de fundo para o botão Desconectar
+    borderColor: "black",
+    borderRadius: 12,
+    borderWidth: 1,
   },
 });
