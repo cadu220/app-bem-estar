@@ -171,7 +171,7 @@ const styles = StyleSheet.create({
         position: "absolute",
 
         marginBottom:15,
-        top: 40,
+        top: 70,
       },
     input: {
       height: 50,
