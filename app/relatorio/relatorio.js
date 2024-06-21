@@ -6,6 +6,7 @@ import {
   View,
   Text,
   Image,
+  ActivityIndicator,
 } from "react-native";
 import { Link, router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
@@ -23,35 +24,38 @@ import db from "../firebase";
 const image = require("./imgs/pesos.jpg");
 
 export default function Relatorio() {
-     const [relatorio, setRelatorio] = useState();
-
-    useEffect(() => {
-      Start();
-    }, []);
-    const Start = async () => {
-      let sessao = await GetSessao();
-      pesquisarRelatorio(sessao)
-    };
-
-    const GetSessao = async () => {
-      try {
-        const jsonValue = await AsyncStorage.getItem("sessao");
-
-        return jsonValue != null ? JSON.parse(jsonValue) : null;
-      } catch (e) {}
-    };
+  const [relatorio, setRelatorio] = useState();
+  const [iniciarRelatorio, setIniciarRelatorio] = useState(false);
 
 
+  useEffect(() => {
+    Start();
+  }, []);
+  const Start = async () => {
+    let sessao = await GetSessao();
+    pesquisarRelatorio(sessao);
+  };
+
+  const GetSessao = async () => {
+    try {
+      const jsonValue = await AsyncStorage.getItem("sessao");
+
+      return jsonValue != null ? JSON.parse(jsonValue) : null;
+    } catch (e) {}
+  };
 
   const pesquisarRelatorio = async (sessao) => {
-    console.log(sessao)
+    console.log(sessao);
     let query_validar_email = query(
       collection(db, "relatorio"),
       where("usuario", "==", sessao.email)
     );
     let querySnapshot = await getCountFromServer(query_validar_email);
     if (querySnapshot.data().count >= 1) {
-      const q = query(collection(db, "relatorio"), where("usuario", "==", sessao.email));
+      const q = query(
+        collection(db, "relatorio"),
+        where("usuario", "==", sessao.email)
+      );
       const querySnapshot = await getDocs(q);
       querySnapshot.forEach((doc) => {
         SalvarInfoRelatorio(doc.data(), "relatorio");
@@ -67,37 +71,73 @@ export default function Relatorio() {
   };
 
   const SalvarInfoRelatorio = async (data) => {
-      const jsonValue = JSON.stringify(data);
-      console.log(jsonValue)
-      setRelatorio(jsonValue)
-      return;
+    const jsonValue = JSON.stringify(data);
+    console.log(123);
+    console.log(jsonValue);
+    setRelatorio(jsonValue);
+    setIniciarRelatorio(true)
+    return;
   };
   return (
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollViewContent}>
-        <StatusBar backgroundColor="#151718" style="light" />
-        <Text style={styles.title}>Seu Perfil</Text>
-        <View style={styles.profile_info}>
-          <Text style={styles.h3}>Exercícios</Text>
-          <Text style={styles.info_text}>Todos exercícios feitos: {relatorio.exerciciosfeitos}</Text>
-          <Text style={styles.info_text}>Exercícios feitos esse mês: {relatorio.exerciciosfeitosmes != null ? relatorio.exerciciosfeitosmes: 0 }</Text>
-          <Text style={styles.info_text}>Exercícios feitos essa semana: {relatorio.exerciciosfeitossemana != null ? relatorio.exerciciosfeitossemana: 0 }</Text>
-          <Text style={styles.info_text}>Exercícios feitos hoje: {relatorio.exerciciosfeitoshj != null ? relatorio.exerciciosfeitoshj: 0 }</Text>
-        </View>
-        <View style={styles.profile_img}>
-          <Image source={image} style={styles.buttonBackgroundImage} />
-        </View>
-        <View style={styles.config}>
-          <Text style={styles.h3}>Tempo de Atividades</Text>
-          <Text style={styles.info_text}>Conta criada em: {relatorio.datacriacao}</Text>
-          <Text style={styles.info_text}>Tempo de conta: {relatorio.tempoconta}</Text>
-          <Text style={styles.info_text}>Maior ofensiva: {relatorio.maiorofensiva}</Text>
-          <Text style={styles.info_text}>Ofensiva atual: {relatorio.ofensivaatual}</Text>
-          <Text style={styles.info_text}>Meta de Ofensiva: 30 dias</Text>
-          <Text style={styles.info_text}>Dias para meta: {relatorio.diasmeta}</Text>
-          <Text style={styles.info_text}></Text>
-        </View>
-        <View style={styles.vazio}></View>
+        {iniciarRelatorio ? (
+          <View>
+            <StatusBar backgroundColor="#151718" style="light" />
+            <Text style={styles.title}>Seu Perfil</Text>
+            <View style={styles.profile_info}>
+              <Text style={styles.h3}>Exercícios</Text>
+              <Text style={styles.info_text}>
+                Todos exercícios feitos:{" "}
+                {relatorio.exerciciosfeitos ? relatorio.exerciciosfeitos : 0}
+              </Text>
+              <Text style={styles.info_text}>
+                Exercícios feitos esse mês:{" "}
+                {relatorio.exerciciosfeitosmes != null
+                  ? relatorio.exerciciosfeitosmes
+                  : 0}
+              </Text>
+              <Text style={styles.info_text}>
+                Exercícios feitos essa semana:{" "}
+                {relatorio.exerciciosfeitossemana != null
+                  ? relatorio.exerciciosfeitossemana
+                  : 0}
+              </Text>
+              <Text style={styles.info_text}>
+                Exercícios feitos hoje:{" "}
+                {relatorio.exerciciosfeitoshj != null
+                  ? relatorio.exerciciosfeitoshj
+                  : 0}
+              </Text>
+            </View>
+            <View style={styles.profile_img}>
+              <Image source={image} style={styles.buttonBackgroundImage} />
+            </View>
+            <View style={styles.config}>
+              <Text style={styles.h3}>Tempo de Atividades</Text>
+              <Text style={styles.info_text}>
+                Conta criada em: {relatorio.datacriacao}
+              </Text>
+              <Text style={styles.info_text}>
+                Tempo de conta: {relatorio.tempoconta}
+              </Text>
+              <Text style={styles.info_text}>
+                Maior ofensiva: {relatorio.maiorofensiva}
+              </Text>
+              <Text style={styles.info_text}>
+                Ofensiva atual: {relatorio.ofensivaatual}
+              </Text>
+              <Text style={styles.info_text}>Meta de Ofensiva: 30 dias</Text>
+              <Text style={styles.info_text}>
+                Dias para meta: {relatorio.diasmeta}
+              </Text>
+              <Text style={styles.info_text}></Text>
+            </View>
+            <View style={styles.vazio}></View>
+          </View>
+        ) : (
+          <ActivityIndicator style={{}} size="large" color="gray" />
+        )}
       </ScrollView>
       <Footer />
     </View>
@@ -165,7 +205,7 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     borderRadius: 20,
     backgroundColor: "#FFFFFF",
-    borderColor: "#75D67F"
+    borderColor: "#75D67F",
   },
   config: {
     height: 280,
@@ -182,7 +222,8 @@ const styles = StyleSheet.create({
     border: 1,
     height: 150,
     width: 340,
-    marginTop: 10,borderColor: "#75D67F",
+    marginTop: 10,
+    borderColor: "#75D67F",
     marginBottom: 10,
     paddingLeft: 10,
     borderRadius: 20,
